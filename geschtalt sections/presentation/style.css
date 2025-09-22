@@ -1,0 +1,152 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt_presentation start **/
+
+#geschtalt_presentation .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt_presentation {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt_presentation {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt_presentation .presentation_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+#geschtalt_presentation .item {
+  flex: 1 1 calc(33.33% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+}
+
+#geschtalt_presentation .image {
+  width: 100%;
+  height: 400px;
+  background-color: var(--main-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first {
+  background-image: url("./first-dishe.jpg");
+}
+
+.second {
+  background-image: url("./second-dishe.jpg");
+}
+
+.third {
+  background-image: url("./third-dishe.jpg");
+}
+
+#geschtalt_presentation .text-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  gap: 4px;
+}
+
+#geschtalt_presentation .title {
+  font-size: 38px;
+  margin: 0;
+}
+
+#geschtalt_presentation .desc {
+  font-size: 20px;
+  font-family: "Almarai", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt_presentation .item {
+    flex: 1 1 calc(100% - 20px);
+    display: flex;
+    flex-direction: unset;
+  }
+
+  #geschtalt_presentation .text-row {
+    padding: 0;
+  }
+
+  #geschtalt_presentation .presentation_container {
+    padding: 32px 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt_presentation .text-row {
+    padding: 0;
+    height: 150px;
+  }
+
+  #geschtalt_presentation .item {
+    flex-direction: column !important;
+    gap: 2.5em;
+  }
+
+  #geschtalt_presentation .presentation_container {
+    gap: 32px;
+    padding: 0;
+  }
+}
+
+/** geschtalt_presentation end **/

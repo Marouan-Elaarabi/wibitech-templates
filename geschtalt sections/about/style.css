@@ -1,0 +1,189 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt_about start **/
+
+#geschtalt_about .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt_about {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt_about {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt_about .about-us-container {
+  display: flex;
+  padding: 32px 0em;
+  gap: 32px;
+}
+
+#geschtalt_about .our_history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 32px;
+  transition: all 0.33s ease;
+  flex: 1;
+}
+
+#geschtalt_about .history-title {
+  font-size: 73px;
+  color: var(--main-color);
+  margin: 0;
+}
+
+#geschtalt_about .history-desc {
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+  margin: 0;
+}
+
+#geschtalt_about .see_more_his {
+  font-family: "Almarai", sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  text-decoration: none;
+  display: flex;
+  min-width: 127px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: 0.8s;
+}
+
+#geschtalt_about .see_more_his[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+#geschtalt_about .about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  align-items: start;
+  transition: all 0.33s ease;
+  flex: 1;
+}
+
+#geschtalt_about .about-title {
+  font-size: 73px;
+  color: var(--main-color);
+  margin: 0;
+}
+
+#geschtalt_about .about-desc {
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: justify;
+  margin: 0;
+}
+
+#geschtalt_about .see_more_about {
+  font-family: "Almarai", sans-serif;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  text-decoration: none;
+  display: flex;
+  min-width: 127px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: 0.8s;
+}
+
+#geschtalt_about .see_more_about[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+#geschtalt_about .kitchen_knife {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex: 0 0 auto;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt_about .about-us-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 35px;
+  }
+
+  #geschtalt_about .our_history {
+    align-items: center;
+  }
+
+  #geschtalt_about .about_us {
+    align-items: center;
+  }
+
+  #geschtalt_about .kitchen_knife {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt_about .about-us-container {
+    padding: 32px 0;
+  }
+}
+
+/** geschtalt_about end **/

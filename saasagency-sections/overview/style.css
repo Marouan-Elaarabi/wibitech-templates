@@ -1,0 +1,176 @@
+/** css rules start **/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** saasagency-overview start **/
+
+#saasagency-overview {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-overview .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-overview .content {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 108px;
+}
+
+#saasagency-overview .content .image-content {
+  max-width: 557px;
+  padding: 60px;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+#saasagency-overview .content .image-content img {
+  width: 100%;
+}
+
+#saasagency-overview .content .text-content {
+  max-width: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 38px;
+}
+
+#saasagency-overview .content .text-content .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 13px;
+  border: 1px solid #f5f5f521;
+  border-radius: 6px;
+}
+
+#saasagency-overview .content .text-content .header-container .header,
+#saasagency-overview .content .text-content .header-container .icon {
+  padding: 2px;
+}
+
+#saasagency-overview .content .text-content .header-container .header-text {
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .description-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 44px;
+}
+
+#saasagency-overview .content .text-content .main-description {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .sub-description {
+  color: #b4b4b4;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 21px;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.41;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item .checkmark {
+  padding: 2px;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item .feature-text {
+  margin: 0;
+  color: #F5F5F5;
+}
+
+
+@media screen and (max-width: 1020px) {
+  #saasagency-overview .content {
+    flex-direction: column-reverse;
+    padding: 60px 35px 95px;
+  }
+
+  #saasagency-overview .content .image-content,
+  #saasagency-overview .content .text-content {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-overview .content {
+    padding: 65px 0px;
+  }
+
+  #saasagency-overview .content .image-content {
+    padding: 30px;
+  }
+}
+
+/** saasagency-overview end **/

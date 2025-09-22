@@ -1,0 +1,304 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lingualearn-courses start **/
+
+#lingualearn-courses {
+  --main-color: #1c3533;
+  --secondary-color: #F4F1EB;
+  --third-color: #FDFBF9;
+
+  --shades-1: #19302e;
+  --shades-2: #162a29;
+  --shades-3: #142524;
+  --shades-4: #11201f;
+  --shades-5: #0e1b1a;
+  --shades-6: #0b1514;
+  --shades-7: #08100f;
+  --shades-8: #060b0a;
+  --shades-9: #030505;
+  --shades-10: #000000;
+
+  --tints-1: #334947;
+  --tints-2: #495d5c;
+  --tints-3: #607270;
+  --tints-4: #778685;
+  --tints-5: #8e9a99;
+  --tints-6: #a4aead;
+  --tints-7: #bbc2c2;
+  --tints-8: #d2d7d6;
+  --tints-9: #e8ebeb;
+  --tints-10: #ffffff;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  box-sizing: border-box;
+}
+
+#lingualearn-courses .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#lingualearn-courses .container .content {
+  padding: 125px 10px 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#lingualearn-courses .courses-header {
+  width: 93px;
+  height: 29px;
+  border-radius: 31px;
+  text-align: center;
+  border: 1.5px solid var(--shades-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .courses-header .about-text {
+  margin: 0;
+}
+
+#lingualearn-courses .explore-more-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+#lingualearn-courses .explore-more-button .courses-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#lingualearn-courses .explore-more-button .courses-title {
+  font-size: 46px;
+  font-weight: 600;
+  max-width: 537px;
+  margin: 0 0 24px;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .explore-more-button .courses-subtitle {
+  max-width: 392px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .discover {
+  border: 2px solid var(--shades-10);
+  color: var(--shades-10);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 18.5px 23.71px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+
+#lingualearn-courses .explore-more-button .explore-button .text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--shades-10);
+  margin: 0;
+}
+
+#lingualearn-courses .courses-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 100%;
+}
+
+#lingualearn-courses .courses-list .course-card {
+  background-color: var(--tints-10);
+  padding: 15px 20px;
+  border-radius: 17px;
+  box-shadow: 0 0 22.4px 0 #0000001f;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lingualearn-courses .courses-list .course-card .image {
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 5px 0 5px;
+  width: 100%;
+}
+
+#lingualearn-courses .courses-list .course-card .image img {
+  width: 100%;
+}
+
+#lingualearn-courses .courses-list .course-card .course-details,
+#lingualearn-courses .courses-list .course-card .course-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lingualearn-courses .courses-list .course-card .course-info {
+  gap: 20px;
+  width: 100%;
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-description {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-rating .course-rating-value {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-price .course-discounted-price,
+#lingualearn-courses .courses-list .course-card .course-info .course-price .course-price-unit {
+  direction: ltr;
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-price .course-discounted-price {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+#lingualearn-courses .courses-list .course-card .course-info .course-price .course-price-unit {
+  color: #797979;
+  text-decoration: line-through;
+  font-weight: 600;
+  margin: 0;
+}
+
+#lingualearn-courses .explore-btn-mobile {
+  display: none;
+}
+
+/** tablet media query */
+@media screen and (max-width: 1020px) {
+  #lingualearn-courses .container .content {
+    padding: 0 35px;
+    padding: 125px 35px 115px;
+  }
+
+  #lingualearn-courses .courses-header,
+  #lingualearn-courses .explore-more-button .courses-info .courses-title,
+  #lingualearn-courses .explore-more-button .courses-info .courses-subtitle {
+    margin: 0 auto;
+  }
+
+  #lingualearn-courses .courses-list {
+    grid-template-columns: 1fr;
+  }
+
+  #lingualearn-courses .about-text {
+    margin: 0 auto;
+  }
+
+  #lingualearn-courses .explore-more-button {
+    flex-direction: column;
+  }
+
+  #lingualearn-courses .explore-more-button .courses-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  #lingualearn-courses .explore-more-button .courses-info .courses-title,
+  #lingualearn-courses .explore-more-button .courses-info .courses-subtitle {
+    max-width: 100%;
+  }
+
+  #lingualearn-courses .explore-more-button .discover {
+    display: none;
+  }
+
+  #lingualearn-courses .courses-list .course-card .image {
+    max-height: 238px;
+    display: flex;
+    align-items: center;
+  }
+
+  #lingualearn-courses .courses-list .course-card .course-info {
+    max-width: 338px;
+  }
+
+  #lingualearn-courses .explore-btn-mobile {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lingualearn-courses .container {
+    padding: 0px 15px;
+  }
+
+  #lingualearn-courses .container .content {
+    padding: 125px 0 90px;
+  }
+
+  #lingualearn-courses .courses-list .course-card .image {
+    max-height: unset;
+  }
+}
+
+/** lingualearn-courses end **/

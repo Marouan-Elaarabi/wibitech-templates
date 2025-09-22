@@ -1,0 +1,309 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** saasagency-header start **/
+
+#saasagency-header {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tints-10);
+  background: var(--third-color);
+  padding: 80px 50px 40px;
+  max-height: 193px;
+  user-select: none;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#saasagency-header .container {
+  background-color: #131317;
+  border: 1px solid #f5f5f521;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-header .content,
+#saasagency-header .navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+#saasagency-header .logo-container a {
+  padding: 10px;
+}
+
+#saasagency-header .navigation-links {
+  padding: 0px;
+  gap: 70px;
+  list-style: none;
+}
+
+#saasagency-header .content a {
+  color: var(--tints-10);
+  text-decoration: none;
+  display: block;
+}
+
+#saasagency-header .contact-container {
+  padding: 0 10px;
+}
+
+#saasagency-header .contact-container .contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 105px;
+  border: 1px solid #ffffff38;
+  border-radius: 8px;
+  background: linear-gradient(#04050a, #282833);
+  cursor: pointer;
+}
+
+#saasagency-header .contact-container .nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-header .navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    background-color: var(--third-color);
+    height: calc(100vh - 193px);
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: center;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #saasagency-header .navigation-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100;
+  }
+
+  #saasagency-header .contact-container .contact-us {
+    display: none;
+  }
+
+  #saasagency-header .contact-container .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    cursor: pointer;
+  }
+
+  #saasagency-header .contact-container .nav-icon img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-header {
+    padding: 80px 12px 40px;
+  }
+}
+
+/** saasagency-header end **/
+
+/** saasagency-hero start **/
+
+#saasagency-hero {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-hero .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-hero .top-content {
+  padding: 116px 35px 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#saasagency-hero .top-content .content-text {
+  max-width: 611px;
+}
+
+#saasagency-hero .top-content .content-text .title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+#saasagency-hero .top-content .content-text .subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 332px;
+  margin: 0 auto;
+  line-height: 1.54;
+  color: var(--tints-10);
+}
+
+#saasagency-hero .top-content .buttons {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 600;
+}
+
+#saasagency-hero .top-content .buttons a {
+  width: 148px;
+  height: 46px;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--tints-10);
+  border: 1px solid #f5f5f521;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 5px;
+}
+
+#saasagency-hero .top-content .buttons a .icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+#saasagency-hero .top-content .buttons a .icon img {
+  width: 100%;
+}
+
+#saasagency-hero .top-content .buttons a.start-now {
+  background: linear-gradient(#04050a, #282833);
+  border: 1px solid #f5f5f521;
+}
+
+#saasagency-hero .top-content .buttons p {
+  margin: 0;
+}
+
+#saasagency-hero .image-container {
+  padding: 5px;
+}
+
+#saasagency-hero .image-container iframe {
+  width: 100%;
+  height: 767px;
+  margin-top: 66px;
+  border-radius: 13px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/** mobile media query */
+@media screen and (max-width: 767px) {
+  #saasagency-hero {
+    padding: 92px 0px;
+  }
+
+  #saasagency-hero .top-content {
+    padding: 0;
+  }
+
+  #saasagency-hero .top-content .content .title {
+    font-size: 40px;
+  }
+
+  #saasagency-hero .top-content .buttons {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #saasagency-hero .top-content .buttons a {
+    width: 100%;
+  }
+}
+
+/** saasagency-hero end **/

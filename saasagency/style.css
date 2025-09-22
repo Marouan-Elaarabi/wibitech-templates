@@ -1,0 +1,1937 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+/** css rules end **/
+
+/** saasagency-header start **/
+
+#saasagency-header {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tints-10);
+  background: var(--third-color);
+  padding: 80px 50px 40px;
+  max-height: 193px;
+  user-select: none;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#saasagency-header .container {
+  background-color: #131317;
+  border: 1px solid #f5f5f521;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-header .content,
+#saasagency-header .navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+#saasagency-header .logo-container a {
+  padding: 10px;
+}
+
+#saasagency-header .navigation-links {
+  padding: 0px;
+  gap: 70px;
+  list-style: none;
+}
+
+#saasagency-header .content a {
+  color: var(--tints-10);
+  text-decoration: none;
+  display: block;
+}
+
+#saasagency-header .contact-container {
+  padding: 0 10px;
+}
+
+#saasagency-header .contact-container .contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 105px;
+  border: 1px solid #ffffff38;
+  border-radius: 8px;
+  background: linear-gradient(#04050a, #282833);
+  cursor: pointer;
+}
+
+#saasagency-header .contact-container .nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-header .navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    background-color: var(--third-color);
+    height: calc(100vh - 193px);
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: center;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  #saasagency-header .navigation-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100;
+  }
+
+  #saasagency-header .contact-container .contact-us {
+    display: none;
+  }
+
+  #saasagency-header .contact-container .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    cursor: pointer;
+  }
+
+  #saasagency-header .contact-container .nav-icon img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-header {
+    padding: 80px 12px 40px;
+  }
+}
+
+/** saasagency-header end **/
+
+/** saasagency-hero start **/
+
+#saasagency-hero {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-hero .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-hero .top-content {
+  padding: 116px 35px 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#saasagency-hero .top-content .content-text {
+  max-width: 611px;
+}
+
+#saasagency-hero .top-content .content-text .title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+#saasagency-hero .top-content .content-text .subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 332px;
+  margin: 0 auto;
+  line-height: 1.54;
+  color: var(--tints-10);
+}
+
+#saasagency-hero .top-content .buttons {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 600;
+}
+
+#saasagency-hero .top-content .buttons a {
+  width: 148px;
+  height: 46px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--tints-10);
+  border: 1px solid #f5f5f521;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 5px;
+}
+
+#saasagency-hero .top-content .buttons a .icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+#saasagency-hero .top-content .buttons a .icon img {
+  width: 100%;
+}
+
+#saasagency-hero .top-content .buttons a.start-now {
+  background: linear-gradient(#04050a, #282833);
+  border: 1px solid #f5f5f521;
+}
+
+#saasagency-hero .top-content .buttons p {
+  margin: 0;
+}
+
+#saasagency-hero .image-container {
+  padding: 5px;
+}
+
+#saasagency-hero .image-container iframe {
+  width: 100%;
+  height: 767px;
+  margin-top: 66px;
+  border-radius: 13px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/** mobile media query */
+@media screen and (max-width: 767px) {
+  #saasagency-hero {
+    padding: 92px 0px;
+  }
+
+  #saasagency-hero .top-content {
+    padding: 0;
+  }
+
+  #saasagency-hero .top-content .content .title {
+    font-size: 40px;
+  }
+
+  #saasagency-hero .top-content .buttons {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #saasagency-hero .top-content .buttons a {
+    width: 100%;
+  }
+}
+
+/** saasagency-hero end **/
+
+/** saasagency-social-proof start **/
+
+#saasagency-social-proof {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-social-proof .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-social-proof .content {
+  padding: 100px 75px 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 41px;
+}
+
+#saasagency-social-proof .title .text {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#saasagency-social-proof .logo-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 83px;
+}
+
+#saasagency-social-proof .logo-container .vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 5px;
+}
+
+#saasagency-social-proof .logo-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-social-proof .logo-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  #saasagency-social-proof .logo-container .vector {
+    grid-column: span 2;
+  }
+
+  #saasagency-social-proof .logo-container .vector:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  #saasagency-social-proof .logo-container .vector:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-social-proof .content {
+    padding: 80px 0;
+  }
+
+  #saasagency-social-proof .logo-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #saasagency-social-proof .logo-container .vector,
+  #saasagency-social-proof .logo-container .vector:nth-child(4),
+  #saasagency-social-proof .logo-container .vector:nth-child(5) {
+    grid-column: unset;
+  }
+}
+
+/** saasagency-social-proof end **/
+
+/** saasagency-stats start **/
+
+#saasagency-stats {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  padding: 80px 0 50px;
+}
+
+#saasagency-stats .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-stats .content {
+  background-image: url(./stats-wavy-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 60px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#saasagency-stats .content .stat-item {
+  padding: 14px 0;
+  text-align: center;
+  width: 100%;
+}
+
+#saasagency-stats .content .stat-item .number-title {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-stats .content .stat-item .description-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
+
+#saasagency-stats .content .stat-item:not(:last-of-type) {
+  border-left: 1px solid #ffffff4a;
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-stats {
+    padding: 65px 12px;
+  }
+
+  #saasagency-stats .content {
+    grid-template-columns: 1fr;
+  }
+
+  #saasagency-stats .content .stat-item {
+    padding: 23px 0;
+  }
+
+  #saasagency-stats .content .stat-item:not(:last-of-type) {
+    border-left: none;
+  }
+}
+
+/** saasagency-stats end **/
+
+/** saasagency-benefits start **/
+
+#saasagency-benefits {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-benefits .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-benefits .content {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 76px;
+}
+
+#saasagency-benefits .header-container .header-text {
+  max-width: 618px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+#saasagency-benefits .content .content-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+#saasagency-benefits .content .content-container .card-container {
+  padding: 25px 25px 50px;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+}
+
+#saasagency-benefits .content .content-container .card-container:first-of-type {
+  grid-column: span 2;
+}
+
+#saasagency-benefits .content .content-container .card-container:first-of-type .image-container {
+  background-color: #15151d;
+  padding: 30px 18px 0;
+  border: 1px solid #f5f5f521;
+  border-radius: 10px;
+}
+
+#saasagency-benefits .content .content-container .image-container img {
+  width: 100%;
+}
+
+#saasagency-benefits .content .content-container .text-container {
+  margin-top: 35px;
+}
+
+#saasagency-benefits .content .content-container .text-container .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+#saasagency-benefits .content .content-container .text-container .description {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-benefits .content {
+    padding: 60px 35px;
+  }
+
+  #saasagency-benefits .content .content-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #saasagency-benefits .content .content-container .card-container:first-of-type {
+    grid-column: unset;
+  }
+
+  #saasagency-benefits .content .content-container .image-container {
+    aspect-ratio: 5/2;
+    overflow: hidden;
+    border: 1px solid #f5f5f521;
+    border-radius: 13px;
+  }
+
+  #saasagency-benefits .content .content-container .card-container:not(:first-of-type) .image-container img {
+    transform: translateY(-30%) scale(1.01);
+  }
+
+  #saasagency-benefits .content .content-container .card-container:last-of-type .image-container img {
+    transform: scale(0.4) translateY(-73%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-benefits .content {
+    padding: 90px 0px;
+  }
+
+  #saasagency-benefits .content .content-container .image-container {
+    aspect-ratio: unset;
+  }
+
+  #saasagency-benefits .content .content-container .card-container:not(:first-of-type) .image-container img,
+  #saasagency-benefits .content .content-container .card-container:last-of-type .image-container img {
+    transform: unset;
+  }
+
+
+  #saasagency-benefits .content .content-container .image-container {
+    border: none;
+  }
+}
+
+/** saasagency-benefits end **/
+
+/** saasagency-overview start **/
+
+#saasagency-overview {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-overview .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-overview .content {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 108px;
+}
+
+#saasagency-overview .content .image-content {
+  max-width: 557px;
+  padding: 60px;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+#saasagency-overview .content .image-content img {
+  width: 100%;
+}
+
+#saasagency-overview .content .text-content {
+  max-width: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 38px;
+}
+
+#saasagency-overview .content .text-content .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 13px;
+  border: 1px solid #f5f5f521;
+  border-radius: 6px;
+}
+
+#saasagency-overview .content .text-content .header-container .header,
+#saasagency-overview .content .text-content .header-container .icon {
+  padding: 2px;
+}
+
+#saasagency-overview .content .text-content .header-container .header-text {
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .description-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 44px;
+}
+
+#saasagency-overview .content .text-content .main-description {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .sub-description {
+  color: #b4b4b4;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 21px;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.41;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item .checkmark {
+  padding: 2px;
+}
+
+#saasagency-overview .content .text-content .features-container .feature-item .feature-text {
+  margin: 0;
+  color: #F5F5F5;
+}
+
+
+@media screen and (max-width: 1020px) {
+  #saasagency-overview .content {
+    flex-direction: column-reverse;
+    padding: 60px 35px 95px;
+  }
+
+  #saasagency-overview .content .image-content,
+  #saasagency-overview .content .text-content {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-overview .content {
+    padding: 65px 0px;
+  }
+
+  #saasagency-overview .content .image-content {
+    padding: 30px;
+  }
+}
+
+/** saasagency-overview end **/
+
+/** saasagency-overview-sec start **/
+
+#saasagency-overview-sec {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-overview-sec .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-overview-sec .content {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 108px;
+}
+
+#saasagency-overview-sec .content .image-content {
+  max-width: 557px;
+  padding: 60px;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+#saasagency-overview-sec .content .image-content img {
+  width: 100%;
+}
+
+#saasagency-overview-sec .content .text-content {
+  max-width: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 38px;
+}
+
+#saasagency-overview-sec .content .text-content .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 13px;
+  border: 1px solid #f5f5f521;
+  border-radius: 6px;
+}
+
+#saasagency-overview-sec .content .text-content .header-container .header,
+#saasagency-overview-sec .content .text-content .header-container .icon {
+  padding: 2px;
+}
+
+#saasagency-overview-sec .content .text-content .header-container .header-text {
+  margin: 0;
+}
+
+#saasagency-overview-sec .content .text-content .description-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 44px;
+}
+
+#saasagency-overview-sec .content .text-content .main-description {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-overview-sec .content .text-content .sub-description {
+  color: #b4b4b4;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  margin: 0;
+}
+
+#saasagency-overview-sec .content .text-content .features-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 21px;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.41;
+}
+
+#saasagency-overview-sec .content .text-content .features-container .feature-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+#saasagency-overview-sec .content .text-content .features-container .feature-item .checkmark {
+  padding: 2px;
+}
+
+#saasagency-overview-sec .content .text-content .features-container .feature-item .feature-text {
+  margin: 0;
+  color: #F5F5F5;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-overview-sec .content {
+    flex-direction: column-reverse;
+    padding: 60px 35px 95px;
+    gap: 70px;
+  }
+
+  #saasagency-overview-sec .content .image-content,
+  #saasagency-overview-sec .content .text-content {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-overview-sec .content {
+    padding: 65px 0px;
+  }
+
+  #saasagency-overview-sec .content .image-content {
+    padding: 30px;
+  }
+}
+
+/** saasagency-overview-sec end **/
+
+/** saasagency-testimonials start **/
+
+#saasagency-testimonials {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-testimonials .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-testimonials .content {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 115px;
+}
+
+#saasagency-testimonials .content .header-text {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-testimonials .content .testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 25px;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-card {
+  padding: 45px 30px;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-header {
+  padding: 5px 30px;
+  border-radius: 36px;
+  background-color: var(--fourth-color);
+  width: fit-content;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-header .testimonial-text {
+  margin: 0;
+  color: #4d4d5b;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-text-container {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 3px 0;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-text-container .testimonial-text {
+  margin: 0;
+  color: #dae1e7;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer .user-image-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3px;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer .user-image-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer .user-info {
+  padding: 0 2px;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer .user-info h5 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-testimonials .testimonials-container .testimonial-footer .user-info h5:first-of-type {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-testimonials .content {
+    padding: 90px 35px;
+  }
+
+  #saasagency-testimonials .content .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-testimonials .content {
+    padding: 80px 0px;
+  }
+
+  #saasagency-testimonials .content .testimonials-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #saasagency-testimonials .content .header-text {
+    text-align: center;
+  }
+}
+
+/** saasagency-testimonials end **/
+
+/** saasagency-pricing start **/
+
+#saasagency-pricing {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-pricing .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-pricing .content {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 84px;
+}
+
+#saasagency-pricing .header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 453px;
+  text-align: center;
+}
+
+#saasagency-pricing .header-container .header-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-pricing .header-container .header-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #B4B4B4;
+  margin: 0;
+}
+
+#saasagency-pricing .plans-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+#saasagency-pricing .plans-container .plan-container {
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  position: relative;
+  padding: 30px 33px;
+  box-sizing: border-box;
+}
+
+#saasagency-pricing .plans-container .plan-container:first-of-type {
+  flex: 2.4;
+}
+
+#saasagency-pricing .plans-container .plan-container:last-of-type {
+  flex: 1.8;
+}
+
+#saasagency-pricing .plan-features-container {
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#saasagency-pricing .plan-features-container .plan-header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#saasagency-pricing .plan-container .plan-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.41;
+  margin: 0;
+}
+
+#saasagency-pricing .plan-price-container .price-details-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+#saasagency-pricing .plan-price-container .price-details-container .price-amount {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#saasagency-pricing .plan-price-container .price-details-container .price-unit,
+#saasagency-pricing .plan-price-container .payement-frequency,
+#saasagency-pricing .features-list-container .features-title,
+#saasagency-pricing .features-list-container .features-subtitle,
+#saasagency-pricing .features-list-container .feature-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.41;
+  margin: 0;
+}
+
+#saasagency-pricing .plan-price-container .payement-frequency {
+  font-size: 16px;
+}
+
+#saasagency-pricing .features-list-container .features-title {
+  font-size: 18px;
+}
+
+#saasagency-pricing .features-list-container .features-header-container {
+  margin-bottom: 30px;
+}
+
+#saasagency-pricing .features-list-container .features-title {
+  font-weight: 700;
+}
+
+#saasagency-pricing .features-list-container .features-subtitle {
+  margin-top: 10px;
+  color: #b4b4b4;
+  font-weight: 600;
+}
+
+#saasagency-pricing .features-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#saasagency-pricing .feature-item-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+#saasagency-pricing .feature-item-container .feature-icon {
+  padding: 3px;
+}
+
+#saasagency-pricing .features-list-container .feature-text {
+  color: var(--tints-10);
+}
+
+#saasagency-pricing .plan-container .divider-container {
+  position: absolute;
+  right: 0;
+  bottom: 135px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff26;
+}
+
+#saasagency-pricing .plan-container .buy {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  padding: 18.5px 0;
+  color: var(--tints-10);
+  border: none;
+  background-color: var(--main-color);
+  border: 1px solid #ffffff38;
+  border-radius: 13px;
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-pricing .content {
+    padding: 60px 25px;
+  }
+
+  #saasagency-pricing .plans-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #saasagency-pricing .plans-container .plan-container {
+    flex: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-pricing .content {
+    padding: 25px 0px;
+  }
+
+  #saasagency-pricing .plans-container .plan-container {
+    padding: 30px 15px;
+  }
+}
+
+/** saasagency-pricing end **/
+
+/** saasagency-faq start **/
+
+#saasagency-faq {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  padding: 85px 136px;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-faq .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-faq .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#saasagency-faq .faq-header .faq-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#saasagency-faq .accordion {
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+#saasagency-faq .accordion details {
+  border: 1px solid #f5f5f521;
+  background-color: #0c0d12;
+  border-radius: 13px;
+  user-select: none;
+  padding: 5px;
+}
+
+#saasagency-faq .accordion details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.18s;
+  padding: 28px 33px;
+  position: relative;
+}
+
+#saasagency-faq .accordion details summary .text {
+  padding-left: 20px;
+}
+
+#saasagency-faq .accordion details summary .text::before {
+  content: "";
+  background-image: url(./faq-icon.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%) rotate(0deg);
+  width: 14px;
+  height: 15px;
+  transition: all 0.18s linear;
+}
+
+#saasagency-faq .accordion details[open] summary .text::before {
+  transform: translateX(-100%) rotate(-180deg);
+}
+
+#saasagency-faq .accordion details[open] summary {
+  margin-bottom: 10px;
+}
+
+#saasagency-faq .accordion details summary .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+#saasagency-faq .accordion details summary .icon {
+  padding: 0;
+  cursor: default;
+  border: none;
+  background-color: transparent;
+}
+
+#saasagency-faq .accordion details summary .icon img {
+  transform: rotate(0deg);
+  transition: all 0.18s linear;
+}
+
+#saasagency-faq .accordion details[open] summary .icon img {
+  transform: rotate(-180deg);
+}
+
+#saasagency-faq .accordion details .description {
+  color: #b4b4b4;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  padding: 0 33px 28px;
+}
+
+@media only screen and (max-width: 767px) {
+  #saasagency-faq {
+    padding: 85px 0px;
+  }
+
+  #saasagency-faq .accordion {
+    width: 100%;
+  }
+
+  #saasagency-faq .accordion details summary .text #saasagency-faq .accordion details summary .text::before {
+    transform: translateX(-100%) rotate(0deg);
+  }
+
+  #saasagency-faq .accordion details[open] summary .text::before {
+    transform: translateX(-100%) rotate(-180deg);
+  }
+}
+
+/** saasagency-faq end **/
+
+/** saasagency-contact start **/
+
+#saasagency-contact {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-contact .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-contact .content {
+  padding: 118px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#saasagency-contact .contact-us {
+  max-width: 777px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 70px;
+}
+
+#saasagency-contact .header-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+#saasagency-contact .header-container .main-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 5px;
+}
+
+#saasagency-contact .header-container .sub-heading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+  margin: 0;
+}
+
+#saasagency-contact .form-saasagency {
+  width: 629px;
+  margin: 0 auto;
+  background-color: var(--fourth-color);
+  padding: 40px;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+#saasagency-contact .form-saasagency {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+#saasagency-contact .form-saasagency label {
+  width: 100%;
+}
+
+#saasagency-contact .form-saasagency>label:nth-of-type(1),
+#saasagency-contact .form-saasagency>label:nth-of-type(2) {
+  width: 48.8%;
+}
+
+
+#saasagency-contact .form-saasagency>div {
+  width: 100%;
+}
+
+#saasagency-contact .form-saasagency label.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#saasagency-contact .form-saasagency input {
+  width: 100%;
+  border: 1px solid #898e93;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 20px;
+  direction: rtl;
+  color: var(--tints-10);
+  outline: none;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+#saasagency-contact .form-saasagency input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+#saasagency-contact .form-saasagency input::placeholder,
+#saasagency-contact .form-saasagency textarea::placeholder {
+  color: #bcbcbc;
+}
+
+#saasagency-contact .form-saasagency .landino-field-title {
+  display: block;
+  margin-bottom: 16px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#saasagency-contact .form-saasagency .button-cta {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+  color: var(--tints-10);
+  border-radius: 13px;
+  border: none;
+  outline: none;
+  padding: 20px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#saasagency-contact .form-saasagency .disclamer-text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  max-width: 372px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-contact .form-saasagency {
+    width: 100%;
+  }
+
+  #saasagency-contact .content {
+    padding: 90px 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-contact .content {
+    padding: 60px 0;
+  }
+
+  #saasagency-contact .header-container .main-title {
+    font-size: 36px;
+  }
+
+  #saasagency-contact .form-saasagency {
+    padding: 20px 10px;
+  }
+
+  #saasagency-contact .form-saasagency>label:nth-of-type(1),
+  #saasagency-contact .form-saasagency>label:nth-of-type(2) {
+    width: 100%;
+  }
+
+  #saasagency-contact .form-saasagency .disclamer-text {
+    max-width: unset;
+    width: unset;
+  }
+}
+
+/** saasagency-contact end **/
+
+/** saasagency-footer start **/
+
+#saasagency-footer {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-footer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-footer .content {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#saasagency-footer .tagline-container {
+  max-width: 291px;
+  width: 100%;
+}
+
+#saasagency-footer .tagline-container .tagline-container-text {
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.54;
+}
+
+#saasagency-footer .tagline-container .tagline-container-text .tagline-text {
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#saasagency-footer .navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#saasagency-footer .navigation-links a {
+  color: var(--tints-10);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-footer .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #saasagency-footer .tagline-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #saasagency-footer .container {
+    padding: 0px 12px;
+  }
+
+  #saasagency-footer .content {
+    padding: 50px 0;
+  }
+
+  #saasagency-footer .navigation-links {
+    gap: 30px;
+  }
+}
+
+/** saasagency-footer end **/

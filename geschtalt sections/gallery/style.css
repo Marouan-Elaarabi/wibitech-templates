@@ -1,0 +1,161 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-gallery start **/
+
+#geschtalt-gallery .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt-gallery {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-gallery {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt-gallery .gallery {
+  display: flex;
+  padding: 32px 0;
+  gap: 1.5em;
+}
+
+#geschtalt-gallery .content {
+  flex: 1;
+  font-family: "Almarai", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.33s ease;
+}
+
+#geschtalt-gallery .tag {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+#geschtalt-gallery .title {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Fustat", sans-serif;
+  color: var(--main-color);
+  margin: 0;
+}
+
+#geschtalt-gallery .desc {
+  margin: 32px 0;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#geschtalt-gallery .instagram_cta {
+  min-width: 170px;
+  max-width: 190px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.33s ease;
+}
+
+#geschtalt-gallery .instagram_cta[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+#geschtalt-gallery .images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#geschtalt-gallery .images img {
+  height: 400px;
+  flex: 1;
+  object-fit: cover;
+}
+
+#geschtalt-gallery .images img:hover {
+  transition: all 0.33s ease;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt-gallery .content {
+    align-items: center;
+  }
+
+  #geschtalt-gallery .desc {
+    text-align: center;
+  }
+
+  #geschtalt-gallery .gallery {
+    flex-direction: column;
+    padding-right: 0em;
+    padding: 32px 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  #geschtalt-gallery .gallery {
+    padding: 32px 0;
+  }
+
+  #geschtalt-gallery .images {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/** geschtalt-gallery end **/

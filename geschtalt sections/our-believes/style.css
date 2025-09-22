@@ -1,0 +1,165 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-ourbelieves start **/
+
+
+#geschtalt-ourbelieves .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt-ourbelieves {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-ourbelieves {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt-ourbelieves .ourbelieves-content {
+  display: flex;
+  padding: 32px 0em;
+}
+
+#geschtalt-ourbelieves .box {
+  height: 100%;
+  width: 200px;
+  background-color: var(--main-color);
+}
+
+#geschtalt-ourbelieves .chef-image {
+  margin-right: -200px;
+  padding: 1.5em;
+}
+
+#geschtalt-ourbelieves .chef {
+  flex: 1;
+  display: flex;
+}
+
+#geschtalt-ourbelieves .text {
+  flex: 1;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Almarai", sans-serif;
+}
+
+#geschtalt-ourbelieves .tag {
+  margin: 0;
+  font-size: 17px;
+}
+
+#geschtalt-ourbelieves .title {
+  font-size: 38px;
+  color: var(--main-color);
+  font-family: "Fustat", sans-serif;
+  margin: 0;
+}
+
+#geschtalt-ourbelieves .desc {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 32px 0;
+  line-height: 23px;
+  text-align: justify;
+}
+
+#geschtalt-ourbelieves .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-name {
+  font-weight: 700;
+  color: var(--main-color);
+  margin: 0;
+}
+
+.info-title {
+  font-weight: 700;
+  margin: 0;
+}
+
+#geschtalt-ourbelieves .signature {
+  max-width: 100%;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt-ourbelieves .ourbelieves-content {
+    flex-direction: column-reverse;
+    gap: 5em;
+    padding: 32px 35px;
+  }
+
+  #geschtalt-ourbelieves .text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #geschtalt-ourbelieves .chef {
+    justify-content: center;
+  }
+
+  #geschtalt-ourbelieves .box {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt-ourbelieves .chef-image {
+    margin-right: -200px;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  #geschtalt-ourbelieves .ourbelieves-content {
+    padding: 32px 0;
+  }
+}
+
+/** geschtalt-ourbelieves end **/

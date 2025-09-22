@@ -1,0 +1,171 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lingualearn-form start **/
+
+#lingualearn-form {
+  --main-color: #1c3533;
+  --secondary-color: #F4F1EB;
+  --third-color: #FDFBF9;
+
+  --shades-1: #19302e;
+  --shades-2: #162a29;
+  --shades-3: #142524;
+  --shades-4: #11201f;
+  --shades-5: #0e1b1a;
+  --shades-6: #0b1514;
+  --shades-7: #08100f;
+  --shades-8: #060b0a;
+  --shades-9: #030505;
+  --shades-10: #000000;
+
+  --tints-1: #334947;
+  --tints-2: #495d5c;
+  --tints-3: #607270;
+  --tints-4: #778685;
+  --tints-5: #8e9a99;
+  --tints-6: #a4aead;
+  --tints-7: #bbc2c2;
+  --tints-8: #d2d7d6;
+  --tints-9: #e8ebeb;
+  --tints-10: #ffffff;
+
+  --main-color: #000;
+  --secondary-color: #fff;
+  --third-color: #fdfbf9;
+  --fourth-color: #1c3533;
+  font-family: "Cairo", sans-serif;
+  background-image: url(./form-newsletter-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 525px;
+  padding: 40px 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#lingualearn-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066;
+  z-index: 0;
+}
+
+#lingualearn-form .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+#lingualearn-form .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  height: 100%;
+  width: 550px;
+  margin: 0 auto;
+}
+
+#lingualearn-form .newsletter-header {
+  color: var(--tints-10);
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+#lingualearn-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 48px;
+  width: 100%;
+  font-size: 15px;
+}
+
+
+#lingualearn-form form input,
+#lingualearn-form form button {
+  height: 48px;
+  border: 1px solid var(--tints-10);
+  outline: none;
+  border-radius: 44px;
+  box-sizing: border-box;
+}
+
+#lingualearn-form form input {
+  width: 321px;
+  background-color: #ffffff78;
+  padding: 10px 30px;
+  color: var(--tints-10);
+  backdrop-filter: blur(6.099999904632568px)
+}
+
+#lingualearn-form form input::selection {
+  background-color: var(--shades-10);
+}
+
+#lingualearn-form form input::placeholder {
+  color: #707070;
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#lingualearn-form form button {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: var(--tints-10);
+  color: var(--main-color);
+  width: 137px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  #lingualearn-form .content {
+    width: unset;
+    padding: 0 15px;
+  }
+
+  #lingualearn-form .newsletter-header {
+    font-size: 40px;
+  }
+
+  #lingualearn-form form {
+    flex-direction: column;
+    height: unset;
+  }
+
+  #lingualearn-form form label,
+  #lingualearn-form form .submit-btn {
+    width: 100%;
+  }
+
+  #lingualearn-form form input,
+  #lingualearn-form form button {
+    width: 100%;
+    height: 60px;
+  }
+
+  #lingualearn-form form button {
+    cursor: pointer;
+  }
+}
+
+/** lingualearn-form end **/

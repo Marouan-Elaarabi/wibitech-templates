@@ -1,0 +1,171 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lingualearn-teachers start **/
+
+#lingualearn-teachers {
+  --main-color: #1c3533;
+  --secondary-color: #F4F1EB;
+  --third-color: #FDFBF9;
+
+  --shades-1: #19302e;
+  --shades-2: #162a29;
+  --shades-3: #142524;
+  --shades-4: #11201f;
+  --shades-5: #0e1b1a;
+  --shades-6: #0b1514;
+  --shades-7: #08100f;
+  --shades-8: #060b0a;
+  --shades-9: #030505;
+  --shades-10: #000000;
+
+  --tints-1: #334947;
+  --tints-2: #495d5c;
+  --tints-3: #607270;
+  --tints-4: #778685;
+  --tints-5: #8e9a99;
+  --tints-6: #a4aead;
+  --tints-7: #bbc2c2;
+  --tints-8: #d2d7d6;
+  --tints-9: #e8ebeb;
+  --tints-10: #ffffff;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  box-sizing: border-box;
+}
+
+#lingualearn-teachers .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#lingualearn-teachers .content {
+  padding: 100px 10px 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#lingualearn-teachers .content .teachers-header {
+  width: 100%;
+}
+
+#lingualearn-teachers .teachers-header .teachers-header-text {
+  width: fit-content;
+  height: 29px;
+  border-radius: 31px;
+  text-align: center;
+  padding: 7.5px 22px;
+  border: 1.5px solid var(--shades-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: var(--shades-10);
+}
+
+#lingualearn-teachers .teachers-title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--shades-10);
+}
+
+#lingualearn-teachers .teachers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 21px;
+}
+
+#lingualearn-teachers .teachers-grid>div {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 377px;
+  max-height: 377px;
+}
+
+#lingualearn-teachers .teachers-grid .teacher-description-container {
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+#lingualearn-teachers .teachers-grid .teacher-description-container .text {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 22px;
+  color: var(--shades-10);
+}
+
+#lingualearn-teachers .teachers-grid .teacher-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1020px) {
+  #lingualearn-teachers .content {
+    padding: 100px 35px 60px;
+  }
+
+  #lingualearn-teachers .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #lingualearn-teachers .teachers-grid>div {
+    max-width: unset;
+  }
+
+  #lingualearn-teachers .teachers-grid .teacher-image-container {
+    max-height: 378px;
+  }
+
+  #lingualearn-teachers .teachers-grid .teacher-description-container {
+    height: 328px;
+  }
+
+  #lingualearn-teachers .teachers-grid .teacher-image-container {
+    width: 100%;
+    height: 378px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lingualearn-teachers .content {
+    padding: 100px 0px 60px;
+  }
+
+  #lingualearn-teachers .teachers-title {
+    font-size: 40px;
+  }
+
+  #lingualearn-teachers .teachers-grid>div,
+  #lingualearn-teachers .teachers-grid .teacher-image-container,
+  #lingualearn-teachers .teachers-grid .teacher-description-container {
+    max-height: unset;
+    height: unset;
+  }
+
+  #lingualearn-teachers .teachers-grid .teacher-description-container {
+    aspect-ratio: 1/1;
+  }
+
+  #lingualearn-teachers .teachers-grid .teacher-description-container .text {
+    font-size: 22px;
+  }
+}
+
+/** lingualearn-teachers end **/

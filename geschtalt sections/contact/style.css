@@ -1,0 +1,322 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-contact start **/
+
+#geschtalt-contact .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt-contact {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-contact {
+  background-color: var(--main-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt-contact .content {
+  display: flex;
+  padding: 32px 0;
+  gap: 32px;
+}
+
+#geschtalt-contact .geschtalt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1.3;
+}
+
+#geschtalt-contact .form-geschtalt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 32px 0;
+}
+
+#geschtalt-contact .span_half {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#geschtalt-contact .span_half,
+#geschtalt-contact .text,
+#geschtalt-contact .email,
+#geschtalt-contact .tel,
+#geschtalt-contact .number,
+#geschtalt-contact .date,
+#geschtalt-contact .ouasl_field-radios,
+#geschtalt-contact .ouasl_field-checkbox {
+  font-family: "Almarai", sans-serif;
+  width: calc(50% - 1em);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#geschtalt-contact .span_half .ouasl_field-title,
+#geschtalt-contact .ouasl_field-title,
+#geschtalt-contact .ouasl_field-checkbox_title,
+#geschtalt-contact .ouasl_field-radios_title {
+  display: block;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+#geschtalt-contact .span_half input[type="text"],
+#geschtalt-contact .span_half input[type="email"],
+#geschtalt-contact .span_half input[type="tel"],
+#geschtalt-contact .span_half input[type="number"],
+#geschtalt-contact .span_half input[type="datetime-local"],
+#geschtalt-contact textarea,
+#geschtalt-contact .text input[type="text"],
+#geschtalt-contact .email input[type="email"],
+#geschtalt-contact .tel input[type="tel"],
+#geschtalt-contact .number input[type="number"],
+#geschtalt-contact .date input[type="text"],
+#geschtalt-contact .select select {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--fourth-color);
+  font-family: "Almarai", sans-serif;
+  border: none;
+  text-align: right;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+#geschtalt-contact input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+  display: none;
+}
+
+#geschtalt-contact .message,
+#geschtalt-contact .textarea,
+#geschtalt-contact .select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#geschtalt-contact textarea {
+  resize: none;
+  height: 100px;
+}
+
+#geschtalt-contact .ouasl_field-radios,
+#geschtalt-contact .ouasl_field-checkbox {
+  margin-top: 1em;
+}
+
+#geschtalt-contact .ouasl_field-radios h4,
+#geschtalt-contact .ouasl_field-checkbox h4 {
+  margin: 0 0 1em 0;
+}
+
+#geschtalt-contact .checkbox,
+#geschtalt-contact .radio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+#geschtalt-contact .checkbox span,
+#geschtalt-contact .radio span {
+  margin: 0;
+}
+
+#geschtalt-contact .submit-form-btn {
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+#geschtalt-contact .send_form {
+  font-family: "Almarai", sans-serif;
+  min-width: 170px;
+  max-width: 190px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.33s ease;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+#geschtalt-contact .send_form[data-active_hover] {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+#geschtalt-contact .introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#geschtalt-contact .title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+#geschtalt-contact .desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: var(--secondary-color);
+  font-family: "Almarai", sans-serif;
+  margin: 0;
+}
+
+#geschtalt-contact .contact-form-text {
+  flex: 1;
+}
+
+#geschtalt-contact .global-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.5rem;
+  gap: 8px;
+  width: 60%;
+  word-wrap: break-word;
+}
+
+#geschtalt-contact .global-text h4 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--secondary-color);
+  font-weight: 700px;
+}
+
+#geschtalt-contact .line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+#geschtalt-contact .global-text p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 15px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt-contact .content {
+    flex-direction: column;
+    padding: 32px 35px;
+  }
+
+  #geschtalt-contact .contact-form-text {
+    display: flex;
+    gap: 32px;
+  }
+
+  #geschtalt-contact .introduction {
+    align-items: center;
+  }
+
+  #geschtalt-contact .desc {
+    text-align: center;
+  }
+
+  #geschtalt-contact .global-text {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt-contact .content {
+    padding: 32px 0;
+  }
+
+  #geschtalt-contact .contact-form-text {
+    display: block !important;
+  }
+
+  #geschtalt-contact .global-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  #geschtalt-contact .global-text p {
+    text-align: center;
+  }
+
+  #geschtalt-contact .span_half,
+  #geschtalt-contact .text,
+  #geschtalt-contact .email,
+  #geschtalt-contact .tel,
+  #geschtalt-contact .number,
+  #geschtalt-contact .date,
+  #geschtalt-contact .landino_field-radios,
+  #geschtalt-contact .landino_field-checkbox {
+    width: 100%;
+  }
+
+  #geschtalt-contact .send_form {
+    margin: 0 auto;
+  }
+}
+
+/** geschtalt-contact end **/

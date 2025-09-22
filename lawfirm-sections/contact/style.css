@@ -1,0 +1,206 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lawfirm-contact start **/
+
+#lawfirm-contact {
+  --main-color: #2c4e52;
+
+  --shades-1: #28464a;
+  --shades-2: #233e42;
+  --shades-3: #1f3739;
+  --shades-4: #1a2f31;
+  --shades-5: #162729;
+  --shades-6: #121f21;
+  --shades-7: #0d1719;
+  --shades-8: #091010;
+  --shades-9: #040808;
+  --shades-10: #000000;
+
+  --tints-1: #416063;
+  --tints-2: #567175;
+  --tints-3: #6b8386;
+  --tints-4: #809597;
+  --tints-5: #96a7a9;
+  --tints-6: #abb8ba;
+  --tints-7: #c0cacb;
+  --tints-8: #d5dcdc;
+  --tints-9: #eaedee;
+  --tints-10: #ffffff;
+
+  --secondary-color: #012a2e;
+  --third-color: #97a8a9;
+  --fourth-color: #eff2f2;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Markazi Text", serif;
+  background-color: var(--secondary-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#lawfirm-contact .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#lawfirm-contact .content {
+  padding: 50px 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#lawfirm-contact .content .header-container,
+#lawfirm-contact .content .form-lawfirm {
+  width: 100%;
+}
+
+#lawfirm-contact .header-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 70px;
+}
+
+#lawfirm-contact .header-container .contact-container {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+#lawfirm-contact .header-container .icon-container {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--tints-10);
+  margin: 10px;
+}
+
+#lawfirm-contact .header-container .contact-container .contact-text {
+  font-size: 18px;
+  margin: 0;
+}
+
+#lawfirm-contact .header-container .main-title {
+  font-size: 80px;
+  margin: 0;
+}
+
+#lawfirm-contact .form-lawfirm {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+#lawfirm-contact .form-lawfirm>label {
+  width: 49%;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content,
+#lawfirm-contact .form-lawfirm .text-msg,
+#lawfirm-contact .form-lawfirm .btn-cta {
+  width: 100%;
+}
+
+#lawfirm-contact .form-lawfirm input::placeholder,
+#lawfirm-contact .form-lawfirm input,
+#lawfirm-contact .form-lawfirm textarea::placeholder,
+#lawfirm-contact .form-lawfirm textarea {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#lawfirm-contact .form-lawfirm input:not([type="radio"]),
+#lawfirm-contact .form-lawfirm textarea {
+  width: 100%;
+  border: 1px solid #969696;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 20px;
+  color: var(--white-color);
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content .radios_title {
+  margin: 0;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content .voicemail-question {
+  font-weight: 400;
+  margin: 0;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content .radios,
+#lawfirm-contact .form-lawfirm .radios-content .radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+#lawfirm-contact .form-lawfirm .radios-content .radio {
+  gap: 15px;
+}
+
+#lawfirm-contact .form-lawfirm textarea {
+  min-height: 150px;
+}
+
+#lawfirm-contact .form-lawfirm .submit-form-btn {
+  background-color: var(--tints-10);
+  color: var(--secondary-color);
+  border-radius: 58px;
+  border: none;
+  outline: none;
+  padding: 12px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #lawfirm-contact .content {
+    padding: 60px 35px;
+  }
+
+  #lawfirm-contact .form-lawfirm>label {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lawfirm-contact .content {
+    padding: 80px 0px;
+  }
+
+  #lawfirm-contact .header-container {
+    gap: 40px;
+  }
+
+  #lawfirm-contact .header-container .main-title {
+    font-size: 45px;
+  }
+}
+
+/** lawfirm-contact end **/

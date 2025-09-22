@@ -1,0 +1,86 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-video start **/
+
+#geschtalt-video .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+}
+
+#geschtalt-video {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-video {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt-video .geschtalt-video-preview {
+  width: 100%;
+  height: 800px;
+  max-height: 800px;
+  background-color: var(--secondary-color);
+  padding: 32px 0;
+  box-sizing: border-box;
+}
+
+#geschtalt-video .geschtalt-video-preview iframe {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt-video .geschtalt-video-preview {
+    height: 650px;
+    padding: 32px 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt-video .geschtalt-video-preview {
+    height: 550px;
+    padding: 32px 0px;
+  }
+}
+
+/** geschtalt-video end **/

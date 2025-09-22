@@ -1,0 +1,164 @@
+/** css rules start **/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** saasagency-benefits start **/
+
+#saasagency-benefits {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-benefits .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-benefits .content {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 76px;
+}
+
+#saasagency-benefits .header-container .header-text {
+  max-width: 618px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+#saasagency-benefits .content .content-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+#saasagency-benefits .content .content-container .card-container {
+  padding: 25px 25px 50px;
+  background-color: #0c0d12;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+}
+
+#saasagency-benefits .content .content-container .card-container:first-of-type {
+  grid-column: span 2;
+}
+
+#saasagency-benefits .content .content-container .card-container:first-of-type .image-container {
+  background-color: #15151d;
+  padding: 30px 18px 0;
+  border: 1px solid #f5f5f521;
+  border-radius: 10px;
+}
+
+#saasagency-benefits .content .content-container .image-container img {
+  width: 100%;
+}
+
+#saasagency-benefits .content .content-container .text-container {
+  margin-top: 35px;
+}
+
+#saasagency-benefits .content .content-container .text-container .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+#saasagency-benefits .content .content-container .text-container .description {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-benefits .content {
+    padding: 60px 35px;
+  }
+
+  #saasagency-benefits .content .content-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #saasagency-benefits .content .content-container .card-container:first-of-type {
+    grid-column: unset;
+  }
+
+  #saasagency-benefits .content .content-container .image-container {
+    aspect-ratio: 5/2;
+    overflow: hidden;
+    border: 1px solid #f5f5f521;
+    border-radius: 13px;
+  }
+
+  #saasagency-benefits .content .content-container .card-container:not(:first-of-type) .image-container img {
+    transform: translateY(-30%) scale(1.01);
+  }
+
+  #saasagency-benefits .content .content-container .card-container:last-of-type .image-container img {
+    transform: scale(0.4) translateY(-73%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-benefits .content {
+    padding: 90px 0px;
+  }
+
+  #saasagency-benefits .content .content-container .image-container {
+    aspect-ratio: unset;
+  }
+
+  #saasagency-benefits .content .content-container .card-container:not(:first-of-type) .image-container img,
+  #saasagency-benefits .content .content-container .card-container:last-of-type .image-container img {
+    transform: unset;
+  }
+
+
+  #saasagency-benefits .content .content-container .image-container {
+    border: none;
+  }
+}
+
+/** saasagency-benefits end **/

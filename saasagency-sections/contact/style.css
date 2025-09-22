@@ -1,0 +1,226 @@
+/** css rules start **/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** saasagency-contact start **/
+
+#saasagency-contact {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-contact .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-contact .content {
+  padding: 118px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#saasagency-contact .contact-us {
+  max-width: 777px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 70px;
+}
+
+#saasagency-contact .header-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+#saasagency-contact .header-container .main-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 5px;
+}
+
+#saasagency-contact .header-container .sub-heading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+  margin: 0;
+}
+
+#saasagency-contact .form-saasagency {
+  width: 629px;
+  margin: 0 auto;
+  background-color: var(--fourth-color);
+  padding: 40px;
+  border: 1px solid #f5f5f521;
+  border-radius: 13px;
+  box-sizing: border-box;
+}
+
+#saasagency-contact .form-saasagency {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+#saasagency-contact .form-saasagency label {
+  width: 100%;
+}
+
+#saasagency-contact .form-saasagency>label:nth-of-type(1),
+#saasagency-contact .form-saasagency>label:nth-of-type(2) {
+  width: 48.8%;
+}
+
+
+#saasagency-contact .form-saasagency>div {
+  width: 100%;
+}
+
+#saasagency-contact .form-saasagency label.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#saasagency-contact .form-saasagency input {
+  width: 100%;
+  border: 1px solid #898e93;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 15px 20px;
+  direction: rtl;
+  color: var(--tints-10);
+  outline: none;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+#saasagency-contact .form-saasagency input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+#saasagency-contact .form-saasagency input::placeholder,
+#saasagency-contact .form-saasagency textarea::placeholder {
+  color: #bcbcbc;
+}
+
+#saasagency-contact .form-saasagency .landino-field-title {
+  display: block;
+  margin-bottom: 16px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#saasagency-contact .form-saasagency .button-cta {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+  color: var(--tints-10);
+  border-radius: 13px;
+  border: none;
+  outline: none;
+  padding: 20px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#saasagency-contact .form-saasagency .disclamer-text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  max-width: 372px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #b4b4b4;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-contact .form-saasagency {
+    width: 100%;
+  }
+
+  #saasagency-contact .content {
+    padding: 90px 55px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #saasagency-contact .content {
+    padding: 60px 0;
+  }
+
+  #saasagency-contact .header-container .main-title {
+    font-size: 36px;
+  }
+
+  #saasagency-contact .form-saasagency>label:nth-of-type(1),
+  #saasagency-contact .form-saasagency>label:nth-of-type(2) {
+    width: 100%;
+  }
+
+  #saasagency-contact .form-saasagency {
+    padding: 20px 10px;
+  }
+
+  #saasagency-contact .form-saasagency .disclamer-text {
+    max-width: unset;
+    width: unset;
+  }
+}
+
+/** saasagency-contact end **/

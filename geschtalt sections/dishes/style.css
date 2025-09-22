@@ -1,0 +1,244 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-dishes start **/
+
+#geschtalt-dishes .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt-dishes {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-dishes {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+  color: var(--tints-10);
+}
+
+#geschtalt-dishes .content {
+  padding: 32px 0;
+}
+
+#geschtalt-dishes .dishes_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+#geschtalt-dishes .menu_today {
+  font-family: "Almarai", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#geschtalt-dishes .menu_header {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin: 0;
+}
+
+#geschtalt-dishes .learn_more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#geschtalt-dishes .learn_more_cta {
+  background-color: var(--main-color);
+  height: 49px;
+  min-width: 159px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "Almarai", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#geschtalt-dishes .learn_more_cta[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+#geschtalt-dishes .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7em;
+  margin: 1.5em 0em;
+}
+
+#geschtalt-dishes .appetizers {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#geschtalt-dishes .main_dishes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#geschtalt-dishes .dish_image {
+  flex: 1;
+  max-width: 300px;
+  height: 400px;
+  background-image: url("./menu-cuisine.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#geschtalt-dishes .appetizers .title {
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  margin: 0;
+}
+
+#geschtalt-dishes .main_dishes .title {
+  font-weight: 400;
+  font-size: 34px;
+  text-align: center;
+  margin: 0;
+}
+
+#geschtalt-dishes .appetizers-element,
+#geschtalt-dishes .main_dishes-element {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+#geschtalt-dishes .elm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#geschtalt-dishes .elm .name {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  color: var(--main-color);
+  margin: 0;
+}
+
+#geschtalt-dishes .elm .name:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: var(--main-color);
+  display: block;
+  color: inherit;
+}
+
+#geschtalt-dishes .elm .price {
+  color: var(--tints-10);
+  font-size: 18px;
+  margin: 0 10px 0 0;
+  min-width: 30px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  #geschtalt-dishes .dish_image {
+    flex: none;
+    min-width: 80%;
+    margin: 0 auto;
+  }
+
+  #geschtalt-dishes .dishes_title {
+    padding: 32px 35px;
+  }
+
+  #geschtalt-dishes .cards {
+    padding: 32px 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt-dishes .dish_image {
+    flex: none;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  #geschtalt-dishes .cards {
+    padding: 0;
+  }
+}
+
+/** geschtalt-dishes end **/

@@ -1,0 +1,119 @@
+/** css rules start **/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** saasagency-footer start **/
+
+#saasagency-footer {
+  --main-color: #6140ef;
+
+  --shades-1: #573ad7;
+  --shades-2: #4e33bf;
+  --shades-3: #442da7;
+  --shades-4: #3a268f;
+  --shades-5: #312078;
+  --shades-6: #271a60;
+  --shades-7: #1d1348;
+  --shades-8: #130d30;
+  --shades-9: #0a0618;
+  --shades-10: #000000;
+
+  --tints-1: #7153f1;
+  --tints-2: #8166f2;
+  --tints-3: #9079f4;
+  --tints-4: #a08cf5;
+  --tints-5: #b0a0f7;
+  --tints-6: #c0b3f9;
+  --tints-7: #d0c6fa;
+  --tints-8: #dfd9fc;
+  --tints-9: #efecfd;
+  --tints-10: #ffffff;
+
+  --secondary-color: #77ff77;
+  --third-color: #04050a;
+  --fourth-color: #15151d;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--main-color);
+  color: var(--tints-10);
+  box-sizing: border-box;
+}
+
+#saasagency-footer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#saasagency-footer .content {
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#saasagency-footer .tagline-container {
+  max-width: 291px;
+  width: 100%;
+}
+
+#saasagency-footer .tagline-container .tagline-container-text {
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.54;
+}
+
+#saasagency-footer .tagline-container .tagline-container-text .tagline-text {
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#saasagency-footer .navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#saasagency-footer .navigation-links a {
+  color: var(--tints-10);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1020px) {
+  #saasagency-footer .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #saasagency-footer .tagline-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #saasagency-footer .container {
+    padding: 0px 12px;
+  }
+
+  #saasagency-footer .content {
+    padding: 50px 0;
+  }
+
+  #saasagency-footer .navigation-links {
+    gap: 30px;
+  }
+}
+
+/** saasagency-footer end **/

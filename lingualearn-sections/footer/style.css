@@ -1,0 +1,233 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lingualearn-footer start **/
+
+#lingualearn-footer {
+  --main-color: #1c3533;
+  --secondary-color: #F4F1EB;
+  --third-color: #FDFBF9;
+
+  --shades-1: #19302e;
+  --shades-2: #162a29;
+  --shades-3: #142524;
+  --shades-4: #11201f;
+  --shades-5: #0e1b1a;
+  --shades-6: #0b1514;
+  --shades-7: #08100f;
+  --shades-8: #060b0a;
+  --shades-9: #030505;
+  --shades-10: #000000;
+
+  --tints-1: #334947;
+  --tints-2: #495d5c;
+  --tints-3: #607270;
+  --tints-4: #778685;
+  --tints-5: #8e9a99;
+  --tints-6: #a4aead;
+  --tints-7: #bbc2c2;
+  --tints-8: #d2d7d6;
+  --tints-9: #e8ebeb;
+  --tints-10: #ffffff;
+
+  font-family: "Cairo", sans-serif;
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#lingualearn-footer .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#lingualearn-footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
+#lingualearn-footer .content>div {
+  width: 450px;
+}
+
+#lingualearn-footer .platform-description-container,
+#lingualearn-footer .platform-description-inner-container,
+#lingualearn-footer .footer-links-container,
+#lingualearn-footer .footer-links-container .contact-information-container,
+#lingualearn-footer .footer-links-container .contact-information-container .contact-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#lingualearn-footer .platform-description-inner-container {
+  gap: 20px;
+  max-width: 388px;
+}
+
+#lingualearn-footer .platform-description-inner-container .logo-container {
+  padding: 2px 0;
+}
+
+#lingualearn-footer .platform-description-text-container {
+  margin: 0;
+  padding: 2px 0;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--shades-10);
+}
+
+#lingualearn-footer .platform-description-text-container .platform-description {
+  margin: 0;
+}
+
+#lingualearn-footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+#lingualearn-footer .footer-links .faq-link {
+  color: var(--shades-10);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  padding: 2px 0;
+}
+
+#lingualearn-footer .footer-links-container {
+  gap: 15px;
+}
+
+#lingualearn-footer .footer-links-container .contact-information-container {
+  width: 100%;
+  color: var(--shades-10);
+  gap: 10px;
+}
+
+#lingualearn-footer .footer-links-container .contact-information-container .contact-info-heading {
+  margin: 0;
+}
+
+#lingualearn-footer .footer-links-container .contact-information-container .contact-info {
+  gap: 0px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#lingualearn-footer .footer-links-container .contact-information-container .contact-info .contact-info-span {
+  padding: 2px 0;
+  margin: 0;
+}
+
+#lingualearn-footer .footer-links-container .social-media-links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#lingualearn-footer .footer-links-container .social-media-links>div {
+  padding: 2px;
+}
+
+#lingualearn-footer .footer-links-container .social-media-links>div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+@media screen and (max-width: 1020px) {
+  #lingualearn-footer .content {
+    padding: 100px 35px;
+  }
+
+  #lingualearn-footer .content>div:last-of-type {
+    width: 280px;
+  }
+
+  #lingualearn-footer .footer-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lingualearn-footer .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 40px;
+    width: 345px;
+  }
+
+  #lingualearn-footer .content>div:first-of-type,
+  #lingualearn-footer .content>div:last-of-type {
+    width: 100%;
+  }
+
+  #lingualearn-footer .platform-description-text-container .platform-description {
+    text-align: center;
+  }
+
+  #lingualearn-footer .platform-description-container {
+    gap: 40px;
+  }
+
+  #lingualearn-footer .content .platform-description-inner-container {
+    align-items: center;
+  }
+
+  #lingualearn-footer .footer-links-container,
+  #lingualearn-footer .footer-links-container .contact-information-container {
+    align-items: center;
+    gap: 17px;
+  }
+
+  #lingualearn-footer .footer-links-container .social-media-links {
+    margin: 0 auto;
+  }
+
+  #lingualearn-footer .footer-links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #lingualearn-footer .footer-links .faq-link {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  #lingualearn-footer .footer-links .faq-link:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  #lingualearn-footer .footer-links .faq-link:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+/** lingualearn-footer end **/

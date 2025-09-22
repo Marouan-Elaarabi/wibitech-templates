@@ -1,0 +1,321 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** timelime-contact start **/
+
+#timelime-contact {
+  --main-color: #00382B;
+
+  --shades-1: #003227;
+  --shades-2: #002d22;
+  --shades-3: #00271e;
+  --shades-4: #00221a;
+  --shades-5: #001c16;
+  --shades-6: #001611;
+  --shades-7: #00110d;
+  --shades-8: #000b09;
+  --shades-9: #000604;
+  --shades-10: #000000;
+
+  --tints-1: #1a4c40;
+  --tints-2: #336055;
+  --tints-3: #4d746b;
+  --tints-4: #668880;
+  --tints-5: #809c95;
+  --tints-6: #99afaa;
+  --tints-7: #b3c3bf;
+  --tints-8: #ccd7d5;
+  --tints-9: #e6ebea;
+  --tints-10: #ffffff;
+
+  --secondary-color: #024B3A;
+  --third-color: #00664E;
+
+  font-family: "Almarai", serif;
+  direction: rtl;
+  background-color: var(--tints-10);
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+#timelime-contact .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+#timelime-contact .container .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 30px 15px;
+  gap: 25px;
+}
+
+#timelime-contact .form-timelime,
+#timelime-contact .form-inner-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#timelime-contact .form-timelime {
+  gap: 25px;
+  flex: 1.7;
+  margin-bottom: 0;
+  padding: 2px 0;
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title,
+#timelime-contact .form-inner-content {
+  width: 100%;
+}
+
+#timelime-contact .form-inner-content {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title .option-description-title,
+#timelime-contact .form-timelime .ouasl_field-radios_title .option-description-text {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  width: fit-content;
+
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title .option-description-title {
+  font-weight: 700;
+  color: var(--tints-10);
+}
+
+#timelime-contact .form-timelime .ouasl_field-radios_title .option-description-text {
+  font-weight: 600;
+  color: #ffc107;
+}
+
+#timelime-contact .form-inner-content label,
+#timelime-contact .form-inner-content .ouasl_field-radios,
+#timelime-contact .form-inner-content .ouasl_field-radios .radios {
+  width: 100%;
+}
+
+#timelime-contact .form-inner-content .ouasl_field-radios,
+#timelime-contact .form-inner-content .ouasl_field-radios .radios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#timelime-contact .form-inner-content .radio-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border: 1px solid #00382B;
+  border-radius: 14px;
+  background-color: var(--tints-10);
+  cursor: pointer;
+  transition: .2s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#timelime-contact .form-inner-content .radio-label.active {
+  background-color: #ABD0C8;
+}
+
+#timelime-contact .form-inner-content label:not(.radio-label) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+#timelime-contact .form-inner-content .radio-label .ouasl_field-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 100%;
+  color: var(--shades-10);
+}
+
+#timelime-contact .form-inner-content .radio-label .inner-span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  opacity: .4;
+}
+
+#timelime-contact .form-inner-content .radio-label .timelime_radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#timelime-contact .form-inner-content .radio-label .radio-circle {
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin-left: 5px;
+  outline: 2px solid var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background-color 0.2s;
+  outline-offset: 4px;
+}
+
+#timelime-contact .form-inner-content .radio-label input:checked+.radio-circle {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+#timelime-contact .form-inner-content label:not(.radio-label) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+#timelime-contact .form-inner-content label:not(.radio-label) .ouasl_field-title {
+  color: var(--tints-10);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#timelime-contact .form-inner-content label:not(.radio-label) input,
+#timelime-contact .form-inner-content textarea {
+  background-color: var(--secondary-color);
+  color: var(--tints-10);
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  direction: rtl;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#timelime-contact .form-inner-content textarea {
+  resize: vertical;
+}
+
+#timelime-contact .form-inner-content label:not(.radio-label) input::placeholder,
+#timelime-contact .form-inner-content textarea::placeholder {
+  color: #FFFFFF40;
+}
+
+#timelime-contact .form-inner-content .btn-cta {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#timelime-contact .form-inner-content .btn-cta .button-cta {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--tints-10);
+  color: var(--shades-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#timelime-contact .form-inner-content .btn-cta .connect {
+  max-width: 480px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #FFFFFF99;
+  text-align: center;
+}
+
+#timelime-contact .form-image {
+  flex: 1.3;
+  width: 333px;
+  padding: 2px;
+}
+
+#timelime-contact .form-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 26px;
+}
+
+@media screen and (max-width: 1020px) {
+  #timelime-contact .content {
+    flex-direction: column-reverse;
+  }
+
+  #timelime-contact .form-timelime,
+  #timelime-contact .form-image {
+    width: 100%;
+  }
+
+  #timelime-contact .form-image {
+    margin: 0 auto;
+  }
+
+  #timelime-contact .form-image img {
+    aspect-ratio: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #timelime-contact {
+    padding: 30px 15px;
+  }
+
+  #timelime-contact .container .content {
+    padding: 15px 0 30px;
+  }
+
+  #timelime-contact .form-timelime .ouasl_field-radios_title .option-description-title {
+    font-size: 14px;
+  }
+}
+
+/** timelime-contact end **/

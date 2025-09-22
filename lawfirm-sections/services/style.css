@@ -1,0 +1,201 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** Lawfirm-services start **/
+
+#lawfirm-services {
+  --main-color: #2c4e52;
+
+  --shades-1: #28464a;
+  --shades-2: #233e42;
+  --shades-3: #1f3739;
+  --shades-4: #1a2f31;
+  --shades-5: #162729;
+  --shades-6: #121f21;
+  --shades-7: #0d1719;
+  --shades-8: #091010;
+  --shades-9: #040808;
+  --shades-10: #000000;
+
+  --tints-1: #416063;
+  --tints-2: #567175;
+  --tints-3: #6b8386;
+  --tints-4: #809597;
+  --tints-5: #96a7a9;
+  --tints-6: #abb8ba;
+  --tints-7: #c0cacb;
+  --tints-8: #d5dcdc;
+  --tints-9: #eaedee;
+  --tints-10: #ffffff;
+
+  --secondary-color: #012a2e;
+  --third-color: #97a8a9;
+  --fourth-color: #eff2f2;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Markazi Text", serif;
+  color: var(--secondary-color);
+  background-color: #E6EAEA;
+  box-sizing: border-box;
+}
+
+#lawfirm-services .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#lawfirm-services .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 100px;
+  padding: 115px 60px;
+}
+
+#lawfirm-services .header-container,
+#lawfirm-services .services-list,
+#lawfirm-services .service-header,
+#lawfirm-services .service-head {
+  width: 100%;
+}
+
+#lawfirm-services .header-container,
+#lawfirm-services .services-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 95px;
+}
+
+#lawfirm-services .services-container {
+  align-items: flex-end;
+  gap: 5px;
+  min-width: 83px;
+}
+
+#lawfirm-services .services-container .services-icon {
+  width: 5px;
+  height: 5px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+#lawfirm-services .services-text,
+#lawfirm-services .main-title-text,
+#lawfirm-services .service-number-heading,
+#lawfirm-services .service-title,
+#lawfirm-services .service-description {
+  margin: 0;
+}
+
+#lawfirm-services .services-container .services-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#lawfirm-services .header-container .main-title-text {
+  font-size: 80px;
+  font-weight: 600;
+  max-width: 519px;
+  line-height: 1;
+}
+
+#lawfirm-services .services-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#lawfirm-services .service-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 0;
+  gap: 140px;
+  border-bottom: 1px solid #6C8386;
+}
+
+#lawfirm-services .service-number-heading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  min-width: 25px;
+}
+
+#lawfirm-services .service-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#lawfirm-services .service-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+  flex-grow: 1;
+}
+
+#lawfirm-services .service-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#lawfirm-services .service-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--secondary-color);
+}
+
+#lawfirm-services .service-head .service-icon {
+  width: 10px;
+  height: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1020px) {
+  #lawfirm-services .content {
+    padding: 80px 35px;
+  }
+
+  #lawfirm-services .service-header {
+    gap: 60px;
+  }
+
+  #lawfirm-services .header-container .main-title-text {
+    font-size: 60px;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lawfirm-services .content {
+    padding: 80px 0;
+  }
+
+  #lawfirm-services .header-container {
+    gap: 40px;
+  }
+
+  #lawfirm-services .header-container .main-title-text {
+    font-size: 50px;
+  }
+}
+
+/** Lawfirm-services end **/

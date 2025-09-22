@@ -1,0 +1,223 @@
+/** css rules start **/
+
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+/** css rules end **/
+
+/** geschtalt-menu start **/
+
+#geschtalt-menu {
+  --main-color: #D2B379;
+
+  --tints-1: #d7bb86;
+  --tints-2: #dbc294;
+  --tints-3: #e0caa1;
+  --tints-4: #e4d1af;
+  --tints-5: #e9d9bc;
+  --tints-6: #ede1c9;
+  --tints-7: #f2e8d7;
+  --tints-8: #f6f0e4;
+  --tints-9: #fbf7f2;
+  --tints-10: #ffffff;
+
+  --shades-1: #bda16d;
+  --shades-2: #a88f61;
+  --shades-3: #937d55;
+  --shades-4: #7e6b49;
+  --shades-5: #695a3d;
+  --shades-6: #544830;
+  --shades-7: #3f3624;
+  --shades-8: #2a2418;
+  --shades-9: #15120c;
+  --shades-10: #000000;
+
+  --secondary-color: #050605;
+  --third-color: #F4F0E9;
+  --fourth-color: #373837;
+}
+
+#geschtalt-menu {
+  background-color: var(--secondary-color);
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  direction: rtl;
+}
+
+#geschtalt-menu .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#geschtalt-menu .header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 0.33s ease;
+}
+
+#geschtalt-menu .hamburger {
+  display: none;
+  width: 25px;
+}
+
+#geschtalt-menu .hamburger img {
+  width: 100%;
+  pointer-events: none;
+}
+
+#geschtalt-menu .nav-bar ul {
+  display: flex;
+  list-style: none;
+  font-family: "Almarai", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#geschtalt-menu .nav-bar ul .link-item {
+  display: block;
+  color: var(--tints-10);
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+#geschtalt-menu .nav-bar ul .link-item[data-active_hover] {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+#geschtalt-menu ul a.cta_booking {
+  display: none;
+}
+
+#geschtalt-menu .book_table {
+  background-color: var(--main-color);
+}
+
+#geschtalt-menu a.cta_booking {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: flex;
+  min-width: 147px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  transition: 0.8s;
+}
+
+#geschtalt-menu a.cta_booking[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+#geschtalt-menu .media_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  #geschtalt-menu .header {
+    height: 100px;
+    padding: 0 35px;
+  }
+
+  #geschtalt-menu .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #geschtalt-menu .book_table {
+    display: none;
+  }
+
+  #geschtalt-menu .nav-bar {
+    display: none;
+  }
+
+  #geschtalt-menu .media_menu {
+    width: 100%;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    list-style: none;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+  }
+
+  #geschtalt-menu .media_menu ul {
+    opacity: 1;
+    padding: 1em 0;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    list-style: none;
+    font-family: "Almarai", sans-serif;
+  }
+
+  #geschtalt-menu .media_menu ul .media-link {
+    display: block;
+    color: var(--tints-10);
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  #geschtalt-menu .media_menu.showMenu {
+    display: block;
+  }
+
+  #geschtalt-menu .media_menu a.cta_booking {
+    color: var(--main-color);
+    text-decoration: none;
+    display: flex;
+    min-width: 147px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+    transition: 0.8s;
+  }
+
+  #geschtalt-menu .media_menu a.cta_booking[data-active_hover] {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--main-color);
+  }
+
+  #geschtalt-menu .media_menu ul li .media-link[data-active_hover] {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #geschtalt-menu .header {
+    padding: 0;
+  }
+
+  #geschtalt-menu .logo {
+    width: 150px;
+  }
+
+  #geschtalt-menu .logo img {
+    width: 100%;
+  }
+}
+
+/** geschtalt-menu end **/

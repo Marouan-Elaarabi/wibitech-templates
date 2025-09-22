@@ -1,0 +1,237 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lingualearn-header start **/
+#lingualearn-header {
+  --main-color: #1c3533;
+  --secondary-color: #F4F1EB;
+  --third-color: #FDFBF9;
+
+  --shades-1: #19302e;
+  --shades-2: #162a29;
+  --shades-3: #142524;
+  --shades-4: #11201f;
+  --shades-5: #0e1b1a;
+  --shades-6: #0b1514;
+  --shades-7: #08100f;
+  --shades-8: #060b0a;
+  --shades-9: #030505;
+  --shades-10: #000000;
+
+  --tints-1: #334947;
+  --tints-2: #495d5c;
+  --tints-3: #607270;
+  --tints-4: #778685;
+  --tints-5: #8e9a99;
+  --tints-6: #a4aead;
+  --tints-7: #bbc2c2;
+  --tints-8: #d2d7d6;
+  --tints-9: #e8ebeb;
+  --tints-10: #ffffff;
+}
+
+#lingualearn-header {
+  margin: 0;
+  padding: 0 50px;
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-color);
+  position: relative;
+  height: 149px;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+#lingualearn-header .container {
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--tints-10);
+  border-radius: 35px;
+  box-shadow: 0px 0px 29.1px 0px #0000001F;
+}
+
+#lingualearn-header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 2px;
+}
+
+#lingualearn-header .oa-menu-actions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#lingualearn-header ul.menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#lingualearn-header ul.menu a {
+  color: var(--shades-10);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+}
+
+#lingualearn-header .brand {
+  flex: 1;
+  display: flex;
+  max-width: 180px;
+}
+
+#lingualearn-header .brand a {
+  display: inline-block;
+}
+
+#lingualearn-header .brand img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#lingualearn-header .nav-responsive {
+  display: none;
+}
+
+#lingualearn-header .item-link-responsive {
+  display: none;
+  cursor: pointer;
+}
+
+#lingualearn-header .link {
+  color: var(--tints-10);
+  text-decoration: none;
+  padding: 2px;
+}
+
+#lingualearn-header .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+#lingualearn-header .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--shades-10);
+  text-decoration: none;
+}
+
+#lingualearn-header .cta-btn {
+  background-color: var(--main-color);
+  border-radius: 30px;
+  color: var(--tints-10);
+  font-weight: 600;
+  line-height: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  width: 105px;
+  border: 1px solid #FFFFFF38;
+  padding: 13px 0;
+}
+
+#lingualearn-header .responsive-icons {
+  flex: 1;
+  display: flex;
+  display: none;
+  justify-content: end;
+  max-width: fit-content;
+  min-width: 26px;
+}
+
+#lingualearn-header .responsive-icons img {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #lingualearn-header {
+    padding: 0 35px;
+  }
+
+  #lingualearn-header .container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+
+  #lingualearn-header .responsive-icons {
+    display: flex;
+  }
+
+  #lingualearn-header .oa-menu-actions {
+    position: absolute;
+    z-index: 999;
+    top: 149px;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    height: calc(100vh - 149px);
+    gap: 25px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  #lingualearn-header .oa-menu-actions.active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  #lingualearn-header .oa-menu-actions.active .button-container {
+    min-width: 200px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #lingualearn-header ul.menu {
+    flex: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  #lingualearn-header,
+  #lingualearn-header .content {
+    padding: 0;
+  }
+
+  #lingualearn-header ul.menu {
+    width: 100%;
+  }
+
+  #lingualearn-header .oa-menu-actions.active .button-container {
+    flex-direction: column;
+  }
+}
+
+/** lingualearn-header end **/
