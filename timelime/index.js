@@ -41,17 +41,24 @@ function timelimeContact() {
   const root = document.querySelector("[data-name='timelime-contact']");
   if (!root) return;
 
-  const formContent = root.querySelector(".form-inner-content");
+  const formContent = root.querySelector(".form-timelime");
   if (!formContent) return;
 
-  formContent.addEventListener("click", (e) => {
-    const clicked = e.target.closest(".radio-label");
-    if (!clicked || !formContent.contains(clicked)) return;
-    if (clicked.classList.contains("active")) return;
+  formContent.addEventListener("change", (e) => {
+    const input = e.target;
+    if (!input.matches("input[type='radio']:checked")) return;
 
-    const prevActive = formContent.querySelector(".radio-label.active");
-    if (prevActive) prevActive.classList.remove("active");
-    clicked.classList.add("active");
+    const group = input.closest(".ouasl_field-radios");
+    if (!group) return;
+
+    group.querySelectorAll("label.radio.active").forEach((label) => {
+      label.classList.remove("active");
+    });
+
+    const currentLabel = input.closest("label.radio");
+    if (currentLabel) {
+      currentLabel.classList.add("active");
+    }
   });
 }
 

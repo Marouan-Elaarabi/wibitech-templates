@@ -1319,7 +1319,7 @@
   width: 49%;
 }
 
-#lawfirm-contact .form-lawfirm .radios-content,
+#lawfirm-contact .form-lawfirm .ouasl_field-radios,
 #lawfirm-contact .form-lawfirm .text-msg,
 #lawfirm-contact .form-lawfirm .btn-cta {
   width: 100%;
@@ -1351,36 +1351,29 @@
   direction: rtl;
 }
 
-#lawfirm-contact .form-lawfirm .radios-content {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
+#lawfirm-contact .form-lawfirm .ouasl_field-radios,
+#lawfirm-contact .form-lawfirm .radio {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#lawfirm-contact .form-lawfirm .radios-content .radios_title {
-  margin: 0;
-}
-
-#lawfirm-contact .form-lawfirm .radios-content .voicemail-question {
-  font-weight: 400;
-  margin: 0;
-}
-
-#lawfirm-contact .form-lawfirm .radios-content .radios,
-#lawfirm-contact .form-lawfirm .radios-content .radio {
-  display: flex;
-  justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-#lawfirm-contact .form-lawfirm .radios-content .radio {
-  gap: 15px;
+#lawfirm-contact .form-lawfirm .ouasl_field-radios h4 {
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#lawfirm-contact .form-lawfirm .radio {
+  gap: 10px;
+}
+
+#lawfirm-contact .form-lawfirm .full-span {
+  width: 100%;
 }
 
 #lawfirm-contact .form-lawfirm textarea {

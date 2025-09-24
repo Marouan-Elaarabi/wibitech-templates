@@ -1076,6 +1076,7 @@
   background-color: var(--main-color);
   border-radius: 26px;
   overflow: hidden;
+  width: 100%;
 }
 
 #timelime-contact .container .content {
@@ -1087,7 +1088,7 @@
 }
 
 #timelime-contact .form-timelime,
-#timelime-contact .form-inner-content {
+#timelime-contact {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1102,11 +1103,11 @@
 }
 
 #timelime-contact .form-timelime .ouasl_field-radios_title,
-#timelime-contact .form-inner-content {
+#timelime-contact {
   width: 100%;
 }
 
-#timelime-contact .form-inner-content {
+#timelime-contact {
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -1143,14 +1144,14 @@
   color: #ffc107;
 }
 
-#timelime-contact .form-inner-content label,
-#timelime-contact .form-inner-content .ouasl_field-radios,
-#timelime-contact .form-inner-content .ouasl_field-radios .radios {
+#timelime-contact label,
+#timelime-contact .ouasl_field-radios,
+#timelime-contact .ouasl_field-radios .radios {
   width: 100%;
 }
 
-#timelime-contact .form-inner-content .ouasl_field-radios,
-#timelime-contact .form-inner-content .ouasl_field-radios .radios {
+#timelime-contact .ouasl_field-radios,
+#timelime-contact .ouasl_field-radios .radios {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1158,7 +1159,7 @@
   gap: 16px;
 }
 
-#timelime-contact .form-inner-content .radio-label {
+#timelime-contact .ouasl_field-radios label.radio {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1170,13 +1171,14 @@
   transition: .2s;
   box-sizing: border-box;
   width: 100%;
+  position: relative;
 }
 
-#timelime-contact .form-inner-content .radio-label.active {
+#timelime-contact .ouasl_field-radios label.radio.active {
   background-color: #ABD0C8;
 }
 
-#timelime-contact .form-inner-content label:not(.radio-label) {
+#timelime-contact label:not(label.radio) {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1185,7 +1187,7 @@
   gap: 15px;
 }
 
-#timelime-contact .form-inner-content .radio-label .ouasl_field-title {
+#timelime-contact .ouasl_field-radios label.radio .ouasl_field-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -1193,39 +1195,53 @@
   color: var(--shades-10);
 }
 
-#timelime-contact .form-inner-content .radio-label .inner-span {
+#timelime-contact .ouasl_field-radios label.radio .inner-span {
   font-size: 13px;
   font-weight: 600;
   line-height: 1.2;
   opacity: .4;
 }
 
-#timelime-contact .form-inner-content .radio-label .timelime_radio {
+#timelime-contact .ouasl_field-radios label.radio input[type="radio"] {
   position: absolute;
-  opacity: 0;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 0;
   height: 0;
 }
 
-#timelime-contact .form-inner-content .radio-label .radio-circle {
-  width: 15px;
-  height: 15px;
+#timelime-contact .ouasl_field-radios label.radio input::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
   border: none;
-  margin-left: 5px;
   outline: 2px solid var(--main-color);
   border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  transition: border-color 0.2s, background-color 0.2s;
-  outline-offset: 4px;
 }
 
-#timelime-contact .form-inner-content .radio-label input:checked+.radio-circle {
+#timelime-contact .ouasl_field-radios label.radio input::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#timelime-contact .ouasl_field-radios label.radio input:checked::after {
   background-color: var(--main-color);
-  border-color: var(--main-color);
 }
 
-#timelime-contact .form-inner-content label:not(.radio-label) {
+#timelime-radios label:not(label.radio) {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1234,15 +1250,15 @@
   gap: 15px;
 }
 
-#timelime-contact .form-inner-content label:not(.radio-label) .ouasl_field-title {
+#timelime-contact label:not(label.radio) .ouasl_field-title {
   color: var(--tints-10);
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
 }
 
-#timelime-contact .form-inner-content label:not(.radio-label) input,
-#timelime-contact .form-inner-content textarea {
+#timelime-contact label:not(label.radio) input,
+#timelime-contact textarea {
   background-color: var(--secondary-color);
   color: var(--tints-10);
   border: none;
@@ -1255,16 +1271,17 @@
   outline: none;
 }
 
-#timelime-contact .form-inner-content textarea {
+#timelime-contact textarea {
   resize: vertical;
 }
 
-#timelime-contact .form-inner-content label:not(.radio-label) input::placeholder,
-#timelime-contact .form-inner-content textarea::placeholder {
+#timelime-contact label:not(label.radio) input::placeholder,
+#timelime-contact textarea::placeholder {
   color: #FFFFFF40;
+  font-family: "Almarai", serif;
 }
 
-#timelime-contact .form-inner-content .btn-cta {
+#timelime-contact .btn-cta {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -1273,7 +1290,7 @@
   gap: 30px;
 }
 
-#timelime-contact .form-inner-content .btn-cta .button-cta {
+#timelime-contact .btn-cta .button-cta {
   width: 100%;
   border: none;
   outline: none;
@@ -1289,9 +1306,10 @@
   font-weight: 600;
   line-height: 1;
   cursor: pointer;
+  font-family: "Almarai", serif;
 }
 
-#timelime-contact .form-inner-content .btn-cta .connect {
+#timelime-contact .btn-cta .connect {
   max-width: 480px;
   margin: 0;
   font-size: 15px;
