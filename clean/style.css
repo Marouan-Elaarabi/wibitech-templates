@@ -297,7 +297,7 @@
 #clean-hero .hero-img-carousel-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -788,13 +788,20 @@
   background-color: #3A3634;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  border-radius: 50%;
   padding: 5px 0;
+}
+
+#clean-benefits .benefits-cards .icon-illustration img {
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 #clean-benefits .benefits-cards .benefits-card-descriptive {
@@ -943,8 +950,9 @@
 }
 
 #clean-testemonials .content .avatar-img {
-  width: 164px;
-  height: 108px;
+  aspect-ratio: 3/2;
+  max-width: 128px;
+  max-height: 85px;
   overflow: hidden;
   padding: 5px 0;
 }

@@ -1,0 +1,597 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** thobe-header start **/
+
+#thobe-header {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-header {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  height: 126px;
+}
+
+#thobe-header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#thobe-header .upper-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 100%;
+  gap: 60px;
+  background-color: var(--sec-bg-color);
+  overflow: hidden;
+}
+
+#thobe-header .upper-header-benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+#thobe-header .upper-header-benefit:nth-child(2)::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--tints-10);
+}
+
+#thobe-header .upper-header .upper-header-benefit-txt {
+  margin: 0;
+  color: var(--tints-10);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#thobe-header .lower-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82px;
+  width: 100%;
+  background-color: var(--tints-10);
+}
+
+/** thobe-header end **/
+
+/** thobe-hero start **/
+
+#thobe-hero {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-hero {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  height: calc(100svh - 126px);
+  background-image: url(./hero-bg-img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+#thobe-hero::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(358.59deg, #504F4C 1.13%, rgba(0, 0, 0, 0) 98.76%);
+  z-index: 1;
+}
+
+#thobe-hero .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+#thobe-hero .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+#thobe-hero .content-info {
+  width: 708px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 35px;
+}
+
+#thobe-hero .content-info .content-info-heading,
+#thobe-hero .content-info .cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#thobe-hero .content-info .content-info-heading-txt {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--tints-10);
+  margin: 0;
+}
+
+#thobe-hero .content-info .content-info-heading-paragraph {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--tints-10);
+  margin: 0;
+}
+
+#thobe-hero .content-info .buy-cta {
+  background-color: var(--tints-10);
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 30px;
+  box-sizing: border-box;
+}
+
+#thobe-hero .content-info .buy-cta-txt {
+  color: var(--shades-10);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+#thobe-hero .content-info .scarcity-text {
+  color: var(--tints-10);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 0;
+}
+
+
+#thobe-hero .content-info .hero-clean-benefits,
+#thobe-hero .content-info .hero-clean-benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#thobe-hero .content-info .hero-clean-benefits {
+  background-color: #E8E8E133;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+
+#thobe-hero .content-info .hero-clean-benefit {
+  gap: 7px;
+}
+
+#thobe-hero .content-info .hero-clean-benefit .hero-clean-benefit-logo {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+#thobe-hero .content-info .hero-clean-benefit .hero-clean-benefit-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#thobe-hero .content-info .hero-clean-benefit .hero-clean-benefit-txt {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--tints-10);
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-hero .content-info {
+    padding-bottom: 130px;
+  }
+
+  #thobe-hero .content-info .content-info-heading-txt {
+    font-size: 47px;
+  }
+
+  #thobe-hero .content-info .hero-clean-benefits {
+    display: none;
+  }
+}
+
+/** thobe-hero end **/
+
+/** thobe-price-offer start **/
+
+#thobe-price-offer {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-price-offer {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 70px 0;
+}
+
+#thobe-price-offer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-price-offer .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 17.5px;
+}
+
+#thobe-price-offer .upper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#thobe-price-offer .upper-content .heading-txt {
+  max-width: 180px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--shades-10);
+  margin: 0;
+}
+
+#thobe-price-offer .upper-content .product-rates,
+#thobe-price-offer .upper-content .product-rates-imgs,
+#thobe-price-offer .upper-content .product-rates-info-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thobe-price-offer .upper-content .product-rates {
+  gap: 30px;
+}
+
+#thobe-price-offer .upper-content .product-rates-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  background-color: var(--tints-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -5px;
+  position: relative;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(1) {
+  transform: rotate(-9.23deg);
+  z-index: 1;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(2) {
+  transform: rotate(10.81deg);
+  z-index: 2;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(3) {
+  transform: rotate(-20.92deg);
+  z-index: 3;
+}
+
+#thobe-price-offer .upper-content .product-rates-img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+#thobe-price-offer .upper-content .product-rates-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#thobe-price-offer .upper-content .product-rates-info-stars {
+  gap: 3px;
+}
+
+#thobe-price-offer .upper-content .product-rates-info-txt {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#thobe-price-offer .lower-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-height: 672px;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .price-timer-countdown,
+#thobe-price-offer .lower-content .product-showcase-img {
+  flex: 1;
+}
+
+#thobe-price-offer .lower-content .price-timer-countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .price-box,
+#thobe-price-offer .lower-content .timer-countdown-box {
+  background-color: var(--tints-10);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  height: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box {
+  background-color: #E8E8E1;
+}
+
+#thobe-price-offer .lower-content .price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#thobe-price-offer .lower-content .price-wrapper .discounted-price {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--shades-10);
+  margin: 0;
+}
+
+#thobe-price-offer .lower-content .price-wrapper .original-price {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--shades-10);
+  text-decoration: line-through;
+  margin: 0;
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta {
+  width: fit-content;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta-txt {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timeleft {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--btn-color);
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div {
+  background-color: var(--btn-color);
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div p {
+  margin: 0;
+  color: var(--tints-10);
+  line-height: .5;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-digits {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-txt {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#thobe-price-offer .lower-content .product-showcase-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#thobe-price-offer .lower-content .product-showcase-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #thobe-price-offer .lower-content .price-wrapper .discounted-price {
+    font-size: 42px;
+  }
+
+  #thobe-price-offer .lower-content .price-wrapper .original-price {
+    font-size: 20px;
+  }
+
+  #thobe-price-offer .lower-content .price-box .buy-cta-txt {
+    font-size: 16px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown {
+    gap: 20px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div {
+    width: 80px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-digits {
+    font-size: 30px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-txt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-price-offer .lower-content {
+    flex-direction: column;
+  }
+}
+
+/** thobe-price-offer end **/
