@@ -529,6 +529,27 @@
   flex-direction: column;
   box-sizing: border-box;
   gap: 20px;
+  position: relative;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::before {
+  content: ":";
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-62%);
+  color: var(--btn-color);
+  font-size: 70px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::after {
+  content: ":";
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translateY(-62%);
+  color: var(--btn-color);
+  font-size: 70px;
 }
 
 #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div p {
@@ -579,6 +600,14 @@
     width: 80px;
   }
 
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::before {
+    left: -19px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::after {
+    right: -17px;
+  }
+
   #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-digits {
     font-size: 30px;
   }
@@ -589,9 +618,579 @@
 }
 
 @media screen and (max-width: 767px) {
+  #thobe-price-offer .content {
+    padding: 0;
+  }
+
+  #thobe-price-offer .upper-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
   #thobe-price-offer .lower-content {
     flex-direction: column;
+    max-height: unset;
+  }
+
+  #thobe-price-offer .lower-content .price-box,
+  #thobe-price-offer .lower-content .timer-countdown-box {
+    height: 322px;
+  }
+
+  #thobe-price-offer .lower-content .product-showcase-img {
+    aspect-ratio: 1;
   }
 }
 
 /** thobe-price-offer end **/
+
+/** thobe-benefits start **/
+
+#thobe-benefits {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-benefits {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 50px 0;
+}
+
+#thobe-benefits .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-benefits .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 20px;
+  padding: 0 17.5px;
+}
+
+#thobe-benefits .content .benefit-box {
+  background-color: var(--main-bg-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px 20px;
+}
+
+#thobe-benefits .content .benefit-txt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--shades-10);
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-benefits .content {
+    padding: 0;
+  }
+}
+
+/** thobe-benefits end **/
+
+/** thobe-cta start **/
+
+#thobe-cta {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-cta {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 50px 0;
+}
+
+#thobe-cta .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-cta .content {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 80px 17.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thobe-cta .content .buy-cta {
+  width: fit-content;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+
+#thobe-cta .content .buy-cta-txt {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  color: var(--tints-10);
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-cta .content {
+    padding: 50px 0;
+  }
+}
+
+/** thobe-cta end **/
+
+/** thobe-testimonials start **/
+
+#thobe-testimonials {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-testimonials {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 50px 0;
+}
+
+#thobe-testimonials .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-testimonials .content {
+  background-color: var(--tints-10);
+  border-radius: 20px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+#thobe-testimonials .content .heading-txt {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--shades-10);
+}
+
+#thobe-testimonials .content .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  height: 580px;
+  position: relative;
+  padding: 10px;
+}
+
+#thobe-testimonials .content .swiper,
+#thobe-testimonials .content .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#thobe-testimonials .content .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#thobe-testimonials .content .swiper-pagination {
+  position: relative;
+  width: 100% !important;
+  display: none;
+}
+
+#thobe-testimonials .content .swiper-pagination-bullet-active {
+  background: var(--btn-color);
+}
+
+@media screen and (max-width: 1279px) {
+  #thobe-testimonials .content .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-testimonials .content {
+    padding: 50px 0;
+  }
+}
+
+/** thobe-testimonials end **/
+
+/** thobe-guarantie start **/
+
+#thobe-guarantie {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-guarantie {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 50px 0;
+}
+
+#thobe-guarantie .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+#thobe-guarantie .content {
+  background-image: url(./thobe-guarantie-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#thobe-guarantie .content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #282828A3;
+}
+
+#thobe-guarantie .inner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 430px;
+  position: relative;
+  z-index: 2;
+}
+
+#thobe-guarantie .content .heading,
+#thobe-guarantie .content .buy-cta {
+  width: 100%;
+  text-align: center;
+}
+
+#thobe-guarantie .content .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+#thobe-guarantie .content .heading-txt {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#thobe-guarantie .content .heading-paragraph {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#thobe-guarantie .content .buy-cta {
+  width: fit-content;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--tints-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+
+#thobe-guarantie .content .buy-cta-txt {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  color: var(--shades-10);
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-guarantie .content {
+    padding: 50px 20px;
+  }
+
+  #thobe-guarantie .inner-content {
+    height: unset;
+
+  }
+
+  #thobe-guarantie .content .heading-paragraph {
+    font-size: 20px;
+  }
+}
+
+/** thobe-guarantie end **/
+
+/** thobe-form start **/
+
+#thobe-form {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-form {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 50px 0;
+}
+
+#thobe-form .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+#thobe-form .content {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+#thobe-form .form-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 360px;
+}
+
+#thobe-form .form-heading-txt,
+#thobe-form .form-heading-paragraph {
+  margin: 0;
+  color: var(--shades-10);
+  line-height: 1.25;
+}
+
+#thobe-form .form-heading-txt {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#thobe-form .form-heading-paragraph {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#thobe-form .form-wrapper {
+  max-width: 600px;
+}
+
+#thobe-form .form-thobe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+#thobe-form .form-thobe .half-span {
+  width: calc(50% - 10px);
+}
+
+#thobe-form .form-thobe>label,
+#thobe-form .form-thobe>.ouasl_field-radios {
+  width: 100%;
+}
+
+#thobe-form .form-thobe label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#thobe-form .form-thobe label .ouasl_field-title,
+#thobe-form .form-thobe label .ouasl_field-title+input {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--sec-bg-color);
+}
+
+#thobe-form .form-thobe label .ouasl_field-title+input {
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#thobe-form .form-thobe label .ouasl_field-title+input::placeholder {
+  color: #C7C7C7;
+}
+
+/** thobe-form end **/
