@@ -44,6 +44,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  padding: 0 !important;
 }
 
 #thobe-header .upper-header {
@@ -64,15 +65,7 @@
   gap: 10px;
   position: relative;
   flex-shrink: 0;
-}
-
-#thobe-header .upper-header-benefit:nth-child(2)::before {
-  content: "-";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--tints-10);
+  padding: 2px 0;
 }
 
 #thobe-header .upper-header .upper-header-benefit-txt {
@@ -128,24 +121,12 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   height: calc(100svh - 126px);
-  background-image: url(./hero-bg-img.png);
+  background-image: url(./hero-bg-img.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: border-box;
   position: relative;
-  z-index: 0;
-}
-
-#thobe-hero::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(358.59deg, #504F4C 1.13%, rgba(0, 0, 0, 0) 98.76%);
-  z-index: 1;
 }
 
 #thobe-hero .container {
@@ -253,6 +234,7 @@
   width: 25px;
   height: 25px;
   overflow: hidden;
+  padding: 2px 0;
 }
 
 #thobe-hero .content-info .hero-clean-benefit .hero-clean-benefit-logo img {
@@ -271,7 +253,7 @@
 
 @media screen and (max-width: 767px) {
   #thobe-hero .content-info {
-    padding-bottom: 130px;
+    padding-bottom: 30px;
   }
 
   #thobe-hero .content-info .content-info-heading-txt {
@@ -279,7 +261,17 @@
   }
 
   #thobe-hero .content-info .hero-clean-benefits {
-    display: none;
+    flex-wrap: wrap;
+    padding: 15px 0px;
+    gap: 20px;
+  }
+
+  #thobe-hero .content-info .hero-clean-benefit {
+    width: calc(50% - 20px);
+  }
+
+  #thobe-hero .content-info .hero-clean-benefit-logo {
+    padding: 2px 0;
   }
 }
 
@@ -319,7 +311,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 70px 0;
+  padding: 30px 0;
 }
 
 #thobe-price-offer .container {
@@ -345,7 +337,7 @@
 }
 
 #thobe-price-offer .upper-content .heading-txt {
-  max-width: 180px;
+  max-width: 210px;
   font-size: 45px;
   font-weight: 700;
   line-height: 1.25;
@@ -411,11 +403,16 @@
   gap: 3px;
 }
 
+#thobe-price-offer .upper-content .product-rates-info-star {
+  padding: 2px 0;
+}
+
 #thobe-price-offer .upper-content .product-rates-info-txt {
   margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
+  color: var(--shades-10);
 }
 
 #thobe-price-offer .lower-content {
@@ -569,14 +566,15 @@
 }
 
 #thobe-price-offer .lower-content .product-showcase-img {
-  border-radius: 20px;
   overflow: hidden;
+  padding: 2px 0;
 }
 
 #thobe-price-offer .lower-content .product-showcase-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1020px) {
@@ -680,7 +678,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #thobe-benefits .container {
@@ -691,7 +689,7 @@
 
 #thobe-benefits .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   padding: 0 17.5px;
 }
@@ -705,6 +703,10 @@
   flex-direction: column;
   gap: 25px;
   padding: 30px 20px;
+}
+
+#thobe-benefits .content .benefit-box .logo-wrapper {
+  padding: 2px 0;
 }
 
 #thobe-benefits .content .benefit-txt {
@@ -757,7 +759,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #thobe-cta .container {
@@ -769,7 +771,8 @@
 #thobe-cta .content {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 80px 17.5px;
+  margin: 0 17.5px;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -799,6 +802,7 @@
 @media screen and (max-width: 767px) {
   #thobe-cta .content {
     padding: 50px 0;
+    margin: 0;
   }
 }
 
@@ -838,7 +842,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #thobe-testimonials .container {
@@ -850,6 +854,7 @@
 #thobe-testimonials .content {
   background-color: var(--tints-10);
   border-radius: 20px;
+  margin: 0 17.5px;
   padding: 60px 50px;
   display: flex;
   justify-content: center;
@@ -885,10 +890,15 @@
   position: relative;
 }
 
+#thobe-testimonials .content .swiper-slide {
+  padding: 2px 0;
+}
+
 #thobe-testimonials .content .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 20px;
 }
 
 #thobe-testimonials .content .swiper-pagination {
@@ -912,6 +922,7 @@
 @media screen and (max-width: 767px) {
   #thobe-testimonials .content {
     padding: 50px 0;
+    margin: 0;
   }
 }
 
@@ -951,7 +962,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #thobe-guarantie .container {
@@ -962,35 +973,20 @@
 }
 
 #thobe-guarantie .content {
-  background-image: url(./thobe-guarantie-bg.png);
+  background-image: url(./thobe-guarantie-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-}
-
-#thobe-guarantie .content::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: #282828A3;
-}
-
-#thobe-guarantie .inner-content {
+  margin: 0 17.5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 50px;
   height: 430px;
-  position: relative;
-  z-index: 2;
 }
 
 #thobe-guarantie .content .heading,
@@ -1046,7 +1042,8 @@
 
 @media screen and (max-width: 767px) {
   #thobe-guarantie .content {
-    padding: 50px 20px;
+    padding: 50px 15px;
+    margin: 0;
   }
 
   #thobe-guarantie .inner-content {
@@ -1095,7 +1092,7 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-color: #F2F2EF;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 #thobe-form .container {
@@ -1114,6 +1111,7 @@
   flex-direction: column;
   gap: 50px;
   padding: 50px 0;
+  margin: 0 17.5px;
 }
 
 #thobe-form .form-heading {
@@ -1173,11 +1171,14 @@
 }
 
 #thobe-form .form-thobe label .ouasl_field-title,
-#thobe-form .form-thobe label .ouasl_field-title+input {
+#thobe-form .form-thobe label .ouasl_field-title+input,
+#thobe-form .form-thobe .ouasl_field-radios .option-description-title,
+#thobe-form .form-thobe .ouasl_field-checkbox .ouasl_field-checkbox_title {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.3;
   color: var(--sec-bg-color);
+  margin: 0;
 }
 
 #thobe-form .form-thobe label .ouasl_field-title+input {
@@ -1189,8 +1190,204 @@
   direction: rtl;
 }
 
-#thobe-form .form-thobe label .ouasl_field-title+input::placeholder {
+#thobe-form .form-thobe .ouasl_field-radios,
+#thobe-form .form-thobe .ouasl_field-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .ouasl_field-radios_title,
+#thobe-form .form-thobe .ouasl_field-checkbox .ouasl_field-checkbox_title {
+  width: 100%;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio {
+  flex: 1;
+  height: 45px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio.active,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio.active {
+  background-color: var(--sec-bg-color);
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio .ouasl_field-title {
+  color: var(--sec-bg-color);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio.active .ouasl_field-title,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio.active .ouasl_field-title {
+  color: var(--main-bg-color);
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio input,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio input {
+  display: none;
+}
+
+
+#thobe-form .form-thobe ::placeholder,
+#thobe-form .form-thobe ::placeholder {
   color: #C7C7C7;
+  font-family: "Tajawal", sans-serif;
+}
+
+#thobe-form .form-thobe label textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#thobe-form .form-thobe label select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+#thobe-form .form-thobe label select option {
+  color: var(--sec-bg-color);
+
+}
+
+#thobe-form .form-thobe .btn-cta {
+  width: 100%;
+}
+
+#thobe-form .form-thobe .button-cta {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-bg-color);
+  color: var(--main-bg-color);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 18px 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Tajawal", sans-serif;
+}
+
+#thobe-form .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thobe-form .form-footer-paragraph {
+  max-width: 354px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: var(--sec-bg-color);
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-form .content {
+    margin: 0;
+    padding: 50px 20px;
+    margin: 0;
+  }
+
+  #thobe-form .content .form-heading,
+  #thobe-form .content .form-wrapper {
+    max-width: unset;
+  }
+
+  #thobe-form .form-thobe .half-span {
+    width: 100%;
+  }
+
+  #thobe-form .form-thobe .ouasl_field-radios .radio .ouasl_field-title {
+    font-size: 15px;
+  }
 }
 
 /** thobe-form end **/
+
+
+/** thobe-footer start **/
+
+#thobe-footer {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-footer {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#thobe-footer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-footer .content {
+  width: 125px;
+  margin: 0 auto;
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+#thobe-footer .content img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/** thobe-footer end **/
