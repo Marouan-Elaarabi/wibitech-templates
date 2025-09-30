@@ -41,6 +41,10 @@
   height: 143px;
 }
 
+#clean-header .container {
+  padding: 0 !important;
+}
+
 #clean-header .content {
   width: 100%;
 }
@@ -445,20 +449,24 @@
 #clean-form .timeleft {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
   width: 100%;
 }
 
-#clean-form .time-form,
-#clean-form .catologue-options {
-  width: 50%;
+#clean-form .form-heading {
+  width: 100%;
+  text-align: right;
+}
+
+#clean-form .time-form {
+  width: 100%;
 }
 
 #clean-form .timeleft .timer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   width: 100%;
@@ -529,13 +537,13 @@
 
 #clean-form .form-clean {
   gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#clean-form .form-clean .ouasl_field-radios {
-  position: absolute;
-  left: 50px;
-  top: 40px;
-  width: 35%;
+#clean-form .form-clean .ouasl_field-radios,
+#clean-form .form-clean .ouasl_field-checkbox {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -551,28 +559,30 @@
   line-height: 1.2;
 }
 
-#clean-form .ouasl_field-radios label.radio {
+#clean-form .ouasl_field-radios label.radio,
+#clean-form .ouasl_field-checkbox label.radio {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 16px;
+  padding: 18px 16px;
   border: 1px solid #00382B;
   border-radius: 14px;
   background-color: var(--tints-10);
   color: var(--shades-10);
   cursor: pointer;
-  transition: .2s;
   box-sizing: border-box;
   width: 100%;
   position: relative;
 }
 
-#clean-form .ouasl_field-radios label.radio.active {
-  background-color: var(--btn-color);
-  color: var(--tints-10);
+#clean-form .ouasl_field-radios label.radio.active .ouasl_field-title,
+#clean-form .ouasl_field-checkbox label.radio.active .ouasl_field-title {
+  color: var(--btn-color);
+  font-weight: 700;
 }
 
-#clean-form .ouasl_field-radios label.radio input[type="radio"] {
+#clean-form .ouasl_field-radios label.radio input[type="radio"],
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"] {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -581,7 +591,8 @@
   height: 0;
 }
 
-#clean-form .ouasl_field-radios label.radio input::before {
+#clean-form .ouasl_field-radios label.radio input::before,
+#clean-form .ouasl_field-checkbox label.radio input::before {
   content: '';
   position: absolute;
   left: 0;
@@ -594,7 +605,12 @@
   border-radius: 50%;
 }
 
-#clean-form .ouasl_field-radios label.radio input::after {
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"]::before {
+  border-radius: 0;
+}
+
+#clean-form .ouasl_field-radios label.radio input::after,
+#clean-form .ouasl_field-checkbox label.radio input::after {
   content: '';
   position: absolute;
   left: 4px;
@@ -607,12 +623,19 @@
   background-color: transparent;
 }
 
-#clean-form .ouasl_field-radios label.radio input:checked::before {
-  outline-color: var(--sec-bg-color);
+
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"]::after {
+  border-radius: 0;
 }
 
-#clean-form .ouasl_field-radios label.radio input:checked::after {
-  background-color: var(--sec-bg-color);
+#clean-form .ouasl_field-radios label.radio input:checked::before,
+#clean-form .ouasl_field-checkbox label.radio input:checked::before {
+  outline-color: var(--btn-color);
+}
+
+#clean-form .ouasl_field-radios label.radio input:checked::after,
+#clean-form .ouasl_field-checkbox label.radio input:checked::after {
+  background-color: var(--btn-color);
 }
 
 #clean-form .form-clean .form-heading-txt {
@@ -623,18 +646,54 @@
   line-height: 1.2;
 }
 
-#clean-form .form-clean label,
-#clean-form .form-clean label input {
-  direction: rtl;
-  box-sizing: border-box;
+#clean-form .form-clean label .ouasl_field-title {
+  color: var(--btn-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#clean-form .form-clean label.text,
+#clean-form .form-clean label.email,
+#clean-form .form-clean label.tel,
+#clean-form .form-clean label.number,
+#clean-form .form-clean label.select,
+#clean-form .form-clean label.date,
+#clean-form .form-clean label.textarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  width: calc(50% - 7.5px);
+}
+
+#clean-form .form-clean label.textarea {
   width: 100%;
 }
 
-#clean-form .form-clean label input {
+#clean-form .form-clean label textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+#clean-form .form-clean label input,
+#clean-form .form-clean label select {
+  direction: rtl;
+  width: 100%;
+}
+
+#clean-form .form-clean label input,
+#clean-form .form-clean label textarea,
+#clean-form .form-clean label select {
   padding: 16px;
   border: 1px solid var(--btn-color);
   border-radius: 12px;
   background-color: transparent;
+  box-sizing: border-box;
+}
+
+#clean-form .form-clean label select {
+  padding: 8px 16px;
 }
 
 #clean-form .form-clean label input::placeholder {
@@ -1121,6 +1180,7 @@
 #clean-footer .footer-logo {
   width: fit-content;
   height: fit-content;
+  margin: 0 auto;
 }
 
 #clean-footer .footer-logo img {

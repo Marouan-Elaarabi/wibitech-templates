@@ -1112,10 +1112,13 @@
   flex-wrap: wrap;
 }
 
-#timelime-contact .form-timelime .ouasl_field-radios_title {
+#timelime-contact .form-timelime .ouasl_field-radios_title,
+#timelime-contact .form-timelime .ouasl_field-checkbox_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  color: var(--tints-10);
 }
 
 #timelime-contact .form-timelime .ouasl_field-radios_title p {
@@ -1146,12 +1149,15 @@
 
 #timelime-contact label,
 #timelime-contact .ouasl_field-radios,
+#timelime-contact .ouasl_field-checkbox,
 #timelime-contact .ouasl_field-radios .radios {
   width: 100%;
 }
 
 #timelime-contact .ouasl_field-radios,
-#timelime-contact .ouasl_field-radios .radios {
+#timelime-contact .ouasl_field-radios .radios,
+#timelime-contact .ouasl_field-checkbox,
+#timelime-contact .ouasl_field-checkbox .radios {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1159,7 +1165,8 @@
   gap: 16px;
 }
 
-#timelime-contact .ouasl_field-radios label.radio {
+#timelime-contact .ouasl_field-radios label.radio,
+#timelime-contact .ouasl_field-checkbox label.radio {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1174,7 +1181,8 @@
   position: relative;
 }
 
-#timelime-contact .ouasl_field-radios label.radio.active {
+#timelime-contact .ouasl_field-radios label.radio.active,
+#timelime-contact .ouasl_field-checkbox label.radio.active {
   background-color: #ABD0C8;
 }
 
@@ -1187,7 +1195,8 @@
   gap: 15px;
 }
 
-#timelime-contact .ouasl_field-radios label.radio .ouasl_field-title {
+#timelime-contact .ouasl_field-radios label.radio .ouasl_field-title,
+#timelime-contact .ouasl_field-checkbox label.radio .ouasl_field-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -1195,14 +1204,8 @@
   color: var(--shades-10);
 }
 
-#timelime-contact .ouasl_field-radios label.radio .inner-span {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.2;
-  opacity: .4;
-}
-
-#timelime-contact .ouasl_field-radios label.radio input[type="radio"] {
+#timelime-contact .ouasl_field-radios label.radio input[type="radio"],
+#timelime-contact .ouasl_field-checkbox label.radio input[type="checkbox"] {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -1211,7 +1214,8 @@
   height: 0;
 }
 
-#timelime-contact .ouasl_field-radios label.radio input::before {
+#timelime-contact .ouasl_field-radios label.radio input::before,
+#timelime-contact .ouasl_field-checkbox label.radio input::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1224,7 +1228,8 @@
   border-radius: 50%;
 }
 
-#timelime-contact .ouasl_field-radios label.radio input::after {
+#timelime-contact .ouasl_field-radios label.radio input::after,
+#timelime-contact .ouasl_field-checkbox label.radio input::after {
   content: '';
   position: absolute;
   left: 4px;
@@ -1237,7 +1242,8 @@
   background-color: transparent;
 }
 
-#timelime-contact .ouasl_field-radios label.radio input:checked::after {
+#timelime-contact .ouasl_field-radios label.radio input:checked::after,
+#timelime-contact .ouasl_field-checkbox label.radio input:checked::after {
   background-color: var(--main-color);
 }
 
@@ -1258,7 +1264,8 @@
 }
 
 #timelime-contact label:not(label.radio) input,
-#timelime-contact textarea {
+#timelime-contact textarea,
+#timelime-contact select {
   background-color: var(--secondary-color);
   color: var(--tints-10);
   border: none;

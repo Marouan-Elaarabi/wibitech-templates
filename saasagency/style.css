@@ -1637,6 +1637,7 @@
   background-color: var(--main-bg);
   color: rgba(var(--txt-color), 1);
   box-sizing: border-box;
+  direction: rtl;
 }
 
 #saasagency-contact .container {
@@ -1689,7 +1690,12 @@
   margin: 0;
 }
 
-#saasagency-contact .form-saasagency {
+#saasagency-contact .form-paragraph-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
   width: 629px;
   margin: 0 auto;
   background-color: var(--sec-bg);
@@ -1720,7 +1726,7 @@
   width: 100%;
 }
 
-#saasagency-contact .form-saasagency label.wrapper {
+#saasagency-contact .form-saasagency label {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1728,11 +1734,16 @@
   gap: 16px;
 }
 
-#saasagency-contact .form-saasagency label span {
+#saasagency-contact .form-saasagency label span,
+#saasagency-contact .form-saasagency .ouasl_field-checkbox_title {
   color: rgba(var(--txt-color), 1);
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-#saasagency-contact .form-saasagency input {
+#saasagency-contact .form-saasagency input,
+#saasagency-contact .form-saasagency textarea {
   width: 100%;
   border: 1px solid #898e93;
   border-radius: 10px;
@@ -1743,7 +1754,12 @@
   outline: none;
   font-size: 15px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'cairo', sans-serif;
+}
+
+#saasagency-contact .form-saasagency textarea {
+  resize: vertical;
 }
 
 #saasagency-contact .form-saasagency input[type="tel"] {
@@ -1754,6 +1770,99 @@
 #saasagency-contact .form-saasagency input::placeholder,
 #saasagency-contact .form-saasagency textarea::placeholder {
   color: #bcbcbc;
+}
+
+#saasagency-contact label,
+#saasagency-contact .ouasl_field-radios,
+#saasagency-contact .ouasl_field-checkbox,
+#saasagency-contact .ouasl_field-radios .radios,
+#saasagency-contact label.select select {
+  width: 100%;
+}
+
+#saasagency-contact .ouasl_field-radios,
+#saasagency-contact .ouasl_field-radios .radios,
+#saasagency-contact .ouasl_field-checkbox,
+#saasagency-contact .ouasl_field-checkbox .radios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio,
+#saasagency-contact .ouasl_field-checkbox label.radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #898e93;
+  border-radius: 14px;
+  background-color: var(--main-bg);
+  cursor: pointer;
+  transition: .2s;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio .ouasl_field-title,
+#saasagency-contact .ouasl_field-checkbox label.radio .ouasl_field-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio input[type="radio"],
+#saasagency-contact .ouasl_field-checkbox label.radio input[type="checkbox"] {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio input::before,
+#saasagency-contact .ouasl_field-checkbox label.radio input::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  outline: 2px solid var(--btn-color);
+  border-radius: 50%;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio input::after,
+#saasagency-contact .ouasl_field-checkbox label.radio input::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#saasagency-contact .ouasl_field-radios label.radio input:checked::after,
+#saasagency-contact .ouasl_field-checkbox label.radio input:checked::after {
+  background-color: var(--btn-color);
+}
+
+#saasagency-contact label.select select {
+  background-color: var(--main-bg);
+  color: var(--tints-10);
+  padding: 16px;
+  border-radius: 14px;
 }
 
 #saasagency-contact .form-saasagency .landino-field-title {
@@ -1779,8 +1888,11 @@
   cursor: pointer;
 }
 
-#saasagency-contact .form-saasagency .disclamer-text {
+#saasagency-contact .form-paragraph-wrapper .disclamer-container {
   margin: 0 auto;
+}
+
+#saasagency-contact .form-paragraph-wrapper .disclamer-text {
   text-align: center;
   padding: 10px;
   max-width: 372px;
@@ -1789,6 +1901,7 @@
   font-weight: 600;
   line-height: 1.41;
   color: rgba(var(--txt-color), .7);
+  margin: 0;
 }
 
 @media screen and (max-width: 1020px) {
