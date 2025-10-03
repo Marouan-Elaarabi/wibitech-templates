@@ -14,7 +14,6 @@ function ouaslHeader() {
 
   const dropDownIcon = content.querySelector(".drop-down img");
   if (!dropDownIcon) return;
-  console.log(dropDownIcon.src);
 
   dropDownIcon.addEventListener("click", (e) => {
     const open = content.classList.contains("open");

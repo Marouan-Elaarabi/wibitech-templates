@@ -513,6 +513,7 @@
   gap: 32px;
   transition: all 0.33s ease;
   flex: 1;
+  z-index: 3;
 }
 
 #geschtalt_about .history-title {
@@ -558,6 +559,8 @@
   align-items: start;
   transition: all 0.33s ease;
   flex: 1;
+  z-index: 3;
+
 }
 
 #geschtalt_about .about-title {
@@ -602,6 +605,7 @@
   align-items: center;
   flex: 1;
   flex: 0 0 auto;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 1020px) {

@@ -1,0 +1,515 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** tomor-header start **/
+
+#tomor-header {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-header {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-header .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#tomor-header .logo-content,
+#tomor-header .links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#tomor-header .logo-content .logo {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+#tomor-header .logo-content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#tomor-header .logo-content .logo-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#tomor-header .links-wrapper {
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 100;
+}
+
+#tomor-header .links-wrapper .link {
+  color: var(--txt-color-1);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+#tomor-header .menu-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#tomor-header .menu-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-header .links-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    background-color: var(--main-bg-color);
+    opacity: 0;
+    transition: .44s;
+    pointer-events: none;
+  }
+
+  #tomor-header .links-wrapper.open {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  #tomor-header .menu-icon {
+    display: block;
+  }
+}
+
+/** tomor-header end **/
+
+/** tomor-hero start **/
+
+#tomor-hero {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-hero {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-hero .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 65px;
+  padding: 60px 0;
+}
+
+#tomor-hero .content .heading-cta,
+#tomor-hero .content .heading-txt {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tomor-hero .content .heading-title,
+#tomor-hero .content .heading-paragraph {
+  color: var(--txt-color-1);
+  margin: 0;
+  text-align: center;
+}
+
+#tomor-hero .content .heading-title {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-hero .content .heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-hero .content .cta-wrapper a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 90px;
+  border-radius: 50px;
+  background-color: var(--btn-color);
+  color: var(--txt-color-2);
+  text-decoration: none;
+}
+
+#tomor-hero .content .hero-banner {
+  max-width: 1010px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tomor-hero .content .hero-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-hero .content .heading-title {
+    font-size: 37px;
+  }
+}
+
+/** tomor-hero end **/
+
+/** tomor-best-products start **/
+
+#tomor-best-products {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-best-products {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-best-products .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-best-products .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 65px;
+  padding: 60px 0;
+}
+
+#tomor-best-products .content .heading-cta,
+#tomor-best-products .content .heading-txt {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tomor-best-products .content .heading-title,
+#tomor-best-products .content .heading-paragraph {
+  color: var(--txt-color-1);
+  margin: 0;
+  text-align: center;
+}
+
+#tomor-best-products .content .heading-title {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-best-products .content .heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-best-products .content .cta-wrapper a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 90px;
+  border-radius: 50px;
+  background-color: var(--btn-color);
+  color: var(--txt-color-2);
+  text-decoration: none;
+}
+
+#tomor-best-products .content .products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+#tomor-best-products .content .products-grid .box-img {
+  width: 100%;
+  max-height: 365px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#tomor-best-products .content .products-grid .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+#tomor-best-products .content .products-grid .box-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+#tomor-best-products .content .products-grid .box-info .box-title,
+#tomor-best-products .content .products-grid .box-info .box-paragraph {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#tomor-best-products .content .products-grid .box-info .box-title {
+  color: var(--txt-color-1);
+}
+
+#tomor-best-products .content .products-grid .box-info .box-paragraph {
+  color: var(--sec-bg-color);
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-best-products .content .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #tomor-best-products .content .heading-title {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-best-products .content .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/** tomor-best-products end **/
+
+/** tomor-benefits start **/
+
+#tomor-benefits {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-benefits {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--btn-color);
+  position: relative;
+}
+
+#tomor-benefits .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-benefits .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px 20px;
+  padding: 50px 0;
+}
+
+#tomor-benefits .benefit-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-benefits .benefit-box .benefit-icon {
+  background-color: var(--sec-bg-color);
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tomor-benefits .benefit-box .benefit-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+#tomor-benefits .benefit-box .benefit-heading,
+#tomor-benefits .benefit-box .benefit-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+}
+
+#tomor-benefits .benefit-box .benefit-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-benefits .benefit-box .benefit-paragraph {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+}

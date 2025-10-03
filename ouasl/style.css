@@ -38,10 +38,11 @@
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   height: 128px;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0px;
   z-index: 100;
+  background-color: var(--sec-bg-color);
 }
 
 #ouasl-header .container {
@@ -51,9 +52,12 @@
 }
 
 #ouasl-header .content {
-  max-width: 1080px;
+  max-width: 1020px;
   width: 100%;
-  margin: 25px auto 0;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
   border: 0.75px solid #898E93;
   display: flex;
   justify-content: space-between;
@@ -114,6 +118,7 @@
     transition: max-height .44s;
     overflow: hidden;
     padding: 15px 20px;
+    max-width: 90%;
   }
 
   #ouasl-header .content.open {
@@ -340,14 +345,16 @@
 }
 
 #ouasl-hero .social-proof-wrapper .social {
-  display: block;
-  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 6px;
+  overflow: hidden;
 }
 
 #ouasl-hero .social-proof-wrapper .social img {
   width: 15px;
   height: 15px;
-  overflow: hidden;
   object-fit: cover;
 }
 
@@ -566,6 +573,10 @@
   gap: 40px;
 }
 
+#ouasl-benefits .cards .card {
+  background-color: #a4d0f1;
+}
+
 #ouasl-benefits .cards .card:nth-child(1) {
   background-color: #B6DBFF;
 }
@@ -687,6 +698,14 @@
   padding: 30px 0;
 }
 
+#ouasl-brand-trust .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
 #ouasl-brand-trust .brand-heading {
   display: flex;
   justify-content: center;
@@ -731,6 +750,7 @@
   height: 150px;
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 #ouasl-brand-trust .stock-ticker .before,
@@ -739,7 +759,7 @@
   width: 10%;
   height: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 20;
   pointer-events: none;
 }
 
@@ -762,6 +782,7 @@
   align-items: center;
   gap: var(--gap);
   animation: scroll 20s linear infinite;
+  z-index: 1;
 }
 
 #ouasl-brand-trust .stock-ticker:hover ul {
@@ -1143,7 +1164,21 @@
 }
 
 #ouasl-footer .content .lower .socials {
-  gap: 20px;
+  gap: 10px;
+}
+
+#ouasl-footer .content .lower .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  overflow: hidden;
+}
+
+#ouasl-footer .content .lower .social img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1020px) {
