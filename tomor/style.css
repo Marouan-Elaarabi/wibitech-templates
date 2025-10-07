@@ -194,7 +194,7 @@
   align-items: center;
   flex-direction: column;
   gap: 65px;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #tomor-hero .content .heading-cta,
@@ -311,7 +311,7 @@
   align-items: center;
   flex-direction: column;
   gap: 65px;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #tomor-best-products .content .heading-cta,
@@ -454,6 +454,7 @@
   direction: rtl;
   background-color: var(--btn-color);
   position: relative;
+  margin: 40px 0;
 }
 
 #tomor-benefits .container {
@@ -502,6 +503,15 @@
   color: var(--txt-color-2);
 }
 
+#tomor-benefits .benefit-box .benefit-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 200px;
+}
+
 #tomor-benefits .benefit-box .benefit-heading {
   font-size: 18px;
   font-weight: 700;
@@ -512,4 +522,728 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 1.3;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-benefits {
+    background-color: transparent;
+  }
+
+  #tomor-benefits .content {
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-benefits .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/** tomor-benefits end **/
+
+/** tomor-testimonials start **/
+
+#tomor-testimonials {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-testimonials {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+  padding: 0;
+  padding: 40px 0;
+}
+
+#tomor-testimonials .container {
+  padding: 15px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#tomor-testimonials .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tomor-testimonials .testimonial-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 560px;
+}
+
+#tomor-testimonials .testimonial-heading-txt,
+#tomor-testimonials .testimonial-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-1);
+}
+
+#tomor-testimonials .testimonial-heading-txt {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-testimonials .testimonial-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-testimonials .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  position: relative;
+  height: 550px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#tomor-testimonials .swiper,
+#tomor-testimonials .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+#tomor-testimonials .swiper-slide {
+  padding: 2px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .44s;
+}
+
+#tomor-testimonials .swiper-slide:nth-of-type(odd) {
+  transform: scale(.9);
+}
+
+#tomor-testimonials .swiper-slide:nth-of-type(even) {
+  transform: scale(1.1);
+}
+
+#tomor-testimonials .swiper-slide .before {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%) rotateY(0);
+  width: 100%;
+  height: 100%;
+  background-image: url(./testimonials-before.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .44s;
+}
+
+#tomor-testimonials .swiper-slide:nth-of-type(1) .before,
+#tomor-testimonials .swiper-slide:nth-of-type(3) .before {
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+#tomor-testimonials .box,
+#tomor-testimonials .box .testimonial-body,
+#tomor-testimonials .box .testimonial-body .heading,
+#tomor-testimonials .box .testimonial-body .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#tomor-testimonials .box {
+  position: relative;
+  z-index: 20;
+  padding: 0 50px;
+}
+
+#tomor-testimonials .box .testimonial-header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#tomor-testimonials .box .testimonial-body .heading-txt,
+#tomor-testimonials .box .testimonial-body .quote-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+  text-align: center;
+  line-height: 1;
+}
+
+#tomor-testimonials .box .testimonial-body .heading-txt {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+#tomor-testimonials .box .testimonial-body .rating-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#tomor-testimonials .box .testimonial-body .quote-paragraph {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#tomor-testimonials .swiper-pagination {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important;
+  height: fit-content;
+}
+
+#tomor-testimonials .swiper-pagination-bullet-active {
+  background: var(--btn-color);
+}
+
+@media screen and (max-width: 1200px) {
+
+  #tomor-testimonials .swiper-slide:nth-of-type(odd),
+  #tomor-testimonials .swiper-slide:nth-of-type(even) {
+    transform: none;
+  }
+
+  #tomor-testimonials .swiper-slide .before {
+    width: 90%;
+    height: 90%;
+    top: 50%;
+  }
+
+  #tomor-testimonials .swiper-slide:nth-of-type(1) .before,
+  #tomor-testimonials .swiper-slide:nth-of-type(3) .before {
+    transform: translate(-50%, -50%) rotateY(0);
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-testimonials .testimonial-heading {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  #tomor-testimonials .testimonial-heading-txt {
+    font-size: 37px;
+  }
+
+  #tomor-testimonials .swiper-wrapper {
+    padding: 0;
+  }
+
+  #tomor-testimonials .swiper-slide .before {
+    width: 80%;
+    height: 80%;
+    top: 57%;
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 50%;
+  }
+
+  #tomor-testimonials .box,
+  #tomor-testimonials .box .testimonial-body,
+  #tomor-testimonials .box .testimonial-body .heading,
+  #tomor-testimonials .box .testimonial-body .quote {
+    gap: 5px;
+  }
+
+  #tomor-testimonials .box .testimonial-header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #tomor-testimonials .box .testimonial-body .heading-txt {
+    font-size: 18px;
+  }
+
+  #tomor-testimonials .box .testimonial-body .quote-paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  #tomor-testimonials .swiper-slide .before {
+    width: 100%;
+    height: 100%;
+    top: 57%;
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 70%;
+  }
+}
+
+/** tomor-testimonials end **/
+
+/** tomor-offers start **/
+
+#tomor-offers {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-offers {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--btn-color);
+  position: relative;
+  padding: 0;
+  margin: 40px 0;
+}
+
+#tomor-offers .container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-offers .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tomor-offers .offer-info,
+#tomor-offers .offer-img {
+  width: 50%;
+  height: 100%;
+  flex: 1;
+}
+
+#tomor-offers .offer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tomor-offers .offer-info-wrapper {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-txt,
+#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+  line-height: 1;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-offers .offer-info-wrapper .cta-btn {
+  background-color: var(--sec-bg-color);
+  padding: 15px 25px;
+  color: var(--txt-color-1);
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+#tomor-offers .offer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tomor-offers .offer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-offers {
+    background-color: transparent;
+  }
+
+  #tomor-offers .container {
+    padding: 0 15px;
+  }
+
+  #tomor-offers .content {
+    flex-direction: column;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: var(--btn-color);
+    height: unset;
+  }
+
+  #tomor-offers .offer-info-wrapper {
+    padding: 60px 15px;
+  }
+
+  #tomor-offers .offer-info,
+  #tomor-offers .offer-img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+    font-size: 37px;
+  }
+}
+
+/** tomor-offers end **/
+
+/** tomor-contact start **/
+
+#tomor-contact {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-contact {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: #E8DEBA;
+  position: relative;
+  padding: 40px 0;
+}
+
+#tomor-contact .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-contact .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 145px;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-contact .form-heading-txt,
+#tomor-contact .form-paragraph-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  line-height: 1;
+}
+
+#tomor-contact .form-heading-txt {
+  font-size: 43px;
+  font-weight: 700;
+}
+
+#tomor-contact .form-paragraph-txt {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+}
+
+#tomor-contact .form-tomor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label {
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label.half-span {
+  width: calc(50% - 8px);
+}
+
+#tomor-contact .form-tomor label input {
+  width: 100%;
+  border-radius: 50px;
+  background-color: var(--main-bg-color);
+  color: var(--txt-color-1);
+  padding: 15px 18px;
+  border: none;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#tomor-contact .form-tomor label input:focus {
+  outline: 1px solid var(--btn-color);
+}
+
+#tomor-contact .form-tomor .button-cta {
+  background-color: var(--txt-color-1);
+  color: var(--txt-color-2);
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 50px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-contact {
+    background-color: unset;
+  }
+
+  #tomor-contact .content {
+    padding: 70px 16px;
+    background-color: #E8DEBA;
+    border-radius: 20px;
+  }
+
+  #tomor-contact .form-tomor label.half-span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-contact .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/** tomor-contact end **/
+
+/** tomor-footer start **/
+
+#tomor-footer {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-footer {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--txt-color-2);
+  position: relative;
+  padding: 40px 0;
+}
+
+#tomor-footer .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tomor-footer .logo-content,
+#tomor-footer .links-wrapper,
+#tomor-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#tomor-footer .logo-content .logo-txt {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#tomor-footer .links-wrapper {
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+#tomor-footer .links-wrapper .link {
+  text-decoration: none;
+  color: var(--txt-color-1);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+#tomor-footer .social-icons {
+  gap: 50px;
+}
+
+#tomor-footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-footer .content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #tomor-footer .links-wrapper {
+    gap: 40px;
+  }
 }
