@@ -227,6 +227,15 @@
   line-height: 1.5;
 }
 
+#tomor-hero .content .cta-wrapper {
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 #tomor-hero .content .cta-wrapper a {
   display: block;
   width: fit-content;
@@ -344,6 +353,15 @@
   line-height: 1.5;
 }
 
+#tomor-best-products .content .cta-wrapper {
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 #tomor-best-products .content .cta-wrapper a {
   display: block;
   width: fit-content;
@@ -360,6 +378,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 100%;
+}
+
+#tomor-best-products .content .products-grid .box {
+  padding: 5px;
 }
 
 #tomor-best-products .content .products-grid .box-img {
@@ -452,14 +474,19 @@
 #tomor-benefits {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--btn-color);
   position: relative;
-  margin: 40px 0;
+  padding: 40px 0;
+  background-color: var(--main-bg-color);
+}
+
+#tomor-benefits .tomor-benefits-wrapper {
+  background-color: var(--btn-color);
+  padding: 0 15px;
 }
 
 #tomor-benefits .container {
-  padding: 0 15px;
   max-width: 1200px;
+  padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -468,7 +495,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 90px 20px;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 #tomor-benefits .benefit-box {
@@ -526,11 +553,14 @@
 
 @media screen and (max-width: 1020px) {
   #tomor-benefits {
-    background-color: transparent;
+    padding: 40px 15px;
+  }
+
+  #tomor-benefits .tomor-benefits-wrapper {
+    border-radius: 20px;
   }
 
   #tomor-benefits .content {
-    background-color: var(--btn-color);
     border-radius: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -728,6 +758,10 @@
   gap: 5px;
 }
 
+#tomor-testimonials .box .testimonial-body .rating-star {
+  padding: 3px;
+}
+
 #tomor-testimonials .box .testimonial-body .quote-paragraph {
   font-size: 18px;
   font-weight: 400;
@@ -863,37 +897,43 @@
 #tomor-offers {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--btn-color);
   position: relative;
-  padding: 0;
-  margin: 40px 0;
+  background-color: var(--main-bg-color);
+  padding: 40px 0;
 }
 
 #tomor-offers .container {
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 #tomor-offers .content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 15px;
 }
 
 #tomor-offers .offer-info,
 #tomor-offers .offer-img {
-  width: 50%;
-  height: 100%;
-  flex: 1;
+  width: calc(50% - 7.5px);
+  overflow: hidden;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 #tomor-offers .offer-info {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--btn-color);
+  border-radius: 20px;
 }
 
-#tomor-offers .offer-info-wrapper {
+#tomor-offers .offer-info-content {
   max-width: 360px;
   display: flex;
   justify-content: flex-start;
@@ -902,7 +942,7 @@
   gap: 40px;
 }
 
-#tomor-offers .offer-info-wrapper .offer-info-heading {
+#tomor-offers .offer-info-content .offer-info-heading {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -910,25 +950,34 @@
   gap: 20px;
 }
 
-#tomor-offers .offer-info-wrapper .offer-info-heading-txt,
-#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+#tomor-offers .offer-info-content .offer-info-heading-txt,
+#tomor-offers .offer-info-content .offer-info-heading-paragraph {
   margin: 0;
   color: var(--txt-color-2);
   line-height: 1;
 }
 
-#tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+#tomor-offers .offer-info-content .offer-info-heading-txt {
   font-size: 54px;
   font-weight: 700;
 }
 
-#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+#tomor-offers .offer-info-content .offer-info-heading-paragraph {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
 
-#tomor-offers .offer-info-wrapper .cta-btn {
+#tomor-offers .offer-info-content .cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 350px;
+  flex-wrap: wrap;
+}
+
+#tomor-offers .offer-info-content .cta-btn {
   background-color: var(--sec-bg-color);
   padding: 15px 25px;
   color: var(--txt-color-1);
@@ -944,33 +993,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #tomor-offers .offer-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1020px) {
-  #tomor-offers {
-    background-color: transparent;
-  }
-
-  #tomor-offers .container {
-    padding: 0 15px;
-  }
-
-  #tomor-offers .content {
-    flex-direction: column;
-    border-radius: 18px;
-    overflow: hidden;
-    background-color: var(--btn-color);
-    height: unset;
-  }
-
-  #tomor-offers .offer-info-wrapper {
+  #tomor-offers .offer-info-content {
     padding: 60px 15px;
+    max-width: unset;
+    width: 100%;
+  }
+
+  #tomor-offers .offer-info-content .offer-info-heading-txt {
+    font-size: 44px;
   }
 
   #tomor-offers .offer-info,
@@ -981,7 +1022,11 @@
 
 
 @media screen and (max-width: 767px) {
-  #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+  #tomor-offers .content {
+    flex-direction: column;
+  }
+
+  #tomor-offers .offer-info-content .offer-info-heading-txt {
     font-size: 37px;
   }
 }
@@ -1023,14 +1068,18 @@
 #tomor-contact {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: #E8DEBA;
+  background-color: var(--main-bg-color);
   position: relative;
+}
+
+#tomor-contact .tomor-contact-wrapper {
   padding: 40px 0;
+  background-color: #E8DEBA;
 }
 
 #tomor-contact .container {
-  padding: 0 15px;
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -1082,15 +1131,44 @@
   width: 100%;
 }
 
+#tomor-contact .form-tomor .ouasl_field-checkbox,
+#tomor-contact .form-tomor .ouasl_field-radios,
 #tomor-contact .form-tomor label {
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#tomor-contact .form-tomor .ouasl_field-checkbox,
+#tomor-contact .form-tomor .ouasl_field-radios {
+  flex-wrap: wrap;
+}
+
+#tomor-contact .form-tomor label.radio {
+  flex-direction: row-reverse;
+  width: fit-content;
+}
+
+#tomor-contact .form-tomor .ouasl_field-checkbox .ouasl_field-checkbox_title,
+#tomor-contact .form-tomor .ouasl_field-radios .ouasl_field-radios_title,
+#tomor-contact .form-tomor label .ouasl_field-title {
+  color: var(--txt-color-1);
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
 }
 
 #tomor-contact .form-tomor label.half-span {
   width: calc(50% - 8px);
 }
 
-#tomor-contact .form-tomor label input {
+#tomor-contact .form-tomor label input,
+#tomor-contact .form-tomor label textarea,
+#tomor-contact .form-tomor label select {
   width: 100%;
   border-radius: 50px;
   background-color: var(--main-bg-color);
@@ -1099,9 +1177,29 @@
   border: none;
   box-sizing: border-box;
   direction: rtl;
+  outline: none;
 }
 
-#tomor-contact .form-tomor label input:focus {
+#tomor-contact .form-tomor label textarea {
+  border-radius: 20px;
+}
+
+#tomor-contact .form-tomor .ouasl_field-checkbox,
+#tomor-contact .form-tomor .ouasl_field-radios {
+  width: 100%;
+}
+
+#tomor-contact .form-tomor .ouasl_field-checkbox input,
+#tomor-contact .form-tomor .ouasl_field-radios input {
+  width: fit-content;
+}
+
+#tomor-contact .form-tomor label textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#tomor-contact .form-tomor label input:focus:not([type="radio"]):not([type="checkbox"]) {
   outline: 1px solid var(--btn-color);
 }
 
@@ -1120,12 +1218,18 @@
 
 @media screen and (max-width: 1020px) {
   #tomor-contact {
-    background-color: unset;
+    background-color: var(--main-bg-color);
+    padding: 40px 15px;
   }
+
+  #tomor-contact .tomor-contact-wrapper {
+    padding: 40px 0;
+    border-radius: 20px;
+  }
+
 
   #tomor-contact .content {
     padding: 70px 16px;
-    background-color: #E8DEBA;
     border-radius: 20px;
   }
 
@@ -1210,6 +1314,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
+  color: var(--txt-color-1);
 }
 
 #tomor-footer .links-wrapper {
@@ -1234,7 +1339,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 1020px) {
