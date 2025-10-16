@@ -89,10 +89,10 @@
 #ouasl-header .content .ouasl-menu .link {
   color: var(--txt-color);
   text-decoration: none;
-  transition: .44s;
+  transition: all 0.33s ease;
 }
 
-#ouasl-header .content .ouasl-menu .link:hover {
+#ouasl-header .content .ouasl-menu .link[data-active_hover] {
   color: var(--btn-color);
 }
 
@@ -105,17 +105,30 @@
   text-align: center;
   border-radius: 15px;
   padding: 15px 40px;
+  transition: all 0.33s ease;
+}
+
+#ouasl-header .content .header-cta .register[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #ouasl-header .content .drop-down {
   display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+#ouasl-header .content .drop-down img {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1020px) {
   #ouasl-header .content {
     flex-direction: column;
     max-height: 66.4px;
-    transition: max-height .44s;
     overflow: hidden;
     padding: 15px 20px;
     max-width: 90%;
@@ -133,7 +146,7 @@
     display: block;
     position: absolute;
     left: 20px;
-    top: 10px;
+    top: -3px;
     transform: translateY(70%);
   }
 
@@ -141,7 +154,6 @@
   #ouasl-header .content .header-cta .register {
     pointer-events: none;
     opacity: 0;
-    transition: opacity .44s;
   }
 
   #ouasl-header .content.open .ouasl-menu .link,
@@ -302,6 +314,11 @@
   border-radius: 15px;
   cursor: pointer;
   font-size: 14px;
+  transition: all 0.33s ease;
+}
+
+#ouasl-hero .form-ouasl .submit-btn .subscribe[data-active_hover] {
+  background-color: var(--main-bg-color);
 }
 
 #ouasl-hero .social-proof-wrapper,
@@ -348,8 +365,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px 6px;
+  padding: 6px;
   overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: all 0.33s ease;
+}
+
+#ouasl-hero .social-proof-wrapper .social[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #ouasl-hero .social-proof-wrapper .social img {
@@ -1138,6 +1162,11 @@
   padding: 20px 50px;
   text-decoration: none;
   width: fit-content;
+  transition: all 0.33s ease;
+}
+
+#ouasl-footer .content .upper .footer-cta .get-started[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #ouasl-footer .content .lower,
@@ -1171,8 +1200,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px 10px;
+  padding: 6px;
+  box-sizing: border-box;
   overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.33s ease;
+}
+
+#ouasl-footer .content .lower .social[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #ouasl-footer .content .lower .social img {

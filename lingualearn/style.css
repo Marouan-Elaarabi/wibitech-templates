@@ -148,6 +148,12 @@
   width: 105px;
   border: 1px solid #FFFFFF38;
   padding: 13px 0;
+  transition: all 0.33s ease;
+}
+
+#lingualearn-header .cta-btn[data-active_hover] {
+  background-color: var(--secondary-color);
+  color: var(--fourth-color);
 }
 
 #lingualearn-header .responsive-icons {
@@ -360,6 +366,11 @@
   background-color: var(--main-color);
   color: var(--tints-10);
   border: 2px solid var(--main-color);
+  transition: all 0.33s ease;
+}
+
+#lingualearn-hero .top-content .buttons a.start-now[data-active_hover] {
+  background-color: var(--fourth-color);
 }
 
 #lingualearn-hero .top-content .buttons a.discover {
@@ -369,6 +380,11 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
+  transition: all 0.33s ease;
+}
+
+#lingualearn-hero .top-content .buttons a.discover[data-active_hover] {
+  background-color: var(--fourth-color);
 }
 
 #lingualearn-hero .top-content .buttons a.button p {
@@ -698,8 +714,12 @@
   align-items: center;
   gap: 14px;
   cursor: pointer;
+  transition: all 0.33s ease;
 }
 
+#lingualearn-courses .discover[data-active_hover]{
+  background-color: var(--fourth-color);
+}
 #lingualearn-courses .explore-more-button .explore-button .text {
   font-weight: 600;
   font-size: 14px;
@@ -1265,6 +1285,11 @@
   #lingualearn-faq .container .content {
     padding: 90px 0px;
   }
+
+  #lingualearn-faq .faq-image-container .before {
+    left: -10px;
+    top: 10px;
+  }
 }
 
 /** lingualearn-faq end **/
@@ -1396,10 +1421,11 @@
 
   #lingualearn-teachers .teachers-grid {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
-  #lingualearn-teachers .teachers-grid>div {
-    max-width: unset;
+  #lingualearn-teachers .teachers-grid .container-wrapper {
+    width: 100%;
   }
 
   #lingualearn-teachers .teachers-grid .teacher-image-container {
@@ -1575,6 +1601,12 @@
   color: var(--main-color);
   width: 137px;
   padding: 10px 0;
+  transition: all 0.33s ease;
+}
+
+#lingualearn-form form button[data-active_hover] {
+  background-color: var(--fourth-color);
+  color: var(--tints-10);
 }
 
 @media screen and (max-width: 767px) {
@@ -1714,6 +1746,11 @@
   line-height: 1;
   text-decoration: none;
   padding: 2px 0;
+  transition: all 0.33s ease;
+}
+
+#lingualearn-footer .footer-links .faq-link[data-active_hover] {
+  background-color: var(--fourth-color);
 }
 
 #lingualearn-footer .footer-links-container {
@@ -1762,8 +1799,12 @@
   height: 33px;
   border-radius: 50%;
   background-color: var(--main-color);
+  transition: all 0.33s ease;
 }
 
+#lingualearn-footer .footer-links-container .social-media-links>div a[data-active_hover] {
+  background-color: var(--secondary-color);
+}
 @media screen and (max-width: 1020px) {
   #lingualearn-footer .content {
     padding: 100px 35px;

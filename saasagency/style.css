@@ -81,6 +81,11 @@
   color: rgba(var(--txt-color), 1);
   text-decoration: none;
   display: block;
+  transition: all 0.33s ease;
+}
+
+#saasagency-header .content a[data-active_hover] {
+  color: var(--btn-color);
 }
 
 #saasagency-header .contact-container {
@@ -97,6 +102,12 @@
   border-radius: 8px;
   background: linear-gradient(#04050a, #282833);
   cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#saasagency-header .contact-container .contact-us[data-active_hover] {
+  background: unset;
+  background-color: var(--main-bg);
 }
 
 #saasagency-header .contact-container .nav-icon {
@@ -139,11 +150,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 23px;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
   }
 
   #saasagency-header .contact-container .nav-icon img {
+    object-fit: cover;
     width: 100%;
   }
 }
@@ -250,6 +264,11 @@
   align-items: center;
   gap: 14px;
   margin: 5px;
+  transition: all 0.33s ease;
+}
+
+#saasagency-hero .top-content .buttons a[data-active_hover] {
+  background-color: transparent;
 }
 
 #saasagency-hero .top-content .buttons a .icon {
@@ -266,6 +285,10 @@
   background-color: var(--btn-color);
   border: 1px solid #FFFFFF38;
 }
+
+/* #saasagency-hero .top-content .buttons a.start-now[data-active_hover] {
+  background-color: var(--btn-color);
+} */
 
 #saasagency-hero .top-content .buttons p {
   margin: 0;
@@ -1408,6 +1431,11 @@
   line-height: 12px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#saasagency-pricing .plan-container .buy[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 @media screen and (max-width: 1020px) {
@@ -1886,6 +1914,11 @@
   width: 100%;
   text-align: center;
   cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#saasagency-contact .form-saasagency .button-cta[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #saasagency-contact .form-paragraph-wrapper .disclamer-container {
@@ -2022,6 +2055,11 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
+  transition: all 0.33s ease;
+}
+
+#saasagency-footer .navigation-links a[data-active_hover] {
+  color: rgba(var(--txt-color), 1);
 }
 
 @media screen and (max-width: 1020px) {

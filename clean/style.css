@@ -233,14 +233,16 @@
   border-radius: 10px;
   background-color: var(--btn-color);
   text-decoration: none;
-}
-
-#clean-hero .hero-cta-container .buy-cta-txt {
-  margin: 0;
-  color: var(--tints-10);
+  color: var(--main-bg-color);
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
+  transition: all 0.33s ease;
+}
+
+#clean-hero .hero-cta-container .buy-cta[data-active_hover]  {
+  background-color: var(--sec-bg-color);
+  color: var(--btn-color);
 }
 
 #clean-hero .hero-clean-benefits {
@@ -718,6 +720,12 @@
   font-weight: 600;
   line-height: 1;
   cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#clean-form .form-clean .submit-form-btn[data-active_hover]  {
+  background-color: var(--sec-bg-color);
+  color: var(--btn-color);
 }
 
 #clean-form .catologue-options,
@@ -1111,10 +1119,12 @@
   text-decoration: none;
   padding: 20px;
   display: block;
+  transition: all 0.33s ease;
 }
 
-#clean-cta .content .buy-cta-txt {
-  margin: 0;
+#clean-cta .content .buy-cta[data-active_hover]  {
+  background-color: var(--sec-bg-color);
+  color: var(--btn-color);
 }
 
 @media screen and (max-width: 767px) {

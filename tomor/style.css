@@ -40,6 +40,7 @@
   direction: rtl;
   background-color: var(--main-bg-color);
   position: relative;
+  height: 90px;
 }
 
 #tomor-header .container {
@@ -114,19 +115,19 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   #tomor-header .links-wrapper {
     position: absolute;
     left: 0;
     bottom: 0;
     transform: translateY(100%);
     width: 100%;
+    height: calc(100vh - 90px);
     flex-direction: column;
     padding: 20px 0;
     gap: 20px;
     background-color: var(--main-bg-color);
     opacity: 0;
-    transition: .44s;
     pointer-events: none;
   }
 
@@ -137,6 +138,10 @@
 
   #tomor-header .menu-icon {
     display: block;
+  }
+
+  #tomor-header .links-wrapper .link {
+    font-size: 18px;
   }
 }
 
@@ -1068,13 +1073,13 @@
 #tomor-contact {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
   position: relative;
+  background-color: #E8DEBA;
 }
 
-#tomor-contact .tomor-contact-wrapper {
+#tomor-contact .container .content {
   padding: 40px 0;
-  background-color: #E8DEBA;
 }
 
 #tomor-contact .container {
@@ -1228,9 +1233,14 @@
   }
 
 
+  #tomor-contact .container  {
+
+    border-radius: 20px;
+    background-color: #E8DEBA;
+  }
+
   #tomor-contact .content {
     padding: 70px 16px;
-    border-radius: 20px;
   }
 
   #tomor-contact .form-tomor label.half-span {

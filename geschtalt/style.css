@@ -1,7 +1,7 @@
 /** css rules start **/
 
-@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Fustat:wght@200..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap'); */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 /** css rules end **/
@@ -64,11 +64,14 @@
 
 #geschtalt-menu .hamburger {
   display: none;
-  width: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 #geschtalt-menu .hamburger img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   pointer-events: none;
 }
 
@@ -222,9 +225,9 @@
 
 /** geschtalt-menu end **/
 
-/** geschtalt_slider start **/
+/** geschtalt-slider start **/
 
-#geschtalt_slider {
+#geschtalt-slider {
   --main-color: #D2B379;
 
   --tints-1: #d7bb86;
@@ -254,7 +257,7 @@
   --fourth-color: #373837;
 }
 
-#geschtalt_slider {
+#geschtalt-slider {
   background-color: var(--secondary-color);
   font-family: "Fustat", sans-serif;
   font-optical-sizing: auto;
@@ -263,21 +266,21 @@
   direction: rtl;
 }
 
-#geschtalt_slider .container {
+#geschtalt-slider .container {
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-#geschtalt_slider .content {
+#geschtalt-slider .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 32px 0em;
   align-items: center;
 }
 
-#geschtalt_slider .intro {
+#geschtalt-slider .intro {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -288,14 +291,14 @@
   z-index: 9;
 }
 
-#geschtalt_slider .title {
+#geschtalt-slider .title {
   font-size: 83px;
   font-weight: 500;
   color: var(--tints-10);
   margin: 0;
 }
 
-#geschtalt_slider .description {
+#geschtalt-slider .description {
   font-family: "Almarai", sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -303,7 +306,7 @@
   margin: 0;
 }
 
-#geschtalt_slider .get-table {
+#geschtalt-slider .get-table {
   font-family: "Almarai", sans-serif;
   color: var(--secondary-color);
   background-color: var(--main-color);
@@ -317,23 +320,23 @@
   transition: 0.8s;
 }
 
-#geschtalt_slider .get-table[data-active_hover] {
+#geschtalt-slider .get-table[data-active_hover] {
   background-color: var(--secondary-color);
   color: var(--main-color);
   border: 1px solid var(--main-color);
 }
 
-#geschtalt_slider .slider-image {
+#geschtalt-slider .slider-image {
   grid-column: 2/4;
   width: 100%;
 }
 
-#geschtalt_slider .swiper {
+#geschtalt-slider .swiper {
   width: 100%;
   height: 100%;
 }
 
-#geschtalt_slider .slider-image .swiper-slide {
+#geschtalt-slider .slider-image .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: var(--secondary-color);
@@ -345,7 +348,7 @@
   height: 500px;
 }
 
-#geschtalt_slider .swiper-slide img {
+#geschtalt-slider .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -353,11 +356,11 @@
   max-width: 100%;
 }
 
-#geschtalt_slider .swiper-slide {
+#geschtalt-slider .swiper-slide {
   background-color: indianred;
 }
 
-#geschtalt_slider .arrows {
+#geschtalt-slider .arrows {
   grid-column: 3 / 4;
   display: flex;
   align-items: center;
@@ -366,8 +369,8 @@
   margin-top: 1em;
 }
 
-#geschtalt_slider .next,
-#geschtalt_slider .prev {
+#geschtalt-slider .next,
+#geschtalt-slider .prev {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,28 +383,28 @@
   cursor: pointer;
 }
 
-#geschtalt_slider .next[data-active_hover] {
+#geschtalt-slider .next[data-active_hover] {
   border-color: var(--main-color);
 }
 
-#geschtalt_slider .prev[data-active_hover] {
+#geschtalt-slider .prev[data-active_hover] {
   border-color: var(--main-color);
 }
 
-#geschtalt_slider .next[data-active_hover] .img_arrow,
-#geschtalt_slider .prev[data-active_hover] .img_arrow {
+#geschtalt-slider .next[data-active_hover] .img_arrow,
+#geschtalt-slider .prev[data-active_hover] .img_arrow {
   transform: rotate(360deg);
   transition: all 0.62s ease;
 }
 
 @media only screen and (max-width: 1020px) {
-  #geschtalt_slider .content {
+  #geschtalt-slider .content {
     grid-template-columns: repeat(1, 1fr);
     gap: 2.5em;
     padding: 32px 35px;
   }
 
-  #geschtalt_slider .intro {
+  #geschtalt-slider .intro {
     grid-column: span 1;
     position: relative;
     justify-content: center;
@@ -409,15 +412,15 @@
     align-items: center;
   }
 
-  #geschtalt_slider .title {
+  #geschtalt-slider .title {
     text-align: center;
   }
 
-  #geschtalt_slider .slider-image {
+  #geschtalt-slider .slider-image {
     grid-column: span 1;
   }
 
-  #geschtalt_slider .arrows {
+  #geschtalt-slider .arrows {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,28 +430,28 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #geschtalt_slider .content {
+  #geschtalt-slider .content {
     gap: 0.5em !important;
     padding: 32px 0;
   }
 
-  #geschtalt_slider .title {
+  #geschtalt-slider .title {
     font-size: 60px;
   }
 
-  #geschtalt_slider .description {
+  #geschtalt-slider .description {
     font-size: 15px;
     text-align: center;
   }
 
-  #geschtalt_slider .next,
-  #geschtalt_slider .prev {
+  #geschtalt-slider .next,
+  #geschtalt-slider .prev {
     width: 52px;
     height: 52px;
   }
 }
 
-/** geschtalt_slider end **/
+/** geschtalt-slider end **/
 
 /** geschtalt_about start **/
 
@@ -878,11 +881,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+    transition: all 0.33s ease;
 }
 
 #geschtalt-dishes .learn_more_cta[data-active_hover] {
   background-color: var(--secondary-color);
   color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 #geschtalt-dishes .cards {
@@ -1724,7 +1729,7 @@
   box-sizing: border-box;
 }
 
-#geschtalt-contact input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-inner-spin-button {
+#geschtalt-contact input:enabled:read-write:-webkit-any(:focus, [data-active_hover])::-webkit-inner-spin-button {
   display: none;
 }
 
@@ -1999,6 +2004,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.33s ease;
+  border-radius: 50%;
+}
+
+#geschtalt-footer .media-item[data-active_hover] {
+  background-color: var(--main-color);
 }
 
 #geschtalt-footer .copyright-text {

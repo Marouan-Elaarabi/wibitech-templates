@@ -1,0 +1,585 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-header start **/
+
+#athar-header {
+  --btn-color: #fff;
+  --sec-bg-color: #060606;
+  --main-bg-color: #303030;
+  --txt-color: #fff;
+}
+
+#athar-header {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  position: relative;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+}
+
+#athar-header .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#athar-header .content {
+  max-width: 1020px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 43px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(9.5px);
+}
+
+#athar-header .content .logo img {
+  width: 43px;
+  height: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#athar-header .content .athar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+#athar-header .content .athar-menu .link {
+  color: var(--txt-color);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-header .content .header-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--sec-bg-color);
+  background-color: var(--btn-color);
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px;
+}
+
+#athar-header .content .header-cta .cta-txt {
+  margin: 0;
+  color: var(--sec-bg-color);
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-header .content .header-cta .arrow-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#athar-header .content .drop-down {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #athar-header .content {
+    flex-direction: column;
+    max-height: 66.4px;
+    overflow: hidden;
+    padding: 15px 20px;
+    max-width: 80%;
+  }
+
+  #athar-header .content.open {
+    max-height: 758px;
+  }
+
+  #athar-header .content .logo {
+    width: 100%;
+  }
+
+  #athar-header .content .drop-down {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    transform: translateY(70%);
+  }
+
+  #athar-header .content .athar-menu .link,
+  #athar-header .content .header-cta .register {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  #athar-header .content.open .athar-menu .link,
+  #athar-header .content.open .header-cta .register {
+    pointer-events: unset;
+    opacity: 1;
+  }
+
+  #athar-header .content .athar-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+}
+
+/** athar-header end **/
+
+/** athar-hero start **/
+
+#athar-hero {
+  --btn-color: #fff;
+  --sec-bg-color: #060606;
+  --main-bg-color: #303030;
+  --txt-color: #fff;
+}
+
+#athar-hero {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--sec-bg-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#athar-hero .athar-hero-wrapper {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  background-image: url(./hero-img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+#athar-hero .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#athar-hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15rem;
+  height: 100%;
+}
+
+#athar-hero .content-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+
+#athar-hero .content-info .avalaibility-badge {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+#athar-hero .content-info .avalaibility-badge .circle {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #31EE33;
+}
+
+#athar-hero .content-info .avalaibility-badge .avalaibility-badge-txt {
+  color: var(--btn-color);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-hero .content-info .content-txt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+#athar-hero .content-info .content-heading-txt,
+#athar-hero .content-info .content-paragraph-txt {
+  color: var(--btn-color);
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+  max-width: 428px;
+}
+
+#athar-hero .content-info .content-paragraph-txt {
+  color: var(--btn-color);
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 376px;
+}
+
+#athar-hero .content-info .cta-btn {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  border-radius: 27px;
+  background-color: var(--btn-color);
+  color: var(--sec-bg-color);
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+#athar-hero .content-info .cta-btn .arrow-hero-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#athar-hero .content .socials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+#athar-hero .content .socials .contact,
+#athar-hero .content .socials .social-cards {
+  width: fit-content;
+}
+
+#athar-hero .content .socials .contact {
+  width: 200px;
+  margin: 0;
+  color: var(--btn-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.333px;
+}
+
+#athar-hero .content .socials .social-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#athar-hero .content .socials .social-card {
+  padding: 13px 9px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(133deg, #0C0C0C 51.29%, #727272 287.58%);
+  backdrop-filter: blur(4.5px);
+}
+
+@media screen and (max-width: 1020px) {
+  #athar-hero .athar-hero-wrapper {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+  }
+
+  #athar-hero .content,
+  #athar-hero .content-info,
+  #athar-hero .content .socials {
+    align-items: center;
+  }
+
+  #athar-hero .content {
+    gap: 8rem;
+  }
+
+  #athar-hero .content-info .content-txt {
+    text-align: center;
+  }
+}
+
+
+/** athar-hero end **/
+
+/** athar-about start **/
+
+#athar-about {
+  --btn-color: #fff;
+  --sec-bg-color: #060606;
+  --main-bg-color: #303030;
+  --txt-color: #fff;
+}
+
+#athar-about {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--sec-bg-color);
+  padding: 100px 0 50px;
+}
+
+#athar-about .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 87px;
+}
+
+#athar-about .content .about-imagery {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#athar-about .content .about-imagery .about-imagery-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+#athar-about .content .about-imagery .about-imagery-paragraph-txt {
+  color: var(--btn-color);
+  font-size: 10.543px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+
+#athar-about .content .about-imagery .rating-stars img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#athar-about .content .about-info {
+  max-width: 570px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  flex-direction: column;
+}
+
+#athar-about .content .about-info-heading,
+#athar-about .content .about-info-paragraph {
+  color: var(--btn-color);
+  text-align: right;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-about .content .about-info-paragraph {
+  font-size: 33px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1020px) {
+  #athar-about .content {
+    flex-direction: column-reverse;
+    gap: 45px;
+  }
+
+  #athar-about .content .about-info {
+    align-items: center;
+  }
+
+  #athar-about .content .about-info .about-info-heading,
+  #athar-about .content .about-info .about-info-paragraph {
+    text-align: center;
+  }
+
+  #athar-about .content .about-info .about-info-heading {
+    font-size: 30px;
+  }
+
+  #athar-about .content .about-info-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+/** athar-about end **/
+
+/** athar-projects start **/
+
+#athar-projects {
+  --btn-color: #fff;
+  --sec-bg-color: #060606;
+  --main-bg-color: #303030;
+  --txt-color: #fff;
+}
+
+#athar-projects {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--sec-bg-color);
+  padding: 50px 0;
+}
+
+#athar-projects .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-projects .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#athar-projects .section-heading-txt {
+  color: var(--txt-color);
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-projects .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+}
+
+#athar-projects .projects .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#athar-projects .projects .card .img {
+  width: 100%;
+  height: 383px;
+  border-radius: 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+#athar-projects .projects .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#athar-projects .projects .card .img .link {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 30px;
+  border-radius: 27px;
+  border: 1px solid var(--txt-color);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5.400000095367432px);
+  color: var(--txt-color);
+  text-decoration: none;
+}
+
+#athar-projects .projects .card .img .link img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+#athar-projects .projects .card .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#athar-projects .projects .card .info-heading,
+#athar-projects .projects .card .info-paragraph {
+  color: var(--txt-color);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-projects .projects .card .info-paragraph {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1020px) {
+  #athar-projects .projects {
+    grid-template-columns: 1fr;
+  }
+}
