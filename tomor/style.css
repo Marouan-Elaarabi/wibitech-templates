@@ -103,8 +103,8 @@
 
 #tomor-header .menu-icon {
   display: none;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -144,6 +144,8 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 767px) {}
 
 /** tomor-header end **/
 
@@ -250,6 +252,12 @@
   background-color: var(--btn-color);
   color: var(--txt-color-2);
   text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#tomor-hero .content .cta-wrapper a[data-active_hover] {
+  background-color: var(--btn-color);
+
 }
 
 #tomor-hero .content .hero-banner {
@@ -265,11 +273,13 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #tomor-hero .content .heading-title {
     font-size: 37px;
   }
 }
+
+@media screen and (max-width: 767px) {}
 
 /** tomor-hero end **/
 
@@ -376,6 +386,12 @@
   background-color: var(--btn-color);
   color: var(--txt-color-2);
   text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#tomor-best-products .content .cta-wrapper a[data-active_hover] {
+  background-color: var(--btn-color);
+
 }
 
 #tomor-best-products .content .products-grid {
@@ -426,7 +442,7 @@
   color: var(--sec-bg-color);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #tomor-best-products .content .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -556,7 +572,7 @@
   line-height: 1.3;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #tomor-benefits {
     padding: 40px 15px;
   }
@@ -808,6 +824,8 @@
   }
 }
 
+@media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 767px) {
   #tomor-testimonials .testimonial-heading {
     padding: 0 15px;
@@ -992,6 +1010,12 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 14px;
+  transition: all 0.33s ease;
+}
+
+#tomor-offers .offer-info-content .cta-btn[data-active_hover] {
+  background-color: var(--sec-bg-color);
+
 }
 
 #tomor-offers .offer-img {
@@ -1008,7 +1032,7 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #tomor-offers .offer-info-content {
     padding: 60px 15px;
     max-width: unset;
@@ -1183,6 +1207,7 @@
   box-sizing: border-box;
   direction: rtl;
   outline: none;
+  font-family: "El Messiri", sans-serif;
 }
 
 #tomor-contact .form-tomor label textarea {
@@ -1219,9 +1244,16 @@
   line-height: 16px;
   border: 0;
   cursor: pointer;
+  transition: all 0.33s ease;
+  font-family: "El Messiri", sans-serif;
 }
 
-@media screen and (max-width: 1020px) {
+#tomor-contact .form-tomor .button-cta[data-active_hover] {
+  background-color: var(--txt-color-1);
+
+}
+
+@media screen and (max-width: 1024px) {
   #tomor-contact {
     background-color: var(--main-bg-color);
     padding: 40px 15px;
@@ -1233,7 +1265,7 @@
   }
 
 
-  #tomor-contact .container  {
+  #tomor-contact .container {
 
     border-radius: 20px;
     background-color: #E8DEBA;
@@ -1350,9 +1382,17 @@
   justify-content: center;
   align-items: center;
   padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.33s ease;
 }
 
-@media screen and (max-width: 1020px) {
+#tomor-footer .social-icon[data-active_hover] {
+  background-color: var(--btn-color);
+}
+
+@media screen and (max-width: 1024px) {
   #tomor-footer .content {
     flex-direction: column;
     gap: 25px;
@@ -1362,3 +1402,7 @@
     gap: 40px;
   }
 }
+
+@media screen and (max-width: 767px) {}
+
+/** tomor-footer end **/

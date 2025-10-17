@@ -148,7 +148,7 @@
   color: #2b2b2b;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-our-team .content {
     padding: 100px 35px;
   }

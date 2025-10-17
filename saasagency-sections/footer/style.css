@@ -91,7 +91,7 @@
   line-height: 24px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-footer .content {
     flex-direction: column;
     gap: 20px;

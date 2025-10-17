@@ -179,7 +179,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-contact .content {
     padding: 60px 35px;
   }

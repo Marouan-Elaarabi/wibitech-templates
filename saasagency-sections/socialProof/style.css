@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-social-proof .logo-container {
     grid-template-columns: repeat(6, 1fr);
   }

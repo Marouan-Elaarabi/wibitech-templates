@@ -176,7 +176,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-testimonials .content {
     padding: 42px 35px;
     flex-direction: column;

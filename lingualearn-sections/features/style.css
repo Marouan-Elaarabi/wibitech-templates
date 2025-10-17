@@ -129,7 +129,7 @@
   color: var(--shades-10);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-features .content {
     padding: 0 35px;
   }

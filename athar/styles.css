@@ -100,7 +100,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #athar-header .content {
     flex-direction: column;
     max-height: 66.4px;
@@ -121,8 +121,17 @@
     display: block;
     position: absolute;
     left: 20px;
-    top: 10px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
     transform: translateY(70%);
+  }
+
+  #athar-header .content .drop-down img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   #athar-header .content .athar-menu .link,
@@ -320,7 +329,7 @@
   backdrop-filter: blur(4.5px);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #athar-hero .athar-hero-wrapper {
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -383,6 +392,11 @@
   gap: 30px;
 }
 
+#athar-about .content .about-imagery .img,
+#athar-about .content .about-imagery .img img {
+  width: 100%;
+}
+
 #athar-about .content .about-imagery .about-imagery-txt {
   display: flex;
   justify-content: space-between;
@@ -432,7 +446,7 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #athar-about .content {
     flex-direction: column-reverse;
     gap: 45px;
@@ -578,8 +592,143 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #athar-projects .projects {
     grid-template-columns: 1fr;
   }
 }
+
+/** athar-projects end **/
+
+/** athar-why start **/
+
+#athar-why {
+  --btn-color: #fff;
+  --sec-bg-color: #060606;
+  --main-bg-color: #303030;
+  --txt-color: #fff;
+}
+
+#athar-why {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--sec-bg-color);
+  padding: 50px 0;
+}
+
+#athar-why .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-why .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#athar-why .section-heading-txt {
+  color: var(--txt-color);
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-why .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  width: 100%;
+}
+
+#athar-why .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(104deg, #2B2B2B -54.54%, #151515 98.18%);
+}
+
+#athar-why .cards .card .icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2E2E2E;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+}
+
+#athar-why .cards .card .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#athar-why .cards .card .card-paragraph {
+  color: var(--txt-color);
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-why .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+#athar-why .cta .cta-btn {
+  padding: 20px 70px;
+  border-radius: 47px;
+  background: var(--txt-color);
+  color: var(--sec-bg-color);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+#athar-why .cta .cta-scarcity {
+  color: var(--txt-color);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #athar-why .cards {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 767px) {
+  #athar-why .cards {
+    grid-template-columns: 1fr;
+}
+}
+
+/** athar-why end **/

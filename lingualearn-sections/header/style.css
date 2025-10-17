@@ -168,7 +168,7 @@
   width: 30px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #lingualearn-header {
     padding: 0 35px;
   }

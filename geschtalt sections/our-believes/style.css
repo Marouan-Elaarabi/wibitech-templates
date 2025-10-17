@@ -128,7 +128,7 @@
   width: fit-content;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #geschtalt-ourbelieves .ourbelieves-content {
     flex-direction: column-reverse;
     gap: 5em;

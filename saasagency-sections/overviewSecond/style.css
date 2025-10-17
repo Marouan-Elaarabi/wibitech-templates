@@ -150,7 +150,7 @@
   color: #F5F5F5;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-overview-sec .content {
     flex-direction: column-reverse;
     padding: 60px 35px 95px;

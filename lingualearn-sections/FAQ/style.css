@@ -190,7 +190,7 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #lingualearn-faq .container .content {
     flex-direction: column;
     padding: 90px 35px;

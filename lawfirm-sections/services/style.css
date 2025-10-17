@@ -169,7 +169,7 @@
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-services .content {
     padding: 80px 35px;
   }

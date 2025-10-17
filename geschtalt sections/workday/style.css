@@ -163,7 +163,7 @@
   background-color: var(--main-color);
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #geschtalt-workday .content {
     flex-direction: column-reverse;
     padding: 32px 35px;

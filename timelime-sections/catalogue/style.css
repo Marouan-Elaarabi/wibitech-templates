@@ -236,7 +236,7 @@
   line-height: 1.5;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #timelime-catalogue .content {
     flex-direction: column;
   }

@@ -116,7 +116,7 @@
   aspect-ratio: 1/1;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-teachers .content {
     padding: 100px 35px 60px;
   }

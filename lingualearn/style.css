@@ -174,7 +174,7 @@
   width: 30px;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #lingualearn-header {
     padding: 0 35px;
   }
@@ -426,6 +426,8 @@
   }
 }
 
+@media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 767px) {
   #lingualearn-hero .container {
     padding: 0px 15px;
@@ -565,7 +567,7 @@
 }
 
 /** tablet media query */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-about {
     padding: 70px 0 50px;
   }
@@ -833,7 +835,7 @@
 }
 
 /** tablet media query */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-courses .container .content {
     padding: 0 35px;
     padding: 125px 35px 115px;
@@ -1029,7 +1031,7 @@
   color: var(--shades-10);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-features .content {
     padding: 0 35px;
   }
@@ -1260,7 +1262,7 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #lingualearn-faq .container .content {
     flex-direction: column;
     padding: 90px 35px;
@@ -1414,7 +1416,7 @@
   aspect-ratio: 1/1;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-teachers .content {
     padding: 100px 35px 60px;
   }
@@ -1608,6 +1610,8 @@
   background-color: var(--fourth-color);
   color: var(--tints-10);
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #lingualearn-form .content {
@@ -1805,7 +1809,7 @@
 #lingualearn-footer .footer-links-container .social-media-links>div a[data-active_hover] {
   background-color: var(--secondary-color);
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-footer .content {
     padding: 100px 35px;
   }

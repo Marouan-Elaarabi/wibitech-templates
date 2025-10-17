@@ -103,7 +103,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-header .navigation-links {
     display: flex;
     justify-content: center;
@@ -384,7 +384,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-social-proof .logo-container {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -630,7 +630,7 @@
   color: rgba(var(--txt-color), .7);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-benefits .content {
     padding: 60px 35px;
   }
@@ -827,7 +827,7 @@
 }
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-overview .content {
     flex-direction: column-reverse;
     padding: 60px 35px 95px;
@@ -997,7 +997,7 @@
   color: rgba(var(--txt-color), .7);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-overview-sec .content {
     flex-direction: column-reverse;
     padding: 60px 35px 95px;
@@ -1161,7 +1161,7 @@
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-testimonials .content {
     padding: 90px 35px;
   }
@@ -1410,7 +1410,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-pricing .content {
     padding: 60px 25px;
   }
@@ -1791,7 +1791,7 @@
   color: rgba(var(--txt-color), .7);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-contact .form-saasagency {
     width: 100%;
   }
@@ -1911,7 +1911,7 @@
   line-height: 24px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-footer .content {
     flex-direction: column;
     gap: 20px;

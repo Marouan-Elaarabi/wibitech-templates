@@ -96,6 +96,9 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+}
+
 @media only screen and (max-width: 767px) {
   #clean-header .upperbody {
     --gap: 40px;
@@ -313,7 +316,7 @@
   }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #clean-hero {
     padding: 0 0 35px;
   }
@@ -382,7 +385,7 @@
 
 /** clean-hero end **/
 
-/** clean-catalogue start **/
+/** clean-form start **/
 
 #clean-form {
   --tints-1: #fbd7b9;
@@ -764,6 +767,9 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+}
+
 @media screen and (max-width: 767px) {
   #clean-form .content {
     padding: 30px 0px;
@@ -786,7 +792,7 @@
   }
 }
 
-/** clean-catalogue end **/
+/** clean-form end **/
 
 /** clean-benefits start **/
 
@@ -881,7 +887,7 @@
   max-width: 256px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #clean-benefits .benefits-cards {
     grid-template-columns: repeat(1, 1fr);
     padding: 40px 0px;
@@ -1031,7 +1037,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #clean-testemonials .content {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1127,6 +1133,7 @@
   color: var(--btn-color);
 }
 
+@media screen and (max-width: 1024px) {}
 @media screen and (max-width: 767px) {
   #clean-cta {
     padding: 30px 0;
@@ -1198,5 +1205,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 767px) {}
 
 /** clean-footer end **/

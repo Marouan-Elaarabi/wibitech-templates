@@ -141,7 +141,7 @@
   color: var(--tints-10);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #timelime-testemonials .container .content {
     grid-template-columns: repeat(2, 1fr);
   }

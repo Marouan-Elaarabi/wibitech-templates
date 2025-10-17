@@ -118,7 +118,7 @@
 }
 
 /** tablet media query */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-about {
     padding: 70px 0 50px;
   }

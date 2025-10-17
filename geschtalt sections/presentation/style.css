@@ -116,7 +116,7 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #geschtalt_presentation .item {
     flex: 1 1 calc(100% - 20px);
     display: flex;

@@ -114,7 +114,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-header .navigation-links {
     display: flex;
     justify-content: center;
@@ -307,7 +307,8 @@
   overflow: hidden;
 }
 
-/** mobile media query */
+@media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 767px) {
   #saasagency-hero {
     padding: 92px 0px;
@@ -407,7 +408,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-social-proof .logo-container {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -525,6 +526,8 @@
 #saasagency-stats .content .stat-item:not(:last-of-type) {
   border-left: 1px solid #ffffff4a;
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #saasagency-stats {
@@ -653,7 +656,7 @@
   color: rgba(var(--txt-color), .7);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-benefits .content {
     padding: 60px 35px;
   }
@@ -850,7 +853,7 @@
 }
 
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-overview .content {
     flex-direction: column-reverse;
     padding: 60px 35px 95px;
@@ -1020,7 +1023,7 @@
   color: rgba(var(--txt-color), .7);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-overview-sec .content {
     flex-direction: column-reverse;
     padding: 60px 35px 95px;
@@ -1184,7 +1187,7 @@
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-testimonials .content {
     padding: 90px 35px;
   }
@@ -1438,7 +1441,7 @@
   background-color: var(--btn-color);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-pricing .content {
     padding: 60px 25px;
   }
@@ -1611,6 +1614,8 @@
   margin: 0;
   padding: 0 33px 28px;
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media only screen and (max-width: 767px) {
   #saasagency-faq {
@@ -1937,7 +1942,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-contact .form-saasagency {
     width: 100%;
   }
@@ -2062,7 +2067,7 @@
   color: rgba(var(--txt-color), 1);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-footer .content {
     flex-direction: column;
     gap: 20px;
@@ -2073,7 +2078,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #saasagency-footer .container {
     padding: 0px 12px;
   }

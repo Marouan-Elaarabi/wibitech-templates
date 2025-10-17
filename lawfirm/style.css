@@ -187,7 +187,7 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #lawfirm-header .content {
     padding: 0 35px;
   }
@@ -425,7 +425,7 @@
   background-color: var(--tints-10);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-hero .content {
     padding: 0 35px;
   }
@@ -610,7 +610,7 @@
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-services .content {
     padding: 80px 35px;
   }
@@ -814,7 +814,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-testimonials .content {
     padding: 42px 35px;
     flex-direction: column;
@@ -1015,7 +1015,7 @@
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-results .content {
     padding: 90px 35px;
   }
@@ -1201,7 +1201,7 @@
   color: #2b2b2b;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-our-team .content {
     padding: 100px 35px;
   }
@@ -1441,7 +1441,7 @@
   color: var(--tints-10);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lawfirm-contact .content {
     padding: 60px 35px;
   }
@@ -1584,5 +1584,8 @@
 #lawfirm-footer .content .contact-info .email-container {
   margin-bottom: 15px;
 }
+
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 767px) {}
 
 /** lawfirm-footer end **/

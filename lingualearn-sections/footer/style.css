@@ -157,7 +157,7 @@
   background-color: var(--main-color);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-footer .content {
     padding: 100px 35px;
   }

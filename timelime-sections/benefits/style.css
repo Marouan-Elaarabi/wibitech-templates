@@ -132,7 +132,7 @@
   line-height: 1.2;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #timelime-benefits .benefits-cards {
     grid-template-columns: repeat(3, 1fr);
   }

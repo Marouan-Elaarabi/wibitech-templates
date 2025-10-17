@@ -1,0 +1,376 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** thobe-price-offer start **/
+
+#thobe-price-offer {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-price-offer {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 30px 0;
+}
+
+#thobe-price-offer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-price-offer .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 17.5px;
+}
+
+#thobe-price-offer .upper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#thobe-price-offer .upper-content .heading-txt {
+  max-width: 210px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--shades-10);
+  margin: 0;
+}
+
+#thobe-price-offer .upper-content .product-rates,
+#thobe-price-offer .upper-content .product-rates-imgs,
+#thobe-price-offer .upper-content .product-rates-info-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thobe-price-offer .upper-content .product-rates {
+  gap: 30px;
+}
+
+#thobe-price-offer .upper-content .product-rates-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  background-color: var(--tints-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -5px;
+  position: relative;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(1) {
+  transform: rotate(-9.23deg);
+  z-index: 1;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(2) {
+  transform: rotate(10.81deg);
+  z-index: 2;
+}
+
+#thobe-price-offer .upper-content .product-rates-img:nth-last-of-type(3) {
+  transform: rotate(-20.92deg);
+  z-index: 3;
+}
+
+#thobe-price-offer .upper-content .product-rates-img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+#thobe-price-offer .upper-content .product-rates-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#thobe-price-offer .upper-content .product-rates-info-stars {
+  gap: 3px;
+}
+
+#thobe-price-offer .upper-content .product-rates-info-star {
+  padding: 2px 0;
+}
+
+#thobe-price-offer .upper-content .product-rates-info-txt {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--shades-10);
+}
+
+#thobe-price-offer .lower-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-height: 672px;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .price-timer-countdown,
+#thobe-price-offer .lower-content .product-showcase-img {
+  flex: 1;
+}
+
+#thobe-price-offer .lower-content .price-timer-countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .price-box,
+#thobe-price-offer .lower-content .timer-countdown-box {
+  background-color: var(--tints-10);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  height: calc(100% - 30px);
+  box-sizing: border-box;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box {
+  background-color: #E8E8E1;
+}
+
+#thobe-price-offer .lower-content .price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#thobe-price-offer .lower-content .price-wrapper .discounted-price {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--shades-10);
+  margin: 0;
+}
+
+#thobe-price-offer .lower-content .price-wrapper .original-price {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--shades-10);
+  text-decoration: line-through;
+  margin: 0;
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta {
+  width: fit-content;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 18px 30px;
+  text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta[data-active_hover] {
+  background-color: var(--btn-color);
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta-txt {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  color: var(--tints-10);
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timeleft {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--btn-color);
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div {
+  background-color: var(--btn-color);
+  width: 90px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+  position: relative;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::before {
+  content: ":";
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-62%);
+  color: var(--btn-color);
+  font-size: 70px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::after {
+  content: ":";
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translateY(-62%);
+  color: var(--btn-color);
+  font-size: 70px;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div p {
+  margin: 0;
+  color: var(--tints-10);
+  line-height: .5;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-digits {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-txt {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#thobe-price-offer .lower-content .product-showcase-img {
+  overflow: hidden;
+  padding: 2px 0;
+}
+
+#thobe-price-offer .lower-content .product-showcase-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  #thobe-price-offer .lower-content .price-wrapper .discounted-price {
+    font-size: 42px;
+  }
+
+  #thobe-price-offer .lower-content .price-wrapper .original-price {
+    font-size: 20px;
+  }
+
+  #thobe-price-offer .lower-content .price-box .buy-cta-txt {
+    font-size: 16px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown {
+    gap: 20px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown>div {
+    width: 80px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::before {
+    left: -19px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-countdown-hours::after {
+    right: -17px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-digits {
+    font-size: 30px;
+  }
+
+  #thobe-price-offer .lower-content .timer-countdown-box .timer-countdown .timer-txt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-price-offer .content {
+    padding: 0;
+  }
+
+  #thobe-price-offer .upper-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  #thobe-price-offer .lower-content {
+    flex-direction: column;
+    max-height: unset;
+  }
+
+  #thobe-price-offer .lower-content .price-box,
+  #thobe-price-offer .lower-content .timer-countdown-box {
+    height: 322px;
+  }
+
+  #thobe-price-offer .lower-content .product-showcase-img {
+    aspect-ratio: 1;
+  }
+}
+
+/** thobe-price-offer end **/

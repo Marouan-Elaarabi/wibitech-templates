@@ -233,7 +233,7 @@
 }
 
 /** tablet media query */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #lingualearn-courses .container .content {
     padding: 0 35px;
     padding: 125px 35px 115px;

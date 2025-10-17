@@ -160,7 +160,7 @@
   flex: 0 0 auto;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #geschtalt_about .about-us-container {
     flex-direction: column;
     gap: 32px;

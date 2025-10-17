@@ -189,7 +189,7 @@
   color: #b4b4b4;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-contact .form-saasagency {
     width: 100%;
   }

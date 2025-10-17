@@ -85,6 +85,10 @@
   background-color: var(--tints-10);
 }
 
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 767px) {}
+
 /** thobe-header end **/
 
 /** thobe-hero start **/
@@ -193,6 +197,12 @@
   gap: 30px;
   padding: 18px 30px;
   box-sizing: border-box;
+  transition: all 0.33s ease;
+
+}
+
+#thobe-hero .content-info .buy-cta[data-active_hover] {
+  background-color: var(--main-bg-color);
 }
 
 #thobe-hero .content-info .buy-cta-txt {
@@ -250,6 +260,8 @@
   line-height: 1.3;
   color: var(--tints-10);
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #thobe-hero .content-info {
@@ -490,6 +502,11 @@
   gap: 30px;
   padding: 18px 30px;
   text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#thobe-price-offer .lower-content .price-box .buy-cta[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #thobe-price-offer .lower-content .price-box .buy-cta-txt {
@@ -577,7 +594,7 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #thobe-price-offer .lower-content .price-wrapper .discounted-price {
     font-size: 42px;
   }
@@ -717,6 +734,8 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 767px) {
   #thobe-benefits .content {
     padding: 0;
@@ -789,6 +808,11 @@
   gap: 30px;
   padding: 18px 30px;
   text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#thobe-cta .content .buy-cta[data-active_hover] {
+  background-color: var(--btn-color);
 }
 
 #thobe-cta .content .buy-cta-txt {
@@ -798,6 +822,8 @@
   margin: 0;
   color: var(--tints-10);
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #thobe-cta .content {
@@ -919,6 +945,8 @@
   }
 }
 
+@media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 767px) {
   #thobe-testimonials .content {
     padding: 50px 0;
@@ -1030,6 +1058,12 @@
   gap: 30px;
   padding: 18px 30px;
   text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#thobe-guarantie .content .buy-cta[data-active_hover] {
+  background-color: var(--tints-10);
+
 }
 
 #thobe-guarantie .content .buy-cta-txt {
@@ -1039,6 +1073,8 @@
   margin: 0;
   color: var(--shades-10);
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #thobe-guarantie .content {
@@ -1291,6 +1327,11 @@
   border: none;
   cursor: pointer;
   font-family: "Tajawal", sans-serif;
+  transition: all 0.33s ease;
+}
+
+#thobe-form .form-thobe .button-cta[data-active_hover] {
+  background-color: var(--sec-bg-color);
 }
 
 #thobe-form .form-footer {
@@ -1311,6 +1352,8 @@
   text-align: center;
   color: var(--sec-bg-color);
 }
+
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 767px) {
   #thobe-form .content {
@@ -1389,5 +1432,9 @@
   width: 100%;
   object-fit: contain;
 }
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 767px) {}
 
 /** thobe-footer end **/

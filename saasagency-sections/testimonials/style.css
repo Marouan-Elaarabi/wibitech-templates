@@ -142,7 +142,7 @@
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #saasagency-testimonials .content {
     padding: 90px 35px;
   }
