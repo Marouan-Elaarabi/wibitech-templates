@@ -64,6 +64,10 @@
   padding: 14px 2px;
 }
 
+#lingualearn-header .content .logo img {
+  object-fit: contain;
+}
+
 #lingualearn-header .oa-menu-actions {
   display: flex;
   flex: 1;
@@ -759,6 +763,7 @@
 
 #lingualearn-courses .courses-list .course-card .image img {
   width: 100%;
+  object-fit: cover;
 }
 
 #lingualearn-courses .courses-list .course-card .course-details,
@@ -999,6 +1004,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 21px;
+}
+
+#lingualearn-features .features-items-container .icon img {
+  object-fit: contain;
 }
 
 #lingualearn-features .features-items-container .feature,
@@ -1248,6 +1257,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  object-fit: cover;
 }
 
 #lingualearn-faq .faq-image-container .before {
@@ -1720,6 +1730,10 @@
   padding: 2px 0;
 }
 
+#lingualearn-footer .platform-description-inner-container .logo-container img {
+  object-fit: contain;
+}
+
 #lingualearn-footer .platform-description-text-container {
   margin: 0;
   padding: 2px 0;
@@ -1809,6 +1823,11 @@
 #lingualearn-footer .footer-links-container .social-media-links>div a[data-active_hover] {
   background-color: var(--secondary-color);
 }
+
+#lingualearn-footer .footer-links-container .social-media-links>div a img {
+  object-fit: contain;
+}
+
 @media screen and (max-width: 1024px) {
   #lingualearn-footer .content {
     padding: 100px 35px;

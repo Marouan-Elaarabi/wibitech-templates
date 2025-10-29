@@ -6,6 +6,8 @@
 /** ouasl-header start **/
 
 #ouasl-header {
+  --main-color: #0D74E3;
+
   --tints-1: #2582e6;
   --tints-2: #3d90e9;
   --tints-3: #569eeb;
@@ -28,10 +30,9 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-header {
@@ -42,7 +43,7 @@
   width: 100%;
   top: 0px;
   z-index: 100;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
 }
 
 #ouasl-header .container {
@@ -87,19 +88,19 @@
 }
 
 #ouasl-header .content .ouasl-menu .link {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-decoration: none;
   transition: all 0.33s ease;
 }
 
 #ouasl-header .content .ouasl-menu .link[data-active_hover] {
-  color: var(--btn-color);
+  color: var(--main-color);
 }
 
 #ouasl-header .content .header-cta .register {
   display: block;
-  color: var(--txt-color);
-  background-color: var(--btn-color);
+  color: var(--fourth-color);
+  background-color: var(--main-color);
   text-decoration: none;
   border: none;
   text-align: center;
@@ -109,7 +110,7 @@
 }
 
 #ouasl-header .content .header-cta .register[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #ouasl-header .content .drop-down {
@@ -199,10 +200,10 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-hero {
@@ -245,7 +246,7 @@
 #ouasl-hero .heading-paragraph .heading-txt,
 #ouasl-hero .heading-paragraph .paragraph-txt {
   margin: 0;
-  color: var(--txt-color);
+  color: var(--fourth-color);
   line-height: 1.1;
 }
 
@@ -296,7 +297,7 @@
 
 #ouasl-hero .form-ouasl label.email input {
   border: 0.75px solid #898E93;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   border-radius: 20px;
   padding: 18px 20px;
   box-sizing: border-box;
@@ -310,8 +311,8 @@
 }
 
 #ouasl-hero .form-ouasl .submit-btn .subscribe {
-  background-color: var(--btn-color);
-  color: var(--txt-color);
+  background-color: var(--main-color);
+  color: var(--fourth-color);
   padding: 12px 24px;
   border: none;
   border-radius: 15px;
@@ -321,7 +322,7 @@
 }
 
 #ouasl-hero .form-ouasl .submit-btn .subscribe[data-active_hover] {
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
 }
 
 #ouasl-hero .social-proof-wrapper,
@@ -351,13 +352,13 @@
   width: 30px;
   height: 30px;
   overflow: hidden;
-  border: 1px solid var(--main-bg-color);
+  border: 1px solid var(--third-color);
   border-radius: 50%;
   object-fit: cover;
 }
 
 #ouasl-hero .social-proof-wrapper .social-proof-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   font-size: 15px;
   font-weight: 500;
@@ -376,13 +377,13 @@
 }
 
 #ouasl-hero .social-proof-wrapper .social[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #ouasl-hero .social-proof-wrapper .social img {
   width: 15px;
   height: 15px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {}
@@ -458,17 +459,17 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-video {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-clip: border-box;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
 }
 
 #ouasl-video .container {
@@ -530,17 +531,17 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-benefits {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-clip: border-box;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 30px 0;
 }
 
@@ -573,7 +574,7 @@
 #ouasl-benefits .benefits-heading .heading-txt,
 #ouasl-benefits .benefits-heading .heading-paragraph {
   margin: 0;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #ouasl-benefits .benefits-heading .heading-txt {
@@ -665,7 +666,7 @@
 #ouasl-benefits .cards .card-txt .card-heading,
 #ouasl-benefits .cards .card-txt .card-paragragh {
   margin: 0;
-  color: var(--sec-bg-color);
+  color: var(--secondary-color);
 }
 
 #ouasl-benefits .cards .card-txt .card-heading {
@@ -718,17 +719,17 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-brand-trust {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-clip: border-box;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 30px 0;
 }
 
@@ -757,7 +758,7 @@
 #ouasl-brand-trust .brand-heading .brand-heading-txt,
 #ouasl-brand-trust .brand-heading .brand-heading-paragraph {
   margin: 0;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #ouasl-brand-trust .brand-heading .brand-heading-txt {
@@ -799,12 +800,12 @@
 
 #ouasl-brand-trust .stock-ticker .before {
   left: 0;
-  background: linear-gradient(to right, var(--sec-bg-color) 70%, transparent);
+  background: linear-gradient(to right, var(--secondary-color) 70%, transparent);
 }
 
 #ouasl-brand-trust .stock-ticker .after {
   right: 0;
-  background: linear-gradient(to left, var(--sec-bg-color) 70%, transparent);
+  background: linear-gradient(to left, var(--secondary-color) 70%, transparent);
 }
 
 #ouasl-brand-trust .stock-ticker ul {
@@ -824,7 +825,10 @@
 }
 
 #ouasl-brand-trust .stock-ticker ul img {
+  width: 150px;
   height: 40px;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -876,17 +880,17 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-faq {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
   background-clip: border-box;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 30px 0;
 }
 
@@ -919,7 +923,7 @@
   line-height: 1.1;
   margin: 0;
   text-align: center;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #ouasl-faq .accordion {
@@ -982,7 +986,7 @@
   margin: 0;
   width: 100%;
   position: relative;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #ouasl-faq .accordion details summary .icon {
@@ -1002,7 +1006,7 @@
 }
 
 #ouasl-faq .accordion details .description {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   line-height: 28px;
   font-weight: 400;
   font-size: 15px;
@@ -1057,10 +1061,10 @@
   --shades-9: #010c17;
   --shades-10: #000000;
 
-  --btn-color: #0D74E3;
-  --sec-bg-color: #010202;
-  --main-bg-color: #121416;
-  --txt-color: #F5F5F5;
+  --main-color: #0D74E3;
+  --secondary-color: #010202;
+  --third-color: #121416;
+  --fourth-color: #F5F5F5;
 }
 
 #ouasl-footer {
@@ -1101,8 +1105,21 @@
   max-width: 160px;
 }
 
+#ouasl-footer .content .upper .logo-paragraph .logo {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+
+#ouasl-footer .content .upper .logo-paragraph .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 #ouasl-footer .content .upper .logo-paragraph-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -1128,7 +1145,7 @@
 #ouasl-footer .content .upper .footer-cta-heading-txt,
 #ouasl-footer .content .upper .footer-cta-paragraph-txt {
   margin: 0;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #ouasl-footer .content .upper .footer-cta-heading-txt {
@@ -1155,8 +1172,8 @@
 
 #ouasl-footer .content .upper .footer-cta .get-started {
   display: block;
-  background-color: var(--btn-color);
-  color: var(--txt-color);
+  background-color: var(--main-color);
+  color: var(--fourth-color);
   border-radius: 20px;
   font-size: 20px;
   font-weight: 500;
@@ -1168,7 +1185,7 @@
 }
 
 #ouasl-footer .content .upper .footer-cta .get-started[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #ouasl-footer .content .lower,
@@ -1187,7 +1204,7 @@
 }
 
 #ouasl-footer .content .lower .copyright-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   font-size: 15px;
   font-weight: 400;
@@ -1210,13 +1227,13 @@
 }
 
 #ouasl-footer .content .lower .social[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #ouasl-footer .content .lower .social img {
   width: 15px;
   height: 15px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {

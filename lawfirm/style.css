@@ -311,25 +311,22 @@
   --fourth-color: #eff2f2;
 
   font-family: "Markazi Text", serif;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100svh;
   color: var(--tints-10);
   position: relative;
   overflow: hidden;
   z-index: 0;
   box-sizing: border-box;
-}
-
-#lawfirm-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background-image: url(./hero-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#lawfirm-hero::before {
+  /* content: ""; */
+  position: absolute;
+  inset: 0;
   transform: scaleX(-1);
   z-index: -2;
   background-color: #0000004D;
@@ -1552,6 +1549,7 @@
 
 #lawfirm-footer .content .social-media-icons .social-btn img {
   display: flex;
+  object-fit: cover;
 }
 
 #lawfirm-footer .content .footer-wrapper {
@@ -1583,6 +1581,18 @@
 #lawfirm-footer .content .footer-wrapper .copyright-info,
 #lawfirm-footer .content .contact-info .email-container {
   margin-bottom: 15px;
+}
+
+#lawfirm-footer .content .logo {
+  margin: 0 auto;
+  width: 150px;
+  height: 90px;
+  overflow: hidden;
+}
+
+#lawfirm-footer .content .logo img {
+  width: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {}

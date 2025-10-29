@@ -695,6 +695,7 @@
   border-radius: 12px;
   background-color: transparent;
   box-sizing: border-box;
+  font-family: "Cairo", serif;
 }
 
 #clean-form .form-clean label select {

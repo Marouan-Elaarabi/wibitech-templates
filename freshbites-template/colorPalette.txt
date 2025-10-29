@@ -1,0 +1,7 @@
+colorsThemes: [
+  {name: "green" colors: ['#189D58', "#024C2F", "#95CB42", "#FFFFFF"]},
+  {name: "brown" colors: ['#DD6236', "#8B4513", "#D4712A", "#F7EEDD"]},
+  {name: "red" colors: ['#810000', "#630000", "#9A3E3E", "#EEEBDD"]},
+  {name: "blue" colors: ['#246F7A', "#032E35", "#3497A5", "#FBF8E9"]},
+  {name: "yellow" colors: ['#FF9B17', "#603103", "#B46700", "#FBF8E9"]},
+];
