@@ -33,6 +33,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -69,7 +70,7 @@
   margin: 0;
 }
 
-#timelime-header .count-down>p {
+#timelime-header .count-down .timer-digits  {
   width: 27px;
   height: 27px;
   display: flex;
@@ -85,7 +86,9 @@
   margin: 0;
 }
 
-#timelime-header .count-down>div:not(:first-of-type)::before {
+#timelime-header .count-down > div {position: relative;}
+
+#timelime-header .count-down > div:not(:first-of-type)::before {
   content: ":";
   position: absolute;
   right: -5px;
@@ -132,6 +135,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -243,6 +247,7 @@
 
 #timelime-hero .container .product-cta-container .product-img img {
   border-radius: 8px;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -321,7 +326,7 @@
 
 #timelime-hero .container .social-proof .social-proof-stars-img img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #timelime-hero .container .social-proof .social-proof-bias {
@@ -347,6 +352,14 @@
 
 #timelime-hero .container .timelime-product-advantage-logo {
   padding: 2px 0;
+  width: 25px;height: 25px;overflow: hidden;
+  box-sizing: border-box;
+}
+
+#timelime-hero .container .timelime-product-advantage-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #timelime-hero .container .timelime-product-advantage-info {
@@ -469,6 +482,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -622,6 +636,11 @@
 
 #timelime-catalogue .discount-rate .discount-imagery {
   padding: 2px 0;
+  width: 20px;height: 20px;overflow: hidden;
+}
+
+#timelime-catalogue .discount-rate .discount-imagery img {
+  width: 100%;height: 100%;object-fit: contain;
 }
 
 #timelime-catalogue .discount-rate .buy-cta {
@@ -763,6 +782,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -845,6 +865,11 @@
   align-items: center;
 }
 
+#timelime-benefits .benefits-cards .icon-illustration img {
+  width: 100%;
+  height: 100%;object-fit: contain;
+}
+
 #timelime-benefits .benefits-cards .benefits-card-descriptive {
   margin: 0;
   color: var(--tints-10);
@@ -925,6 +950,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -1007,7 +1033,7 @@
 #timelime-testemonials .testemonial-card .rating-star img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #timelime-testemonials .testemonial-card .testemonial-text {
@@ -1077,6 +1103,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -1425,6 +1452,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -1467,7 +1495,7 @@
 
 #timelime-buying-exp .content .buying-exp .img img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #timelime-buying-exp .content .buying-exp .buying-exp-txt {
@@ -1521,6 +1549,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -1718,6 +1747,7 @@
 
   --secondary-color: #024B3A;
   --third-color: #00664E;
+  --fourth-color: #fff;
 
   font-family: "Almarai", serif;
   direction: rtl;
@@ -1743,7 +1773,7 @@
 
 #timelime-footer .container .content img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {}

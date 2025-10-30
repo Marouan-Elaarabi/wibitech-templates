@@ -6,10 +6,10 @@
 /** athar-header start **/
 
 #athar-header {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-header {
@@ -20,7 +20,7 @@
   top: 0px;
   z-index: 100;
   height: 80px;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
 }
 
 #athar-header .container {
@@ -51,7 +51,7 @@
   width: 43px;
   height: 30px;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #athar-header .content .athar-menu {
@@ -64,7 +64,7 @@
 }
 
 #athar-header .content .athar-menu .link {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-decoration: none;
   font-weight: 700;
   line-height: 120%;
@@ -82,8 +82,8 @@
   justify-content: center;
   align-items: center;
   gap: 7px;
-  color: var(--sec-bg-color);
-  background-color: var(--btn-color);
+  color: var(--secondary-color);
+  background-color: var(--main-color);
   text-decoration: none;
   border: none;
   text-align: center;
@@ -93,7 +93,7 @@
 
 #athar-header .content .header-cta .cta-txt {
   margin: 0;
-  color: var(--sec-bg-color);
+  color: var(--secondary-color);
   font-weight: 700;
   line-height: 120%;
 }
@@ -167,17 +167,17 @@
 /** athar-hero start **/
 
 #athar-hero {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
   background-color: black;
 }
 
 #athar-hero {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   width: 100%;
   height: calc(100vh - 80px);
   display: flex;
@@ -237,7 +237,7 @@
 }
 
 #athar-hero .content-info .avalaibility-badge .avalaibility-badge-txt {
-  color: var(--btn-color);
+  color: var(--main-color);
   text-align: right;
   font-size: 14px;
   font-style: normal;
@@ -256,7 +256,7 @@
 
 #athar-hero .content-info .content-heading-txt,
 #athar-hero .content-info .content-paragraph-txt {
-  color: var(--btn-color);
+  color: var(--main-color);
   font-size: 46px;
   font-style: normal;
   font-weight: 700;
@@ -266,7 +266,7 @@
 }
 
 #athar-hero .content-info .content-paragraph-txt {
-  color: var(--btn-color);
+  color: var(--main-color);
   font-size: 18px;
   font-weight: 500;
   max-width: 376px;
@@ -286,8 +286,8 @@
   align-items: center;
   gap: 3px;
   border-radius: 27px;
-  background-color: var(--btn-color);
-  color: var(--sec-bg-color);
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   text-align: right;
   font-size: 18px;
   font-style: normal;
@@ -300,6 +300,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 35px;
+  min-height: 35px;
+  overflow: hidden;
+}
+
+#athar-hero .content-info .cta-btn .arrow-hero-cta img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #athar-hero .content .socials {
@@ -317,7 +326,7 @@
 #athar-hero .content .socials .contact {
   width: 200px;
   margin: 0;
-  color: var(--btn-color);
+  color: var(--main-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -395,16 +404,16 @@
 /** athar-about start **/
 
 #athar-about {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-about {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 100px 0 50px;
 }
 
@@ -449,7 +458,7 @@
 }
 
 #athar-about .content .about-imagery .about-imagery-paragraph-txt {
-  color: var(--btn-color);
+  color: var(--main-color);
   font-size: 10.543px;
   font-style: normal;
   font-weight: 400;
@@ -460,7 +469,7 @@
 #athar-about .content .about-imagery .rating-stars img {
   width: 15px;
   height: 15px;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 }
 
@@ -475,7 +484,7 @@
 
 #athar-about .content .about-info-heading,
 #athar-about .content .about-info-paragraph {
-  color: var(--btn-color);
+  color: var(--main-color);
   text-align: right;
   font-size: 44px;
   font-style: normal;
@@ -519,16 +528,16 @@
 /** athar-projects start **/
 
 #athar-projects {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-projects {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -548,7 +557,7 @@
 }
 
 #athar-projects .section-heading-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   font-size: 40px;
   font-style: normal;
@@ -595,10 +604,10 @@
   gap: 5px;
   padding: 15px 30px;
   border-radius: 27px;
-  border: 1px solid var(--txt-color);
+  border: 1px solid var(--fourth-color);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5.400000095367432px);
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-decoration: none;
 }
 
@@ -621,7 +630,7 @@
 
 #athar-projects .projects .card .info-heading,
 #athar-projects .projects .card .info-paragraph {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -646,16 +655,16 @@
 /** athar-why start **/
 
 #athar-why {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-why {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -675,7 +684,7 @@
 }
 
 #athar-why .section-heading-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   font-size: 40px;
   font-style: normal;
@@ -719,11 +728,11 @@
 #athar-why .cards .card .icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #athar-why .cards .card .card-paragraph {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-align: center;
   font-size: 17px;
   font-style: normal;
@@ -744,8 +753,8 @@
 #athar-why .cta .cta-btn {
   padding: 20px 70px;
   border-radius: 47px;
-  background: var(--txt-color);
-  color: var(--sec-bg-color);
+  background: var(--fourth-color);
+  color: var(--secondary-color);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -754,7 +763,7 @@
 }
 
 #athar-why .cta .cta-scarcity {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -779,16 +788,16 @@
 /** athar-packages start **/
 
 #athar-packages {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-packages {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -808,7 +817,7 @@
 }
 
 #athar-packages .section-heading-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   font-size: 40px;
   font-style: normal;
@@ -841,14 +850,14 @@
 
 #athar-packages .pack.active {
   background: unset;
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #athar-packages .pack-head,
 #athar-packages .pack-body,
 #athar-packages .pack-footer {
   padding: 0 15px;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 #athar-packages .pack-head {
@@ -890,7 +899,7 @@
 #athar-packages .pack-head .pack-head-title-heading,
 #athar-packages .pack-head .pack-head-title-paragraph {
   margin: 0;
-  color: var(--txt-color);
+  color: var(--fourth-color);
   width: 100%;
 }
 
@@ -959,8 +968,8 @@
 }
 
 #athar-packages .pack-footer .cta-btn {
-  color: var(--sec-bg-color);
-  background-color: var(--btn-color);
+  color: var(--secondary-color);
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -975,8 +984,8 @@
 }
 
 #athar-packages .pack.active .pack-footer .cta-btn {
-  color: var(--btn-color);
-  background-color: var(--sec-bg-color);
+  color: var(--main-color);
+  background-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -996,16 +1005,16 @@
 /** athar-testimonials start **/
 
 #athar-testimonials {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-testimonials {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -1027,7 +1036,7 @@
 }
 
 #athar-testimonials .content .section-heading-txt {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   margin: 0;
   text-align: center;
 }
@@ -1073,7 +1082,7 @@
 
 #athar-testimonials .content .swiper-slide .author-position-paragraph,
 #athar-testimonials .content .swiper-slide .author-testimonial-paragraph {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1114,16 +1123,16 @@
 /** athar-cta start **/
 
 #athar-cta {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-cta {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -1156,7 +1165,7 @@
 }
 
 #athar-cta .cta-wrapper .heading {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-align: center;
   font-family: Tajawal;
   font-size: 42px;
@@ -1177,7 +1186,7 @@
 
 #athar-cta .cta-wrapper .cta-btn,
 #athar-cta .cta-wrapper .whatsapp-cta {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   color: #000;
   display: flex;
   justify-content: center;
@@ -1196,8 +1205,15 @@
   background-color: #4BC959;
 }
 
+#athar-cta .cta-wrapper .whatsapp-cta img {
+  max-width: 25px;
+  max-height: 25px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
 #athar-cta .cta-wrapper .info {
-  color: var(--txt-color);
+  color: var(--fourth-color);
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -1221,16 +1237,16 @@
 /** athar-footer start **/
 
 #athar-footer {
-  --btn-color: #fff;
-  --sec-bg-color: #060606;
-  --main-bg-color: #303030;
-  --txt-color: #fff;
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
 }
 
 #athar-footer {
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
@@ -1276,7 +1292,7 @@
 
 #athar-footer .content ul a {
   text-decoration: none;
-  color: var(--txt-color);
+  color: var(--fourth-color);
 }
 
 @media screen and (max-width: 767px) {

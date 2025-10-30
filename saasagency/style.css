@@ -33,16 +33,16 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
 
   font-family: "Cairo", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(var(--txt-color), 1);
-  background: var(--main-bg);
+  color: rgba(var(--fourth-color), 1);
+  background: var(--third-bg);
   padding: 80px 50px 40px;
   max-height: 193px;
   user-select: none;
@@ -51,7 +51,7 @@
 }
 
 #saasagency-header .container {
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 10px;
   padding: 0 15px;
@@ -71,6 +71,13 @@
   padding: 10px;
 }
 
+#saasagency-header .logo-container a img {
+  width: 110px;
+  height: 30px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
 #saasagency-header .navigation-links {
   padding: 0px;
   gap: 70px;
@@ -78,14 +85,14 @@
 }
 
 #saasagency-header .content a {
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   text-decoration: none;
   display: block;
   transition: all 0.33s ease;
 }
 
 #saasagency-header .content a[data-active_hover] {
-  color: var(--btn-color);
+  color: var(--main-color);
 }
 
 #saasagency-header .contact-container {
@@ -107,7 +114,7 @@
 
 #saasagency-header .contact-container .contact-us[data-active_hover] {
   background: unset;
-  background-color: var(--main-bg);
+  background-color: var(--third-bg);
 }
 
 #saasagency-header .contact-container .nav-icon {
@@ -125,7 +132,7 @@
     pointer-events: none;
     position: absolute;
     width: 100%;
-    background-color: var(--main-bg);
+    background-color: var(--third-bg);
     height: calc(100vh - 193px);
     right: 0;
     bottom: 0;
@@ -195,13 +202,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -230,7 +237,7 @@
   margin: 0;
   margin-bottom: 10px;
   line-height: 1.2;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-hero .top-content .content-text .subtitle {
@@ -239,7 +246,7 @@
   max-width: 332px;
   margin: 0 auto;
   line-height: 1.54;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-hero .top-content .buttons {
@@ -257,7 +264,7 @@
   height: 46px;
   border-radius: 5px;
   cursor: pointer;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   border: 1px solid #f5f5f521;
   display: flex;
   justify-content: center;
@@ -279,15 +286,16 @@
 
 #saasagency-hero .top-content .buttons a .icon img {
   width: 100%;
+  object-fit: contain;
 }
 
 #saasagency-hero .top-content .buttons a.start-now {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   border: 1px solid #FFFFFF38;
 }
 
 /* #saasagency-hero .top-content .buttons a.start-now[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 } */
 
 #saasagency-hero .top-content .buttons p {
@@ -359,13 +367,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -388,7 +396,7 @@
   font-size: 14px;
   font-weight: 600;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-social-proof .logo-container {
@@ -406,6 +414,7 @@
 
 #saasagency-social-proof .logo-container img {
   width: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1024px) {
@@ -469,13 +478,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   padding: 80px 0 50px;
 }
 
@@ -491,7 +500,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: border-box;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 13px;
   display: grid;
@@ -512,7 +521,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-stats .content .stat-item .description-title {
@@ -520,7 +529,7 @@
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-stats .content .stat-item:not(:last-of-type) {
@@ -574,13 +583,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -606,7 +615,7 @@
   line-height: 1.2;
   text-align: center;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-benefits .content .content-container {
@@ -618,24 +627,26 @@
 
 #saasagency-benefits .content .content-container .card-container {
   padding: 25px 25px 50px;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
-  border-radius: 13px;
 }
 
 #saasagency-benefits .content .content-container .card-container:first-of-type {
   grid-column: span 2;
 }
 
-#saasagency-benefits .content .content-container .card-container:first-of-type .image-container {
+#saasagency-benefits .content .content-container .card-container .image-container {
   background-color: #15151d;
-  padding: 30px 18px 0;
   border: 1px solid #f5f5f521;
-  border-radius: 10px;
+  height: 300px;
+  border-radius: 13px;
+  overflow: hidden;
 }
 
 #saasagency-benefits .content .content-container .image-container img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #saasagency-benefits .content .content-container .text-container {
@@ -646,14 +657,14 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 24px;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-benefits .content .content-container .text-container .description {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
 }
 
 @media screen and (max-width: 1024px) {
@@ -732,13 +743,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -758,15 +769,20 @@
 
 #saasagency-overview .content .image-content {
   max-width: 557px;
+  width: 100%;
   padding: 60px;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 13px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #saasagency-overview .content .image-content img {
   width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  object-fit: cover;
 }
 
 #saasagency-overview .content .text-content {
@@ -795,7 +811,7 @@
 
 #saasagency-overview .content .text-content .header-container .header-text {
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-overview .content .text-content .description-container {
@@ -811,7 +827,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-overview .content .text-content .sub-description {
@@ -820,7 +836,7 @@
   font-weight: 600;
   line-height: 1.41;
   margin: 0;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
 }
 
 #saasagency-overview .content .text-content .features-container {
@@ -849,7 +865,7 @@
 
 #saasagency-overview .content .text-content .features-container .feature-item .feature-text {
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 
@@ -903,13 +919,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -930,15 +946,20 @@
 
 #saasagency-overview-sec .content .image-content {
   max-width: 557px;
+  width: 100%;
   padding: 60px;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 13px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #saasagency-overview-sec .content .image-content img {
   width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  object-fit: cover;
 }
 
 #saasagency-overview-sec .content .text-content {
@@ -967,7 +988,7 @@
 
 #saasagency-overview-sec .content .text-content .header-container .header-text {
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-overview-sec .content .text-content .description-container {
@@ -983,11 +1004,11 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-overview-sec .content .text-content .sub-description {
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
@@ -1020,7 +1041,7 @@
 
 #saasagency-overview-sec .content .text-content .features-container .feature-item .feature-text {
   margin: 0;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1074,13 +1095,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -1104,7 +1125,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-testimonials .content .testimonials-container {
@@ -1115,7 +1136,7 @@
 
 #saasagency-testimonials .testimonials-container .testimonial-card {
   padding: 45px 30px;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 13px;
   display: flex;
@@ -1128,7 +1149,7 @@
 #saasagency-testimonials .testimonials-container .testimonial-header {
   padding: 5px 30px;
   border-radius: 36px;
-  background-color: var(--main-bg);
+  background-color: var(--third-bg);
   width: fit-content;
   font-size: 24px;
   font-weight: 600;
@@ -1148,7 +1169,7 @@
 
 #saasagency-testimonials .testimonials-container .testimonial-text-container .testimonial-text {
   margin: 0;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
 }
 
 #saasagency-testimonials .testimonials-container .testimonial-footer {
@@ -1168,6 +1189,8 @@
 
 #saasagency-testimonials .testimonials-container .testimonial-footer .user-image-container img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -1180,7 +1203,7 @@
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-testimonials .testimonials-container .testimonial-footer .user-info h5:first-of-type {
@@ -1239,13 +1262,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -1277,14 +1300,14 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-pricing .header-container .header-subtitle {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
   margin: 0;
 }
 
@@ -1297,7 +1320,7 @@
 }
 
 #saasagency-pricing .plans-container .plan-container {
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border: 1px solid #f5f5f521;
   border-radius: 13px;
   position: relative;
@@ -1335,7 +1358,7 @@
   font-weight: 700;
   line-height: 1.41;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-pricing .plan-price-container .price-details-container {
@@ -1350,7 +1373,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-pricing .plan-price-container .price-details-container .price-unit,
@@ -1362,7 +1385,7 @@
   font-weight: 500;
   line-height: 1.41;
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-pricing .plan-price-container .payement-frequency {
@@ -1407,7 +1430,7 @@
 }
 
 #saasagency-pricing .features-list-container .feature-text {
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-pricing .plan-container .divider-container {
@@ -1425,9 +1448,9 @@
   margin-top: 60px;
   width: 100%;
   padding: 18.5px 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   border: none;
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   border: 1px solid #ffffff38;
   border-radius: 13px;
   font-size: 14px;
@@ -1438,7 +1461,7 @@
 }
 
 #saasagency-pricing .plan-container .buy[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1494,14 +1517,14 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
   padding: 85px 136px;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -1524,7 +1547,7 @@
   margin: 0;
   margin-bottom: 50px;
   text-align: center;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-faq .accordion {
@@ -1537,7 +1560,7 @@
 
 #saasagency-faq .accordion details {
   border: 1px solid #f5f5f521;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   border-radius: 13px;
   user-select: none;
   padding: 5px;
@@ -1587,7 +1610,7 @@
   margin: 0;
   width: 100%;
   position: relative;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-faq .accordion details summary .icon {
@@ -1607,7 +1630,7 @@
 }
 
 #saasagency-faq .accordion details .description {
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
   line-height: 28px;
   font-weight: 400;
   font-size: 15px;
@@ -1662,13 +1685,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--main-bg);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--third-bg);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
   direction: rtl;
 }
@@ -1712,14 +1735,14 @@
   font-weight: 700;
   line-height: 1.4;
   margin: 0 5px;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-contact .header-container .sub-heading {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
   margin: 0;
 }
 
@@ -1731,7 +1754,7 @@
   gap: 15px;
   width: 629px;
   margin: 0 auto;
-  background-color: var(--sec-bg);
+  background-color: var(--secondary-bg);
   padding: 40px;
   border: 1px solid #f5f5f521;
   border-radius: 13px;
@@ -1769,7 +1792,7 @@
 
 #saasagency-contact .form-saasagency label span,
 #saasagency-contact .form-saasagency .ouasl_field-checkbox_title {
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   margin: 0;
   font-size: 15px;
   font-weight: 400;
@@ -1783,7 +1806,7 @@
   background-color: transparent;
   padding: 15px 20px;
   direction: rtl;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   outline: none;
   font-size: 15px;
   line-height: 1;
@@ -1832,7 +1855,7 @@
   padding: 16px;
   border: 1px solid #898e93;
   border-radius: 14px;
-  background-color: var(--main-bg);
+  background-color: var(--third-bg);
   cursor: pointer;
   transition: .2s;
   box-sizing: border-box;
@@ -1868,7 +1891,7 @@
   width: 24px;
   height: 24px;
   border: none;
-  outline: 2px solid var(--btn-color);
+  outline: 2px solid var(--main-color);
   border-radius: 50%;
 }
 
@@ -1888,11 +1911,11 @@
 
 #saasagency-contact .ouasl_field-radios label.radio input:checked::after,
 #saasagency-contact .ouasl_field-checkbox label.radio input:checked::after {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #saasagency-contact label.select select {
-  background-color: var(--main-bg);
+  background-color: var(--third-bg);
   color: var(--tints-10);
   padding: 16px;
   border-radius: 14px;
@@ -1908,8 +1931,8 @@
 
 #saasagency-contact .form-saasagency .button-cta {
   font-family: "Cairo", sans-serif;
-  background-color: var(--btn-color);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--main-color);
+  color: rgba(var(--fourth-color), 1);
   border-radius: 13px;
   border: none;
   outline: none;
@@ -1923,7 +1946,7 @@
 }
 
 #saasagency-contact .form-saasagency .button-cta[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 #saasagency-contact .form-paragraph-wrapper .disclamer-container {
@@ -1938,7 +1961,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1.41;
-  color: rgba(var(--txt-color), .7);
+  color: rgba(var(--fourth-color), .7);
   margin: 0;
 }
 
@@ -2003,13 +2026,13 @@
   --tints-9: #efecfd;
   --tints-10: #ffffff;
 
-  --btn-color: #6140ef;
-  --sec-bg: #0C0D12;
-  --main-bg: #04050a;
-  --txt-color: 255, 255, 255;
+  --main-color: #6140ef;
+  --secondary-bg: #0C0D12;
+  --third-bg: #04050a;
+  --fourth-color: 255, 255, 255;
   font-family: "Cairo", sans-serif;
-  background-color: var(--btn-color);
-  color: rgba(var(--txt-color), 1);
+  background-color: var(--main-color);
+  color: rgba(var(--fourth-color), 1);
   box-sizing: border-box;
 }
 
@@ -2031,6 +2054,16 @@
   width: 100%;
 }
 
+#saasagency-footer .tagline-container .logo-container,
+#saasagency-footer .tagline-container .logo-container img {
+  overflow: hidden;
+  width: 150px;
+}
+
+#saasagency-footer .tagline-container .logo-container img {
+  object-fit: contain;
+}
+
 #saasagency-footer .tagline-container .tagline-container-text {
   padding: 10px 0;
   margin-top: 10px;
@@ -2041,7 +2074,7 @@
 
 #saasagency-footer .tagline-container .tagline-container-text .tagline-text {
   margin: 0;
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 #saasagency-footer .navigation-links {
@@ -2055,7 +2088,7 @@
 }
 
 #saasagency-footer .navigation-links a {
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -2064,7 +2097,7 @@
 }
 
 #saasagency-footer .navigation-links a[data-active_hover] {
-  color: rgba(var(--txt-color), 1);
+  color: rgba(var(--fourth-color), 1);
 }
 
 @media screen and (max-width: 1024px) {

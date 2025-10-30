@@ -28,17 +28,17 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
 #tomor-header {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
   position: relative;
   height: 90px;
 }
@@ -74,12 +74,12 @@
 #tomor-header .logo-content .logo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #tomor-header .logo-content .logo-txt {
   margin: 0;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -94,7 +94,7 @@
 }
 
 #tomor-header .links-wrapper .link {
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
@@ -126,7 +126,7 @@
     flex-direction: column;
     padding: 20px 0;
     gap: 20px;
-    background-color: var(--main-bg-color);
+    background-color: var(--third-color);
     opacity: 0;
     pointer-events: none;
   }
@@ -174,17 +174,17 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
 #tomor-hero {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
   position: relative;
 }
 
@@ -217,7 +217,7 @@
 
 #tomor-hero .content .heading-title,
 #tomor-hero .content .heading-paragraph {
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   margin: 0;
   text-align: center;
 }
@@ -249,14 +249,14 @@
   margin: 0 auto;
   padding: 20px 90px;
   border-radius: 50px;
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   color: var(--txt-color-2);
   text-decoration: none;
   transition: all 0.33s ease;
 }
 
 #tomor-hero .content .cta-wrapper a[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 
 }
 
@@ -308,17 +308,17 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
 #tomor-best-products {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
   position: relative;
 }
 
@@ -351,7 +351,7 @@
 
 #tomor-best-products .content .heading-title,
 #tomor-best-products .content .heading-paragraph {
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   margin: 0;
   text-align: center;
 }
@@ -383,14 +383,14 @@
   margin: 0 auto;
   padding: 20px 90px;
   border-radius: 50px;
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   color: var(--txt-color-2);
   text-decoration: none;
   transition: all 0.33s ease;
 }
 
 #tomor-best-products .content .cta-wrapper a[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 
 }
 
@@ -435,11 +435,11 @@
 }
 
 #tomor-best-products .content .products-grid .box-info .box-title {
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
 }
 
 #tomor-best-products .content .products-grid .box-info .box-paragraph {
-  color: var(--sec-bg-color);
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -485,10 +485,10 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
@@ -497,11 +497,11 @@
   direction: rtl;
   position: relative;
   padding: 40px 0;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
 }
 
 #tomor-benefits .tomor-benefits-wrapper {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   padding: 0 15px;
 }
 
@@ -529,7 +529,7 @@
 }
 
 #tomor-benefits .benefit-box .benefit-icon {
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   width: 80px;
   height: 80px;
   border-radius: 18px;
@@ -542,7 +542,7 @@
 #tomor-benefits .benefit-box .benefit-icon img {
   width: 36px;
   height: 36px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 #tomor-benefits .benefit-box .benefit-heading,
@@ -620,17 +620,17 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
 #tomor-testimonials {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
   position: relative;
   padding: 0;
   padding: 40px 0;
@@ -662,7 +662,7 @@
 #tomor-testimonials .testimonial-heading-txt,
 #tomor-testimonials .testimonial-heading-paragraph {
   margin: 0;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
 }
 
 #tomor-testimonials .testimonial-heading-txt {
@@ -779,8 +779,11 @@
   gap: 5px;
 }
 
-#tomor-testimonials .box .testimonial-body .rating-star {
-  padding: 3px;
+#tomor-testimonials .box .testimonial-body .rating-stars img {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 #tomor-testimonials .box .testimonial-body .quote-paragraph {
@@ -798,7 +801,7 @@
 }
 
 #tomor-testimonials .swiper-pagination-bullet-active {
-  background: var(--btn-color);
+  background: var(--main-color);
 }
 
 @media screen and (max-width: 1200px) {
@@ -910,10 +913,10 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
@@ -921,7 +924,7 @@
   font-family: "El Messiri", sans-serif;
   direction: rtl;
   position: relative;
-  background-color: var(--main-bg-color);
+  background-color: var(--third-color);
   padding: 40px 0;
 }
 
@@ -952,7 +955,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
   border-radius: 20px;
 }
 
@@ -1001,9 +1004,9 @@
 }
 
 #tomor-offers .offer-info-content .cta-btn {
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
   padding: 15px 25px;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
@@ -1014,7 +1017,7 @@
 }
 
 #tomor-offers .offer-info-content .cta-btn[data-active_hover] {
-  background-color: var(--sec-bg-color);
+  background-color: var(--secondary-color);
 
 }
 
@@ -1087,17 +1090,17 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
 #tomor-contact {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  /* background-color: var(--main-bg-color); */
+  /* background-color: var(--third-color); */
   position: relative;
   background-color: #E8DEBA;
 }
@@ -1132,7 +1135,7 @@
 #tomor-contact .form-heading-txt,
 #tomor-contact .form-paragraph-txt {
   margin: 0;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   line-height: 1;
 }
 
@@ -1184,7 +1187,7 @@
 #tomor-contact .form-tomor .ouasl_field-checkbox .ouasl_field-checkbox_title,
 #tomor-contact .form-tomor .ouasl_field-radios .ouasl_field-radios_title,
 #tomor-contact .form-tomor label .ouasl_field-title {
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   font-size: 15px;
   line-height: 1.2;
   font-weight: 500;
@@ -1200,8 +1203,8 @@
 #tomor-contact .form-tomor label select {
   width: 100%;
   border-radius: 50px;
-  background-color: var(--main-bg-color);
-  color: var(--txt-color-1);
+  background-color: var(--third-color);
+  color: var(--fourth-color);
   padding: 15px 18px;
   border: none;
   box-sizing: border-box;
@@ -1230,11 +1233,11 @@
 }
 
 #tomor-contact .form-tomor label input:focus:not([type="radio"]):not([type="checkbox"]) {
-  outline: 1px solid var(--btn-color);
+  outline: 1px solid var(--main-color);
 }
 
 #tomor-contact .form-tomor .button-cta {
-  background-color: var(--txt-color-1);
+  background-color: var(--fourth-color);
   color: var(--txt-color-2);
   border-radius: 50px;
   text-align: center;
@@ -1249,13 +1252,13 @@
 }
 
 #tomor-contact .form-tomor .button-cta[data-active_hover] {
-  background-color: var(--txt-color-1);
+  background-color: var(--fourth-color);
 
 }
 
 @media screen and (max-width: 1024px) {
   #tomor-contact {
-    background-color: var(--main-bg-color);
+    background-color: var(--third-color);
     padding: 40px 15px;
   }
 
@@ -1314,10 +1317,10 @@
   --shades-9: #0e0604;
   --shades-10: #000000;
 
-  --btn-color: #8B3A2C;
-  --sec-bg-color: #CFB58C;
-  --main-bg-color: #fff;
-  --txt-color-1: #2C110D;
+  --main-color: #8B3A2C;
+  --secondary-color: #CFB58C;
+  --third-color: #fff;
+  --fourth-color: #2C110D;
   --txt-color-2: #FFFDF8;
 }
 
@@ -1351,12 +1354,23 @@
   gap: 10px;
 }
 
+#tomor-footer .logo-content .logo {
+  max-width: 60px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+#tomor-footer .logo-content .logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
 #tomor-footer .logo-content .logo-txt {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
 }
 
 #tomor-footer .links-wrapper {
@@ -1367,7 +1381,7 @@
 
 #tomor-footer .links-wrapper .link {
   text-decoration: none;
-  color: var(--txt-color-1);
+  color: var(--fourth-color);
   font-size: 12px;
   font-weight: 600;
   line-height: 21px;
@@ -1384,12 +1398,19 @@
   padding: 5px;
   width: 30px;
   height: 30px;
+  box-sizing: border-box;
   border-radius: 50%;
   transition: all 0.33s ease;
 }
 
+#tomor-footer .social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #tomor-footer .social-icon[data-active_hover] {
-  background-color: var(--btn-color);
+  background-color: var(--main-color);
 }
 
 @media screen and (max-width: 1024px) {
