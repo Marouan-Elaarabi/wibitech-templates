@@ -58,8 +58,23 @@
   gap: 10px;
 }
 
+#timelime-header .content {
+  padding: 30px 0;
+}
+
 #timelime-header .count-down {
   padding: 0;
+  position: relative;
+}
+
+#timelime-header .count-down:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
 #timelime-header .count-down-paragraph {
@@ -70,7 +85,7 @@
   margin: 0;
 }
 
-#timelime-header .count-down .timer-digits  {
+#timelime-header .count-down .timer-digits {
   width: 27px;
   height: 27px;
   display: flex;
@@ -84,11 +99,15 @@
   border-radius: 6px;
   position: relative;
   margin: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
-#timelime-header .count-down > div {position: relative;}
+#timelime-header .count-down>div {
+  position: relative;
+}
 
-#timelime-header .count-down > div:not(:first-of-type)::before {
+#timelime-header .count-down>div:not(:first-of-type)::before {
   content: ":";
   position: absolute;
   right: -5px;
@@ -352,7 +371,9 @@
 
 #timelime-hero .container .timelime-product-advantage-logo {
   padding: 2px 0;
-  width: 25px;height: 25px;overflow: hidden;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -636,11 +657,15 @@
 
 #timelime-catalogue .discount-rate .discount-imagery {
   padding: 2px 0;
-  width: 20px;height: 20px;overflow: hidden;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
 }
 
 #timelime-catalogue .discount-rate .discount-imagery img {
-  width: 100%;height: 100%;object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #timelime-catalogue .discount-rate .buy-cta {
@@ -867,7 +892,8 @@
 
 #timelime-benefits .benefits-cards .icon-illustration img {
   width: 100%;
-  height: 100%;object-fit: contain;
+  height: 100%;
+  object-fit: contain;
 }
 
 #timelime-benefits .benefits-cards .benefits-card-descriptive {
