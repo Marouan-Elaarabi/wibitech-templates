@@ -250,6 +250,15 @@
   align-items: center;
   gap: 14px;
   margin: 5px;
+<<<<<<< HEAD
+=======
+  transition: all 0.33s ease;
+  text-decoration: none;
+}
+
+#saasagency-hero .top-content .buttons a[data-active_hover] {
+  background-color: transparent;
+>>>>>>> ae4462a (push 60% aman-mali template)
 }
 
 #saasagency-hero .top-content .buttons a .icon {
@@ -1408,6 +1417,11 @@
   line-height: 12px;
   font-weight: 600;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  transition: all 0.33s ease;
+  text-decoration: none;
+>>>>>>> ae4462a (push 60% aman-mali template)
 }
 
 @media screen and (max-width: 1020px) {

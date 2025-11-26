@@ -32,6 +32,7 @@ function testimonialsLogic() {
   const swiper = new Swiper(".swiper", {
     direction: "horizontal",
     loop: true,
+    centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,

@@ -360,6 +360,15 @@
   background-color: var(--main-color);
   color: var(--tints-10);
   border: 2px solid var(--main-color);
+<<<<<<< HEAD
+=======
+  transition: all 0.33s ease;
+  text-decoration: none;
+}
+
+#lingualearn-hero .top-content .buttons a.start-now[data-active_hover] {
+  background-color: var(--fourth-color);
+>>>>>>> ae4462a (push 60% aman-mali template)
 }
 
 #lingualearn-hero .top-content .buttons a.discover {
@@ -369,6 +378,15 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
+<<<<<<< HEAD
+=======
+  transition: all 0.33s ease;
+  text-decoration: none;
+}
+
+#lingualearn-hero .top-content .buttons a.discover[data-active_hover] {
+  background-color: var(--fourth-color);
+>>>>>>> ae4462a (push 60% aman-mali template)
 }
 
 #lingualearn-hero .top-content .buttons a.button p {
@@ -698,6 +716,11 @@
   align-items: center;
   gap: 14px;
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  transition: all 0.33s ease;
+  text-decoration: none;
+>>>>>>> ae4462a (push 60% aman-mali template)
 }
 
 #lingualearn-courses .explore-more-button .explore-button .text {
