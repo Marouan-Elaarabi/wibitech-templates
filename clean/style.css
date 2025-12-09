@@ -232,6 +232,7 @@
   height: 50px;
   border-radius: 10px;
   background-color: var(--btn-color);
+  color: var(--tints-10);
   text-decoration: none;
 }
 
@@ -380,7 +381,7 @@
 
 /** clean-hero end **/
 
-/** clean-catalogue start **/
+/** clean-form start **/
 
 #clean-form {
   --tints-1: #fbd7b9;
@@ -778,7 +779,7 @@
   }
 }
 
-/** clean-catalogue end **/
+/** clean-form end **/
 
 /** clean-benefits start **/
 

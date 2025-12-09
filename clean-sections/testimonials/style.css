@@ -1,0 +1,141 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** clean-testemonials start **/
+
+#clean-testemonials {
+  --tints-1: #fbd7b9;
+  --tints-2: #fbdcc1;
+  --tints-3: #fce0c8;
+  --tints-4: #fce5d0;
+  --tints-5: #fde9d8;
+  --tints-6: #fdede0;
+  --tints-7: #fef2e8;
+  --tints-8: #fef6ef;
+  --tints-9: #fffbf7;
+  --tints-10: #ffffff;
+
+  --shades-1: #e1be9f;
+  --shades-2: #c8a98e;
+  --shades-3: #af947c;
+  --shades-4: #967f6a;
+  --shades-5: #7d6a59;
+  --shades-6: #645447;
+  --shades-7: #4b3f35;
+  --shades-8: #322a23;
+  --shades-9: #191512;
+  --shades-10: #000000;
+
+  --btn-color: #171310;
+  --sec-bg-color: #FAD3B1;
+  --main-bg-color: #F3ECE9;
+}
+
+#clean-testemonials {
+  font-family: "Cairo", serif;
+  direction: rtl;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  background-color: var(--tints-10);
+}
+
+#clean-testemonials .container {
+  padding: 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#clean-testemonials .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+#clean-testemonials .content .card,
+#clean-testemonials .content .card .card-txt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#clean-testemonials .content .main-img {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  padding: 3px;
+}
+
+#clean-testemonials .content .main-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#clean-testemonials .content .card-txt .name-city-heading {
+  margin: 0;
+  color: var(--btn-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.64;
+}
+
+#clean-testemonials .content .card-txt-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+#clean-testemonials .content .card-txt-rating-star {
+  padding: 5px 0;
+}
+
+#clean-testemonials .content .card-txt-feedback {
+  margin: 0;
+  color: var(--btn-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.64;
+  text-align: center;
+}
+
+#clean-testemonials .content .avatar-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#clean-testemonials .content .avatar-img {
+  aspect-ratio: 3/2;
+  max-width: 128px;
+  max-height: 85px;
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+#clean-testemonials .content .avatar-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #clean-testemonials .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #clean-testemonials {
+    padding: 30px 0px;
+  }
+}

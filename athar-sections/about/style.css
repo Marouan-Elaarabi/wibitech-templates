@@ -1,0 +1,128 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-about start **/
+
+#athar-about {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-about {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  padding: 100px 0 50px;
+}
+
+#athar-about .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 87px;
+}
+
+#athar-about .content .about-imagery {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#athar-about .content .about-imagery .img,
+#athar-about .content .about-imagery .img img {
+  width: 100%;
+}
+
+#athar-about .content .about-imagery .img img {
+  object-fit: cover;
+}
+
+#athar-about .content .about-imagery .about-imagery-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+#athar-about .content .about-imagery .about-imagery-paragraph-txt {
+  color: var(--main-color);
+  font-size: 10.543px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+
+#athar-about .content .about-imagery .rating-stars img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+#athar-about .content .about-info {
+  max-width: 570px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  flex-direction: column;
+}
+
+#athar-about .content .about-info-heading,
+#athar-about .content .about-info-paragraph {
+  color: var(--main-color);
+  text-align: right;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-about .content .about-info-paragraph {
+  font-size: 33px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  #athar-about .content {
+    flex-direction: column-reverse;
+    gap: 45px;
+  }
+
+  #athar-about .content .about-info {
+    align-items: center;
+  }
+
+  #athar-about .content .about-info .about-info-heading,
+  #athar-about .content .about-info .about-info-paragraph {
+    text-align: center;
+  }
+
+  #athar-about .content .about-info .about-info-heading {
+    font-size: 30px;
+  }
+
+  #athar-about .content .about-info-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+/** athar-about end **/

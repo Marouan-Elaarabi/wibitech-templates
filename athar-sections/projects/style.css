@@ -1,0 +1,131 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-projects start **/
+
+#athar-projects {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-projects {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+#athar-projects .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-projects .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#athar-projects .section-heading-txt {
+  color: var(--fourth-color);
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-projects .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+}
+
+#athar-projects .projects .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#athar-projects .projects .card .img {
+  width: 100%;
+  height: 383px;
+  border-radius: 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+#athar-projects .projects .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#athar-projects .projects .card .img .link {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 30px;
+  border-radius: 27px;
+  border: 1px solid var(--fourth-color);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5.400000095367432px);
+  color: var(--fourth-color);
+  text-decoration: none;
+}
+
+#athar-projects .projects .card .img .link img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+#athar-projects .projects .card .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#athar-projects .projects .card .info-heading,
+#athar-projects .projects .card .info-paragraph {
+  color: var(--fourth-color);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+#athar-projects .projects .card .info-paragraph {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  #athar-projects .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/** athar-projects end **/

@@ -1,0 +1,60 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** clean-footer start **/
+
+#clean-footer {
+  --tints-1: #fbd7b9;
+  --tints-2: #fbdcc1;
+  --tints-3: #fce0c8;
+  --tints-4: #fce5d0;
+  --tints-5: #fde9d8;
+  --tints-6: #fdede0;
+  --tints-7: #fef2e8;
+  --tints-8: #fef6ef;
+  --tints-9: #fffbf7;
+  --tints-10: #ffffff;
+
+  --shades-1: #e1be9f;
+  --shades-2: #c8a98e;
+  --shades-3: #af947c;
+  --shades-4: #967f6a;
+  --shades-5: #7d6a59;
+  --shades-6: #645447;
+  --shades-7: #4b3f35;
+  --shades-8: #322a23;
+  --shades-9: #191512;
+  --shades-10: #000000;
+
+  --btn-color: #171310;
+  --sec-bg-color: #FAD3B1;
+  --main-bg-color: #F3ECE9;
+}
+
+#clean-footer {
+  font-family: "Cairo", serif;
+  direction: rtl;
+  box-sizing: border-box;
+  background-color: var(--sec-bg-color);
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#clean-footer .footer-logo {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+#clean-footer .footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/** clean-footer end **/

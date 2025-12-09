@@ -1,0 +1,230 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** amanmali-testimonials start **/
+
+#amanmali-testimonials {
+  --main-color: #0085f2;
+
+  --shades-1: #0078da;
+  --shades-2: #006ac2;
+  --shades-3: #005da9;
+  --shades-4: #005091;
+  --shades-5: #004379;
+  --shades-6: #003561;
+  --shades-7: #002849;
+  --shades-8: #001b30;
+  --shades-9: #000d18;
+  --shades-10: #000000;
+
+  --tints-1: #1a91f3;
+  --tints-2: #339df5;
+  --tints-3: #4daaf6;
+  --tints-4: #66b6f7;
+  --tints-5: #80c2f9;
+  --tints-6: #99cefa;
+  --tints-7: #b3dafb;
+  --tints-8: #cce7fc;
+  --tints-9: #e6f3fe;
+  --tints-10: #ffffff;
+
+  --secondary-color: #ECF6FF;
+  --third-color: #001E33;
+  font-family: "Almarai", sans-serif;
+  direction: rtl;
+  background-color: var(--tints-10);
+  position: relative;
+  padding: 0;
+  padding: 110px 0px 70px;
+}
+
+#amanmali-testimonials .container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#amanmali-testimonials .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 10px;
+}
+
+#amanmali-testimonials .testimonial-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 560px;
+}
+
+#amanmali-testimonials .testimonial-heading-txt,
+#amanmali-testimonials .testimonial-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-1);
+  text-align: center;
+}
+
+#amanmali-testimonials .testimonial-heading-txt {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--third-color);
+}
+
+#amanmali-testimonials .testimonial-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #393939;
+}
+
+#amanmali-testimonials .testimonial-cards,
+#amanmali-testimonials .testimonial-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#amanmali-testimonials .testimonial-cards {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#amanmali-testimonials .testimonial-card {
+  gap: 40px;
+  box-shadow: 0px 0px 21.3px 0px #00000014;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+}
+
+#amanmali-testimonials .testimonial-card .testimonial-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-rating-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-quote-content {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--third-color);
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-author .testimonial-author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-author .testimonial-author-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-author .testimonial-author-name {
+  margin: 0;
+  color: var(--third-color);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+#amanmali-testimonials .testimonial-content .testimonial-author .testimonial-author-job-position {
+  margin: 0;
+  color: #6B6B6B;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#amanmali-testimonials .entreprise-logo {
+  max-width: 222px;
+  max-height: 330px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#amanmali-testimonials .entreprise-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #amanmali-testimonials .content {
+    padding: 0 35px;
+  }
+
+  #amanmali-testimonials .testimonial-cards {
+    flex-direction: column;
+  }
+
+  #amanmali-testimonials .testimonial-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #amanmali-testimonials .content {
+    padding: 0;
+  }
+
+  #amanmali-testimonials .testimonial-heading-txt {
+    font-size: 40px;
+  }
+
+  #amanmali-testimonials .testimonial-card {
+    flex-direction: column;
+  }
+
+  #amanmali-testimonials .testimonial-card .testimonial-content {
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  #amanmali-testimonials .entreprise-logo {
+    aspect-ratio: 16/9;
+    max-width: unset;
+  }
+}
+
+/** amanmali-testimonials end **/

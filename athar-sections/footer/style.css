@@ -1,0 +1,73 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-footer start **/
+
+#athar-footer {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-footer {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+#athar-footer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-footer .content {
+  border-radius: 35px;
+  background: #303030;
+  padding: 120px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#athar-footer .content .logo {
+  width: 43px;
+  height: 30px;
+  overflow: hidden;
+}
+
+#athar-footer .content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#athar-footer .content ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#athar-footer .content ul a {
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+
+@media screen and (max-width: 767px) {
+  #athar-footer .content {
+    padding: 40px 16px;
+  }
+}
+
+/** athar-footer end **/

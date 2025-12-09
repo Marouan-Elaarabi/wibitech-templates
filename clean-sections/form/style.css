@@ -1,0 +1,404 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** clean-form start **/
+
+#clean-form {
+  --tints-1: #fbd7b9;
+  --tints-2: #fbdcc1;
+  --tints-3: #fce0c8;
+  --tints-4: #fce5d0;
+  --tints-5: #fde9d8;
+  --tints-6: #fdede0;
+  --tints-7: #fef2e8;
+  --tints-8: #fef6ef;
+  --tints-9: #fffbf7;
+  --tints-10: #ffffff;
+
+  --shades-1: #e1be9f;
+  --shades-2: #c8a98e;
+  --shades-3: #af947c;
+  --shades-4: #967f6a;
+  --shades-5: #7d6a59;
+  --shades-6: #645447;
+  --shades-7: #4b3f35;
+  --shades-8: #322a23;
+  --shades-9: #191512;
+  --shades-10: #000000;
+
+  --btn-color: #171310;
+  --sec-bg-color: #FAD3B1;
+  --main-bg-color: #F3ECE9;
+}
+
+#clean-form {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--tints-10);
+}
+
+#clean-form .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#clean-form .content {
+  padding: 30px 17.5px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+}
+
+#clean-form .catalogue-content {
+  flex: 2;
+  background-color: var(--main-bg-color);
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+}
+
+#clean-form .time-form,
+#clean-form .form-clean,
+#clean-form .timeleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+#clean-form .form-heading {
+  width: 100%;
+  text-align: right;
+}
+
+#clean-form .time-form {
+  width: 100%;
+}
+
+#clean-form .timeleft .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+#clean-form .timeleft .timeleft-heading-txt,
+#clean-form .timeleft .timer p {
+  margin: 0;
+  color: var(--btn-color);
+}
+
+#clean-form .timeleft .timeleft-heading-txt {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#clean-form .timeleft .timer>div {
+  background-color: #EBE2DE;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box;
+}
+
+#clean-form .timeleft .timer .minutes-wrapper {
+  position: relative;
+}
+
+#clean-form .timeleft .timer .minutes-wrapper::before {
+  content: ":";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateX(-21px) translateY(-60%);
+  font-size: 70px;
+  color: var(--shades-10);
+}
+
+#clean-form .timeleft .timer .minutes-wrapper::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(21px) translateY(-60%);
+  font-size: 70px;
+  color: var(--shades-10);
+}
+
+#clean-form .timeleft .timer .time-digits {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--btn-color);
+}
+
+#clean-form .timeleft .timer .time-txt {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--btn-color);
+}
+
+#clean-form .form-clean {
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#clean-form .form-clean .ouasl_field-radios,
+#clean-form .form-clean .ouasl_field-checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#clean-form .form-clean .option-description-title {
+  margin: 0;
+  color: var(--btn-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#clean-form .ouasl_field-radios label.radio,
+#clean-form .ouasl_field-checkbox label.radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  border: 1px solid #00382B;
+  border-radius: 14px;
+  background-color: var(--tints-10);
+  color: var(--shades-10);
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+#clean-form .ouasl_field-radios label.radio.active .ouasl_field-title,
+#clean-form .ouasl_field-checkbox label.radio.active .ouasl_field-title {
+  color: var(--btn-color);
+  font-weight: 700;
+}
+
+#clean-form .ouasl_field-radios label.radio input[type="radio"],
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"] {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+}
+
+#clean-form .ouasl_field-radios label.radio input::before,
+#clean-form .ouasl_field-checkbox label.radio input::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: 2px solid var(--btn-color);
+  border-radius: 50%;
+}
+
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"]::before {
+  border-radius: 0;
+}
+
+#clean-form .ouasl_field-radios label.radio input::after,
+#clean-form .ouasl_field-checkbox label.radio input::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+
+#clean-form .ouasl_field-checkbox label.radio input[type="checkbox"]::after {
+  border-radius: 0;
+}
+
+#clean-form .ouasl_field-radios label.radio input:checked::before,
+#clean-form .ouasl_field-checkbox label.radio input:checked::before {
+  outline-color: var(--btn-color);
+}
+
+#clean-form .ouasl_field-radios label.radio input:checked::after,
+#clean-form .ouasl_field-checkbox label.radio input:checked::after {
+  background-color: var(--btn-color);
+}
+
+#clean-form .form-clean .form-heading-txt {
+  margin: 0;
+  color: var(--btn-color);
+  padding-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#clean-form .form-clean label .ouasl_field-title {
+  color: var(--btn-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#clean-form .form-clean label.text,
+#clean-form .form-clean label.email,
+#clean-form .form-clean label.tel,
+#clean-form .form-clean label.number,
+#clean-form .form-clean label.select,
+#clean-form .form-clean label.date,
+#clean-form .form-clean label.textarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  width: calc(50% - 7.5px);
+}
+
+#clean-form .form-clean label.textarea {
+  width: 100%;
+}
+
+#clean-form .form-clean label textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+#clean-form .form-clean label input,
+#clean-form .form-clean label select {
+  direction: rtl;
+  width: 100%;
+}
+
+#clean-form .form-clean label input,
+#clean-form .form-clean label textarea,
+#clean-form .form-clean label select {
+  padding: 16px;
+  border: 1px solid var(--btn-color);
+  border-radius: 12px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+#clean-form .form-clean label select {
+  padding: 8px 16px;
+}
+
+#clean-form .form-clean label input::placeholder {
+  color: #7D7B7A;
+}
+
+#clean-form .form-clean .button-cta {
+  width: 100%;
+}
+
+#clean-form .form-clean .submit-form-btn {
+  background-color: var(--btn-color);
+  color: var(--tints-10);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#clean-form .catologue-options,
+#clean-form .catologue-options-selection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#clean-form .catologue-options-selection .catologue-options-txt {
+  margin: 0;
+  color: var(--btn-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#clean-form .main-img {
+  overflow: hidden;
+  flex: 1;
+  padding: 5px 0;
+}
+
+#clean-form .main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  #clean-form .main-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #clean-form .content {
+    padding: 30px 0px;
+  }
+
+  #clean-form .catalogue-content {
+    padding: 30px 15px;
+  }
+
+  #clean-form .time-form {
+    width: 100%;
+  }
+
+  #clean-form .form-clean .ouasl_field-radios {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+/** clean-form end **/

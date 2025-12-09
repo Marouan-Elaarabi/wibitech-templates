@@ -1,0 +1,194 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--third-color);
+  color: var(--tints-10);
+}
+
+/** css rules end **/
+/** freshbites-footer start **/
+#freshbites-footer {
+  --main-color: #189d58;
+
+  --tints-1: #2fa769;
+  --tints-2: #46b179;
+  --tints-3: #5dba8a;
+  --tints-4: #74c49b;
+  --tints-5: #8cceac;
+  --tints-6: #a3d8bc;
+  --tints-7: #bae2cd;
+  --tints-8: #d1ebde;
+  --tints-9: #e8f5ee;
+  --tints-10: #ffffff;
+
+  --shades-1: #168d4f;
+  --shades-2: #137e46;
+  --shades-3: #116e3e;
+  --shades-4: #0e5e35;
+  --shades-5: #0c4f2c;
+  --shades-6: #0a3f23;
+  --shades-7: #072f1a;
+  --shades-8: #051f12;
+  --shades-9: #021009;
+  --shades-10: #000000;
+
+  --secondary-color: #024c2f;
+  --third-color: #95cb42;
+  --fourth-color: #fafafa;
+}
+
+#freshbites-footer {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: "Almarai", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--fourth-color);
+}
+
+#freshbites-footer .container {
+  width: 100%;
+  padding: 80px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#freshbites-footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* padding: 80px 0; */
+}
+
+#freshbites-footer .social-media {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+#freshbites-footer .box {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  max-width: 100%;
+  background-color: var(--tints-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+}
+
+#freshbites-footer .box:hover img {
+  transform: rotate(360deg);
+  transition: transform 0.66s linear;
+}
+
+#freshbites-footer .title {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#freshbites-footer .title h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+#freshbites-footer .brand {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  box-sizing: content-box;
+}
+
+#freshbites-footer .copyright {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#freshbites-footer .copyright p {
+  font-size: 17px;
+  margin: 0;
+  display: flex;
+  line-height: 1.4;
+  width: 100%;
+  justify-content: center;
+}
+
+#freshbites-footer .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#freshbites-footer .nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#freshbites-footer .nav a {
+  color: var(--tints-10);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#freshbites-footer .nav a[data-active_hover] {
+  color: var(--third-color) !important;
+  transition: color .36s linear;
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 375px) {
+  #freshbites-footer .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #freshbites-footer .title h2 {
+    font-size: 22px;
+  }
+}
+
+/** freshbites-footer end **/

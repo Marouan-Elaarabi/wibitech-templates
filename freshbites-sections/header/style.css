@@ -1,0 +1,218 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--third-color);
+  color: var(--tints-10);
+}
+
+/** css rules end **/
+
+/** freshbites-header start **/
+#freshbites-header {
+  --main-color: #189d58;
+
+  --tints-1: #2fa769;
+  --tints-2: #46b179;
+  --tints-3: #5dba8a;
+  --tints-4: #74c49b;
+  --tints-5: #8cceac;
+  --tints-6: #a3d8bc;
+  --tints-7: #bae2cd;
+  --tints-8: #d1ebde;
+  --tints-9: #e8f5ee;
+  --tints-10: #ffffff;
+
+  --shades-1: #168d4f;
+  --shades-2: #137e46;
+  --shades-3: #116e3e;
+  --shades-4: #0e5e35;
+  --shades-5: #0c4f2c;
+  --shades-6: #0a3f23;
+  --shades-7: #072f1a;
+  --shades-8: #051f12;
+  --shades-9: #021009;
+  --shades-10: #000000;
+
+  --secondary-color: #024c2f;
+  --third-color: #95cb42;
+  --fourth-color: #fafafa;
+}
+
+#freshbites-header {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: "Almarai", sans-serif;
+  background-color: var(--tints-10);
+  max-height: 100px;
+}
+
+#freshbites-header .container {
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#freshbites-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  max-height: 100px;
+  gap: 20px;
+}
+
+#freshbites-header .brand {
+  flex: 1;
+  display: flex;
+  max-width: 180px;
+}
+
+#freshbites-header .brand a {
+  display: inline-block;
+  padding: 8px 0 8px 8px;
+}
+
+#freshbites-header .brand img {
+  max-width: 100%;
+}
+
+#freshbites-header ul.menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#freshbites-header ul.menu a {
+  color: var(--shades-8);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.26s ease-in-out;
+}
+
+#freshbites-header ul.menu a[data-active_hover] {
+  color: var(--main-color) !important;
+}
+
+#freshbites-header .button-container {
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px 10px 0;
+}
+
+#freshbites-header .cta-btn {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  height: 40px;
+  min-width: 145px;
+  max-width: 145px;
+  color: var(--fourth-color);
+}
+
+#freshbites-header .cta-btn[data-active_hover] {
+  transition: background-color 0.26s ease-in-out;
+  background-color: var(--third-color) !important;
+}
+
+#freshbites-header .responsive-icons {
+  flex: 1;
+  display: flex;
+  display: none;
+  justify-content: end;
+  max-width: fit-content;
+  min-width: 26px;
+}
+
+#freshbites-header .responsive-icons img {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  height: 30px;
+  width: 30px;
+}
+
+#freshbites-header .oa-menu-actions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: var(--tints-10);
+}
+
+@media (max-width: 1024px) {
+  #freshbites-header .responsive-icons {
+    display: flex;
+  }
+
+  #freshbites-header .oa-menu-actions {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    gap: 25px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+  }
+
+  #freshbites-header .oa-menu-actions.active {
+    display: flex;
+  }
+
+  #freshbites-header .oa-menu-actions.active .button-container {
+    min-width: 200px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #freshbites-header ul.menu {
+    flex: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #freshbites-header ul.menu {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #freshbites-header .button-container {
+    width: 100%;
+  }
+
+  #freshbites-header .cta-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/** freshbites-header end **/

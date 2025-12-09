@@ -1,0 +1,165 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-header start **/
+
+#athar-header {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-header {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  position: relative;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+  height: 80px;
+  background-color: var(--secondary-color);
+}
+
+#athar-header .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#athar-header .content {
+  max-width: 1020px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 43px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(9.5px);
+}
+
+#athar-header .content .logo img {
+  width: 43px;
+  height: 30px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+#athar-header .content .athar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+#athar-header .content .athar-menu .link {
+  color: var(--fourth-color);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-header .content .cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#athar-header .content .header-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px;
+}
+
+#athar-header .content .header-cta .cta-txt {
+  margin: 0;
+  color: var(--secondary-color);
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-header .content .header-cta .arrow-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#athar-header .content .drop-down {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #athar-header .content {
+    flex-direction: column;
+    max-height: 66.4px;
+    overflow: hidden;
+    padding: 15px 20px;
+    max-width: 80%;
+  }
+
+  #athar-header .content.open {
+    max-height: 758px;
+  }
+
+  #athar-header .content .logo {
+    width: 100%;
+  }
+
+  #athar-header .content .drop-down {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    transform: translateY(70%);
+  }
+
+  #athar-header .content .drop-down img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #athar-header .content .athar-menu .link,
+  #athar-header .content .header-cta .register {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  #athar-header .content.open .athar-menu .link,
+  #athar-header .content.open .header-cta .register {
+    pointer-events: unset;
+    opacity: 1;
+  }
+
+  #athar-header .content .athar-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+}
+
+/** athar-header end **/

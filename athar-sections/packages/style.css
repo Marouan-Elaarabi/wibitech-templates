@@ -1,0 +1,221 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-packages start **/
+
+#athar-packages {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-packages {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+#athar-packages .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-packages .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+#athar-packages .section-heading-txt {
+  color: var(--fourth-color);
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-packages .packs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+#athar-packages .packs * {
+  text-align: center;
+}
+
+#athar-packages .pack {
+  border-radius: 35px;
+  background: linear-gradient(104deg, #2B2B2B -54.54%, #151515 98.18%), #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#athar-packages .pack.active {
+  background: unset;
+  background-color: var(--main-color);
+}
+
+#athar-packages .pack-head,
+#athar-packages .pack-body,
+#athar-packages .pack-footer {
+  padding: 0 15px;
+  color: var(--fourth-color);
+}
+
+#athar-packages .pack-head {
+  border-radius: 35px;
+  box-shadow: 0 56px 16px 0 rgba(0, 0, 0, 0.00), 0 36px 14px 0 rgba(0, 0, 0, 0.01), 0 20px 12px 0 rgba(0, 0, 0, 0.02), 0 9px 9px 0 rgba(0, 0, 0, 0.04), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#athar-packages .pack.active .pack-head {
+  border-radius: 35px;
+  box-shadow: none;
+}
+
+#athar-packages .pack-head .pack-head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  padding: 17px 15px;
+  height: 167px;
+  border-radius: 25px;
+  background-color: #292929;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#athar-packages .pack.active .pack-head-title {
+  background-color: #E3E3E3;
+}
+
+#athar-packages .pack-head .pack-head-title-heading,
+#athar-packages .pack-head .pack-head-title-paragraph {
+  margin: 0;
+  color: var(--fourth-color);
+  width: 100%;
+}
+
+#athar-packages .pack.active * {
+  color: #000;
+}
+
+#athar-packages .pack-head .pack-head-title-heading {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-packages .pack-head .pack-head-title-paragraph {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+#athar-packages .pack-head .pack-head-title-paragraph .price {
+  font-size: 25px;
+}
+
+#athar-packages .pack-body {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#athar-packages .pack-body p {
+  margin: 0;
+  width: 100%;
+}
+
+#athar-packages .pack-body span {
+  font-weight: 700;
+}
+
+#athar-packages .pack-footer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#athar-packages .pack-footer p {
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  max-width: 273px;
+  height: 35px;
+}
+
+#athar-packages .pack-footer .cta-btn {
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 47px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-packages .pack.active .pack-footer .cta-btn {
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  #athar-packages .packs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #athar-packages .packs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/** athar-packages end **/

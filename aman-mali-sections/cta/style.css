@@ -1,0 +1,128 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** amanmali-cta start **/
+
+#amanmali-cta {
+  --main-color: #0085f2;
+
+  --shades-1: #0078da;
+  --shades-2: #006ac2;
+  --shades-3: #005da9;
+  --shades-4: #005091;
+  --shades-5: #004379;
+  --shades-6: #003561;
+  --shades-7: #002849;
+  --shades-8: #001b30;
+  --shades-9: #000d18;
+  --shades-10: #000000;
+
+  --tints-1: #1a91f3;
+  --tints-2: #339df5;
+  --tints-3: #4daaf6;
+  --tints-4: #66b6f7;
+  --tints-5: #80c2f9;
+  --tints-6: #99cefa;
+  --tints-7: #b3dafb;
+  --tints-8: #cce7fc;
+  --tints-9: #e6f3fe;
+  --tints-10: #ffffff;
+
+  --secondary-color: #ECF6FF;
+  --third-color: #001E33;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-image: url(./amanmali-cta-bg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+#amanmali-cta .container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#amanmali-cta .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 437px;
+}
+
+#amanmali-cta .content .cta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#amanmali-cta .content .cta-info .cta-info-header,
+#amanmali-cta .content .cta-info .cta-info-description {
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--tints-10);
+  text-align: center;
+}
+
+#amanmali-cta .content .cta-info .cta-info-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 640px;
+}
+
+#amanmali-cta .content .cta-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#amanmali-cta .content .cta-btns a {
+  border-radius: 10px;
+  color: var(--tints-10);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 20px 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+#amanmali-cta .content .cta-btns a.consult-us {
+  background-color: var(--tints-10);
+  color: var(--shades-10);
+}
+
+@media screen and (max-width: 767px) {
+  #amanmali-cta .content .cta-info .cta-info-header {
+    font-size: 35px;
+  }
+
+  #amanmali-cta .content .cta-btns {
+    flex-direction: column;
+  }
+
+  #amanmali-cta .content .cta-btns a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/** amanmali-cta end **/

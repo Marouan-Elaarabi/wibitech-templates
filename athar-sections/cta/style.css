@@ -1,0 +1,118 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** athar-cta start **/
+
+#athar-cta {
+  --main-color: #fff;
+  --secondary-color: #060606;
+  --third-color: #303030;
+  --fourth-color: #fff;
+}
+
+#athar-cta {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+}
+
+#athar-cta .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#athar-cta .content {
+  border-radius: 35px;
+  background: #303030;
+  padding: 16px;
+}
+
+#athar-cta .cta-wrapper {
+  background-image: url(./cta-bg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  height: 400px;
+  border-radius: 25px;
+}
+
+#athar-cta .cta-wrapper .heading {
+  color: var(--fourth-color);
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 306px;
+  margin: 0;
+}
+
+#athar-cta .cta-wrapper .cta-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#athar-cta .cta-wrapper .cta-btn,
+#athar-cta .cta-wrapper .whatsapp-cta {
+  background-color: var(--main-color);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 306px;
+  border-radius: 47px;
+  padding: 12px 0;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#athar-cta .cta-wrapper .whatsapp-cta {
+  background-color: #4BC959;
+}
+
+#athar-cta .cta-wrapper .whatsapp-cta img {
+  max-width: 25px;
+  max-height: 25px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+#athar-cta .cta-wrapper .info {
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #athar-cta .cta-wrapper .heading {
+    font-size: 28px;
+  }
+
+  #athar-cta .cta-wrapper .cta-btn,
+  #athar-cta .cta-wrapper .whatsapp-cta {
+    max-width: 250px;
+  }
+}
+
+/** athar-cta end **/

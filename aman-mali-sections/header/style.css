@@ -1,0 +1,265 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** lawfirm-header start **/
+
+#amanmali-header {
+  --main-color: #0085f2;
+
+  --shades-1: #0078da;
+  --shades-2: #006ac2;
+  --shades-3: #005da9;
+  --shades-4: #005091;
+  --shades-5: #004379;
+  --shades-6: #003561;
+  --shades-7: #002849;
+  --shades-8: #001b30;
+  --shades-9: #000d18;
+  --shades-10: #000000;
+
+  --tints-1: #1a91f3;
+  --tints-2: #339df5;
+  --tints-3: #4daaf6;
+  --tints-4: #66b6f7;
+  --tints-5: #80c2f9;
+  --tints-6: #99cefa;
+  --tints-7: #b3dafb;
+  --tints-8: #cce7fc;
+  --tints-9: #e6f3fe;
+  --tints-10: #ffffff;
+
+  --secondary-color: #ECF6FF;
+  --third-color: #001E33;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", serif;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#amanmali-header .container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#amanmali-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 135px;
+  max-height: 135px;
+  padding: 0 10px;
+}
+
+#amanmali-header .oa-menu-actions {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#amanmali-header ul.menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#amanmali-header ul.menu a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.33s ease;
+  color: var(--third-color);
+}
+
+#amanmali-header ul.menu a[data-active_hover] {
+  color: var(--main-color);
+}
+
+#amanmali-header .brand {
+  flex: 1;
+  display: flex;
+  max-width: 180px;
+}
+
+#amanmali-header .brand img {
+  max-width: 100%;
+}
+
+#amanmali-header .nav-responsive {
+  display: none;
+}
+
+#amanmali-header .item-link-responsive {
+  display: none;
+  cursor: pointer;
+}
+
+#amanmali-header .link {
+  color: var(--tints-10);
+  text-decoration: none;
+  padding: 2px;
+}
+
+#amanmali-header .button-container .cta-btn-link .contact-text {
+  color: var(--tints-10);
+}
+
+#amanmali-header .button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 10px 10px 0;
+}
+
+#amanmali-header .language-link {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#amanmali-header .language-link .text {
+  color: var(--tints-10);
+}
+
+#amanmali-header .cta-btn-link {
+  border-radius: 10px;
+  color: var(--tints-10);
+  font-weight: 700;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 20px 32px;
+  text-align: center;
+}
+
+#amanmali-header .cta-btn-link[data-active_hover] {
+  background-color: var(--main-color);
+}
+
+#amanmali-header .cta-btn .contact-icon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--tints-10);
+}
+
+#amanmali-header .responsive-icons {
+  display: none;
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+}
+
+#amanmali-header .responsive-icons img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  #amanmali-header .content {
+    padding: 0 35px;
+  }
+
+  #amanmali-header .responsive-icons {
+    display: flex;
+  }
+
+  #amanmali-header .oa-menu-actions {
+    position: absolute;
+    z-index: 999;
+    top: 126px;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    height: calc(100vh - 126px);
+    gap: 30px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: var(--tints-10);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #amanmali-header .oa-menu-actions.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #amanmali-header .button-container {
+    flex-direction: column-reverse;
+  }
+
+  #amanmali-header .oa-menu-actions.active .button-container {
+    min-width: 200px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #amanmali-header .language {
+    display: none;
+  }
+
+  #amanmali-header .cta-btn {
+    border: none;
+    font-size: 17px;
+    height: unset;
+  }
+
+  #amanmali-header .cta-btn .contact-icon {
+    display: none;
+  }
+
+  #amanmali-header ul.menu {
+    flex: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #amanmali-header .content {
+    padding: 0;
+    height: 100px;
+  }
+
+  #amanmali-header ul.menu {
+    width: 100%;
+  }
+
+  #amanmali-header .button-container {
+    width: 100%;
+  }
+
+  #amanmali-header .cta-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #amanmali-header .cta-btn-link {
+    margin: 0 auto;
+  }
+}
+
+/** lawfirm-header end **/
