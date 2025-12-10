@@ -517,7 +517,6 @@
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
-  height: 100%;
 }
 
 #ouasl-benefits .content {
@@ -659,7 +658,9 @@
   }
 }
 
-/* #ouasl-brand-trust start */
+/** ouasl-benefits end **/
+
+/** #ouasl-brand-trust start **/
 
 #ouasl-brand-trust {
   --tints-1: #2582e6;
@@ -825,7 +826,7 @@
   }
 }
 
-/** ouasl-benefits end **/
+/** ouasl-brand-trust end **/
 
 /** ouasl-faq start **/
 
@@ -1004,7 +1005,7 @@
   }
 }
 
-/** saasagency-faq end **/
+/** ouasl-faq end **/
 
 /** ouasl-footer start **/
 
@@ -1052,7 +1053,6 @@
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
-  height: 100%;
 }
 
 #ouasl-footer .container .content {

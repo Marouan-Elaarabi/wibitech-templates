@@ -1,0 +1,73 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** ouasl-video start **/
+
+#ouasl-video {
+  --tints-1: #2582e6;
+  --tints-2: #3d90e9;
+  --tints-3: #569eeb;
+  --tints-4: #6eacee;
+  --tints-5: #86baf1;
+  --tints-6: #9ec7f4;
+  --tints-7: #b6d5f7;
+  --tints-8: #cfe3f9;
+  --tints-9: #e7f1fc;
+  --tints-10: #ffffff;
+
+  --shades-1: #0c68cc;
+  --shades-2: #0a5db6;
+  --shades-3: #09519f;
+  --shades-4: #084688;
+  --shades-5: #073a72;
+  --shades-6: #052e5b;
+  --shades-7: #042344;
+  --shades-8: #03172d;
+  --shades-9: #010c17;
+  --shades-10: #000000;
+
+  --btn-color: #0D74E3;
+  --sec-bg-color: #010202;
+  --main-bg-color: #121416;
+  --txt-color: #F5F5F5;
+}
+
+#ouasl-video {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-clip: border-box;
+  background-color: var(--sec-bg-color);
+}
+
+#ouasl-video .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+#ouasl-video .content {
+  padding: 0 67.5px;
+}
+
+#ouasl-video .image-container {
+  padding: 5px 0;
+}
+
+#ouasl-video .image-container iframe {
+  width: 100%;
+  height: 767px;
+  margin-top: 66px;
+  border-radius: 13px;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+  #ouasl-video .content {
+    padding: 0;
+  }
+}
+
+/** ouasl-video end **/

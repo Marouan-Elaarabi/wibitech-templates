@@ -1,0 +1,248 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** ouasl-hero start **/
+
+#ouasl-hero {
+  --tints-1: #2582e6;
+  --tints-2: #3d90e9;
+  --tints-3: #569eeb;
+  --tints-4: #6eacee;
+  --tints-5: #86baf1;
+  --tints-6: #9ec7f4;
+  --tints-7: #b6d5f7;
+  --tints-8: #cfe3f9;
+  --tints-9: #e7f1fc;
+  --tints-10: #ffffff;
+
+  --shades-1: #0c68cc;
+  --shades-2: #0a5db6;
+  --shades-3: #09519f;
+  --shades-4: #084688;
+  --shades-5: #073a72;
+  --shades-6: #052e5b;
+  --shades-7: #042344;
+  --shades-8: #03172d;
+  --shades-9: #010c17;
+  --shades-10: #000000;
+
+  --btn-color: #0D74E3;
+  --sec-bg-color: #010202;
+  --main-bg-color: #121416;
+  --txt-color: #F5F5F5;
+}
+
+#ouasl-hero {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  height: 100vh;
+  background-image: url(./Background-scaled.webp);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+#ouasl-hero .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+}
+
+#ouasl-hero .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#ouasl-hero .heading-paragraph {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#ouasl-hero .heading-paragraph .heading-txt,
+#ouasl-hero .heading-paragraph .paragraph-txt {
+  margin: 0;
+  color: var(--txt-color);
+  line-height: 1.1;
+}
+
+#ouasl-hero .heading-paragraph .heading-txt {
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 840px;
+}
+
+#ouasl-hero .heading-paragraph .paragraph-txt {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 486px;
+}
+
+#ouasl-hero .form-social-proof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 469px;
+  width: 100%;
+}
+
+#ouasl-hero .form-ouasl {
+  position: relative;
+}
+
+#ouasl-hero .form-ouasl,
+#ouasl-hero .form-ouasl label.email,
+#ouasl-hero .form-ouasl label.email input {
+  width: 100%;
+}
+
+#ouasl-hero .form-ouasl label.email {
+  display: block;
+}
+
+#ouasl-hero .form-ouasl label.email input,
+#ouasl-hero .form-ouasl label.email input::placeholder {
+  color: #898E93;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Tajawal", sans-serif;
+}
+
+#ouasl-hero .form-ouasl label.email input {
+  border: 0.75px solid #898E93;
+  background-color: var(--sec-bg-color);
+  border-radius: 20px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+}
+
+#ouasl-hero .form-ouasl .submit-btn {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#ouasl-hero .form-ouasl .submit-btn .subscribe {
+  background-color: var(--btn-color);
+  color: var(--txt-color);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#ouasl-hero .social-proof-wrapper,
+#ouasl-hero .social-proof,
+#ouasl-hero .social-proof-imgs,
+#ouasl-hero .social-proof-wrapper .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#ouasl-hero .social-proof-wrapper {
+  flex-direction: column;
+}
+
+#ouasl-hero .social-proof-imgs {
+  gap: 0px;
+}
+
+#ouasl-hero .social-proof-img {
+  padding: 3px 0;
+  margin-right: -15px;
+}
+
+#ouasl-hero .social-proof-img img {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#ouasl-hero .social-proof-wrapper .social-proof-txt {
+  color: var(--txt-color);
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#ouasl-hero .social-proof-wrapper .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 6px;
+  overflow: hidden;
+}
+
+#ouasl-hero .social-proof-wrapper .social img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+
+  #ouasl-hero .heading-paragraph .heading-txt,
+  #ouasl-hero .heading-paragraph .paragraph-txt,
+  #ouasl-hero .form-social-proof {
+    max-width: unset;
+  }
+
+  #ouasl-hero .heading-paragraph .heading-txt {
+    font-size: 32px;
+  }
+
+  #ouasl-hero .heading-paragraph .paragraph-txt {
+    font-size: 15px;
+  }
+
+  #ouasl-hero .social-proof {
+    flex-direction: column;
+  }
+
+
+  #ouasl-hero .form-ouasl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #ouasl-hero .form-ouasl .submit-btn,
+  #ouasl-hero .form-ouasl .submit-btn .subscribe {
+    position: relative;
+    width: 100%;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
+
+  #ouasl-hero .form-ouasl label.email input,
+  #ouasl-hero .form-ouasl .submit-btn .subscribe {
+    padding: 16px 20px;
+  }
+}
+
+/** ouasl-hero end **/

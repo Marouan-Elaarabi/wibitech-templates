@@ -1,0 +1,280 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** thobe-form start **/
+
+#thobe-form {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-form {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 30px 0;
+}
+
+#thobe-form .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+#thobe-form .content {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
+  margin: 0 17.5px;
+}
+
+#thobe-form .form-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 360px;
+}
+
+#thobe-form .form-heading-txt,
+#thobe-form .form-heading-paragraph {
+  margin: 0;
+  color: var(--shades-10);
+  line-height: 1.25;
+}
+
+#thobe-form .form-heading-txt {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+#thobe-form .form-heading-paragraph {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#thobe-form .form-wrapper {
+  max-width: 600px;
+}
+
+#thobe-form .form-thobe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+#thobe-form .form-thobe .half-span {
+  width: calc(50% - 10px);
+}
+
+#thobe-form .form-thobe>label,
+#thobe-form .form-thobe>.ouasl_field-radios {
+  width: 100%;
+}
+
+#thobe-form .form-thobe label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#thobe-form .form-thobe label .ouasl_field-title,
+#thobe-form .form-thobe label .ouasl_field-title+input,
+#thobe-form .form-thobe .ouasl_field-radios .option-description-title,
+#thobe-form .form-thobe .ouasl_field-checkbox .ouasl_field-checkbox_title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--sec-bg-color);
+  margin: 0;
+}
+
+#thobe-form .form-thobe label .ouasl_field-title+input {
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios,
+#thobe-form .form-thobe .ouasl_field-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .ouasl_field-radios_title,
+#thobe-form .form-thobe .ouasl_field-checkbox .ouasl_field-checkbox_title {
+  width: 100%;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio {
+  flex: 1;
+  height: 45px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio.active,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio.active {
+  background-color: var(--sec-bg-color);
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio .ouasl_field-title {
+  color: var(--sec-bg-color);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio.active .ouasl_field-title,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio.active .ouasl_field-title {
+  color: var(--main-bg-color);
+}
+
+#thobe-form .form-thobe .ouasl_field-radios .radio input,
+#thobe-form .form-thobe .ouasl_field-checkbox .radio input {
+  display: none;
+}
+
+
+#thobe-form .form-thobe ::placeholder,
+#thobe-form .form-thobe ::placeholder {
+  color: #C7C7C7;
+  font-family: "Tajawal", sans-serif;
+}
+
+#thobe-form .form-thobe label textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#thobe-form .form-thobe label select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+#thobe-form .form-thobe label select option {
+  color: var(--sec-bg-color);
+
+}
+
+#thobe-form .form-thobe .btn-cta {
+  width: 100%;
+}
+
+#thobe-form .form-thobe .button-cta {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-bg-color);
+  color: var(--main-bg-color);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 18px 0;
+  border: none;
+  cursor: pointer;
+  font-family: "Tajawal", sans-serif;
+}
+
+#thobe-form .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#thobe-form .form-footer-paragraph {
+  max-width: 354px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: var(--sec-bg-color);
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-form .content {
+    margin: 0;
+    padding: 50px 20px;
+    margin: 0;
+  }
+
+  #thobe-form .content .form-heading,
+  #thobe-form .content .form-wrapper {
+    max-width: unset;
+  }
+
+  #thobe-form .form-thobe .half-span {
+    width: 100%;
+  }
+
+  #thobe-form .form-thobe .ouasl_field-radios .radio .ouasl_field-title {
+    font-size: 15px;
+  }
+}
+
+/** thobe-form end **/

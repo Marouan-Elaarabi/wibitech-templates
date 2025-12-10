@@ -1,0 +1,88 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** thobe-header start **/
+
+#thobe-header {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-header {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  height: 126px;
+}
+
+#thobe-header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 !important;
+}
+
+#thobe-header .upper-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 100%;
+  gap: 60px;
+  background-color: var(--sec-bg-color);
+  overflow: hidden;
+}
+
+#thobe-header .upper-header-benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex-shrink: 0;
+  padding: 2px 0;
+}
+
+#thobe-header .upper-header .upper-header-benefit-txt {
+  margin: 0;
+  color: var(--tints-10);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#thobe-header .lower-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 82px;
+  width: 100%;
+  background-color: var(--tints-10);
+}
+
+/** thobe-header end **/

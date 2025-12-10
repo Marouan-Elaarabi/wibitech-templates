@@ -1,0 +1,209 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** ouasl-footer start **/
+
+#ouasl-footer {
+  --tints-1: #2582e6;
+  --tints-2: #3d90e9;
+  --tints-3: #569eeb;
+  --tints-4: #6eacee;
+  --tints-5: #86baf1;
+  --tints-6: #9ec7f4;
+  --tints-7: #b6d5f7;
+  --tints-8: #cfe3f9;
+  --tints-9: #e7f1fc;
+  --tints-10: #ffffff;
+
+  --shades-1: #0c68cc;
+  --shades-2: #0a5db6;
+  --shades-3: #09519f;
+  --shades-4: #084688;
+  --shades-5: #073a72;
+  --shades-6: #052e5b;
+  --shades-7: #042344;
+  --shades-8: #03172d;
+  --shades-9: #010c17;
+  --shades-10: #000000;
+
+  --btn-color: #0D74E3;
+  --sec-bg-color: #010202;
+  --main-bg-color: #121416;
+  --txt-color: #F5F5F5;
+}
+
+#ouasl-footer {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-clip: border-box;
+  background-image: url(./footer-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
+}
+
+#ouasl-footer .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#ouasl-footer .container .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 125px;
+  padding: 0 67.5px;
+}
+
+#ouasl-footer .content .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#ouasl-footer .content .upper .logo-paragraph {
+  max-width: 160px;
+}
+
+#ouasl-footer .content .upper .logo-paragraph-txt {
+  color: var(--txt-color);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#ouasl-footer .content .upper .footer-cta,
+#ouasl-footer .content .upper .footer-cta-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 35px;
+}
+
+#ouasl-footer .content .upper .footer-cta {
+  max-width: 620px;
+}
+
+#ouasl-footer .content .upper .footer-cta-heading {
+  gap: 20px;
+}
+
+#ouasl-footer .content .upper .footer-cta-heading-txt,
+#ouasl-footer .content .upper .footer-cta-paragraph-txt {
+  margin: 0;
+  color: var(--txt-color);
+}
+
+#ouasl-footer .content .upper .footer-cta-heading-txt {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 378px;
+}
+
+#ouasl-footer .content .upper .footer-cta-paragraph-txt {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#ouasl-footer .content .upper .footer-cta .header-cta {
+  padding: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#ouasl-footer .content .upper .footer-cta .get-started {
+  display: block;
+  background-color: var(--btn-color);
+  color: var(--txt-color);
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px 50px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+#ouasl-footer .content .lower,
+#ouasl-footer .content .lower .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ouasl-footer .content .lower .social {
+  padding: 3px;
+}
+
+#ouasl-footer .content .lower {
+  width: 100%;
+}
+
+#ouasl-footer .content .lower .copyright-txt {
+  color: var(--txt-color);
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#ouasl-footer .content .lower .socials {
+  gap: 10px;
+}
+
+#ouasl-footer .content .lower .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  overflow: hidden;
+}
+
+#ouasl-footer .content .lower .social img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #ouasl-footer .container .content {
+    padding: 0;
+    gap: 50px;
+  }
+
+  #ouasl-footer .content .upper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #ouasl-footer .content .upper .footer-cta-heading {
+    text-align: center;
+  }
+
+  #ouasl-footer .content .upper .footer-cta-heading-txt {
+    max-width: unset;
+  }
+
+  #ouasl-footer .content .upper .footer-cta .cta-btn {
+    margin: 0 auto;
+  }
+
+  #ouasl-footer .content .lower {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/** ouasl-footer end **/
