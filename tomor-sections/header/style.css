@@ -1,0 +1,142 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** tomor-header start **/
+
+#tomor-header {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-header {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-header .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#tomor-header .logo-content,
+#tomor-header .links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#tomor-header .logo-content .logo {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+#tomor-header .logo-content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#tomor-header .logo-content .logo-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#tomor-header .links-wrapper {
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 100;
+}
+
+#tomor-header .links-wrapper .link {
+  color: var(--txt-color-1);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+#tomor-header .menu-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#tomor-header .menu-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-header .links-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    background-color: var(--main-bg-color);
+    opacity: 0;
+    transition: .44s;
+    pointer-events: none;
+  }
+
+  #tomor-header .links-wrapper.open {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  #tomor-header .menu-icon {
+    display: block;
+  }
+}
+
+/** tomor-header end **/

@@ -1,0 +1,121 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** tomor-hero start **/
+
+#tomor-hero {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-hero {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-hero .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 65px;
+  padding: 40px 0;
+}
+
+#tomor-hero .content .heading-cta,
+#tomor-hero .content .heading-txt {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tomor-hero .content .heading-title,
+#tomor-hero .content .heading-paragraph {
+  color: var(--txt-color-1);
+  margin: 0;
+  text-align: center;
+}
+
+#tomor-hero .content .heading-title {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-hero .content .heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-hero .content .cta-wrapper a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 90px;
+  border-radius: 50px;
+  background-color: var(--btn-color);
+  color: var(--txt-color-2);
+  text-decoration: none;
+}
+
+#tomor-hero .content .hero-banner {
+  max-width: 1010px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tomor-hero .content .hero-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-hero .content .heading-title {
+    font-size: 37px;
+  }
+}
+
+/** tomor-hero end **/

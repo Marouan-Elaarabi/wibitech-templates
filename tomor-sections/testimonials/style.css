@@ -1,0 +1,290 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** tomor-testimonials start **/
+
+#tomor-testimonials {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-testimonials {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+  padding: 0;
+  padding: 40px 0;
+}
+
+#tomor-testimonials .container {
+  padding: 15px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+#tomor-testimonials .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tomor-testimonials .testimonial-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 560px;
+}
+
+#tomor-testimonials .testimonial-heading-txt,
+#tomor-testimonials .testimonial-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-1);
+}
+
+#tomor-testimonials .testimonial-heading-txt {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-testimonials .testimonial-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-testimonials .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  position: relative;
+  height: 550px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#tomor-testimonials .swiper,
+#tomor-testimonials .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+#tomor-testimonials .swiper-slide {
+  padding: 2px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .44s;
+}
+
+#tomor-testimonials .swiper-slide {
+  transform: scale(.9);
+}
+
+#tomor-testimonials .swiper-slide.swiper-slide-active {
+  transform: scale(1.1);
+}
+
+#tomor-testimonials .swiper-slide .before {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  /* transform: translate(-50%, -50%) rotateY(0); */
+  width: 100%;
+  height: 100%;
+  background-image: url(./testimonials-before.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .44s;
+}
+
+#tomor-testimonials .swiper-slide.swiper-slide-active .before {
+  transform: translate(-50%, -50%) rotateY(0);
+}
+
+#tomor-testimonials .swiper-slide .before {
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+#tomor-testimonials .box,
+#tomor-testimonials .box .testimonial-body,
+#tomor-testimonials .box .testimonial-body .heading,
+#tomor-testimonials .box .testimonial-body .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#tomor-testimonials .box {
+  position: relative;
+  z-index: 20;
+  padding: 0 50px;
+}
+
+#tomor-testimonials .box .testimonial-header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#tomor-testimonials .box .testimonial-body .heading-txt,
+#tomor-testimonials .box .testimonial-body .quote-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+  text-align: center;
+  line-height: 1;
+}
+
+#tomor-testimonials .box .testimonial-body .heading-txt {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+#tomor-testimonials .box .testimonial-body .rating-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#tomor-testimonials .box .testimonial-body .quote-paragraph {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#tomor-testimonials .swiper-pagination {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important;
+  height: fit-content;
+}
+
+#tomor-testimonials .swiper-pagination-bullet-active {
+  background: var(--btn-color);
+}
+
+@media screen and (max-width: 1200px) {
+
+  #tomor-testimonials .swiper-slide:nth-of-type(odd),
+  #tomor-testimonials .swiper-slide:nth-of-type(even) {
+    transform: none;
+  }
+
+  #tomor-testimonials .swiper-slide .before {
+    width: 90%;
+    height: 90%;
+    top: 50%;
+  }
+
+  #tomor-testimonials .swiper-slide:nth-of-type(1) .before,
+  #tomor-testimonials .swiper-slide:nth-of-type(3) .before {
+    transform: translate(-50%, -50%) rotateY(0);
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-testimonials .testimonial-heading {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  #tomor-testimonials .testimonial-heading-txt {
+    font-size: 37px;
+  }
+
+  #tomor-testimonials .swiper-wrapper {
+    padding: 0;
+  }
+
+  #tomor-testimonials .swiper-slide .before {
+    width: 80%;
+    height: 80%;
+    top: 57%;
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 50%;
+  }
+
+  #tomor-testimonials .box,
+  #tomor-testimonials .box .testimonial-body,
+  #tomor-testimonials .box .testimonial-body .heading,
+  #tomor-testimonials .box .testimonial-body .quote {
+    gap: 5px;
+  }
+
+  #tomor-testimonials .box .testimonial-header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #tomor-testimonials .box .testimonial-body .heading-txt {
+    font-size: 18px;
+  }
+
+  #tomor-testimonials .box .testimonial-body .quote-paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  #tomor-testimonials .swiper-slide .before {
+    width: 100%;
+    height: 100%;
+    top: 57%;
+  }
+
+  #tomor-testimonials .swiper-slide .box {
+    width: 70%;
+  }
+}
+
+/** tomor-testimonials end **/

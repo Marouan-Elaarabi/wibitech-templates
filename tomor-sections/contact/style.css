@@ -1,0 +1,158 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** tomor-contact start **/
+
+#tomor-contact {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-contact {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: #E8DEBA;
+  position: relative;
+  padding: 40px 0;
+}
+
+#tomor-contact .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-contact .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 145px;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-contact .form-heading-txt,
+#tomor-contact .form-paragraph-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  line-height: 1;
+}
+
+#tomor-contact .form-heading-txt {
+  font-size: 43px;
+  font-weight: 700;
+}
+
+#tomor-contact .form-paragraph-txt {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+}
+
+#tomor-contact .form-tomor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label {
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label.half-span {
+  width: calc(50% - 8px);
+}
+
+#tomor-contact .form-tomor label input {
+  width: 100%;
+  border-radius: 50px;
+  background-color: var(--main-bg-color);
+  color: var(--txt-color-1);
+  padding: 15px 18px;
+  border: none;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#tomor-contact .form-tomor label input:focus {
+  outline: 1px solid var(--btn-color);
+}
+
+#tomor-contact .form-tomor .button-cta {
+  background-color: var(--txt-color-1);
+  color: var(--txt-color-2);
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 50px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-contact {
+    background-color: unset;
+  }
+
+  #tomor-contact .content {
+    padding: 70px 16px;
+    background-color: #E8DEBA;
+    border-radius: 20px;
+  }
+
+  #tomor-contact .form-tomor label.half-span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-contact .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/** tomor-contact end **/

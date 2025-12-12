@@ -452,13 +452,18 @@
 #tomor-benefits {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--btn-color);
+  background-color: var(--tints-10);
   position: relative;
-  margin: 40px 0;
+  padding: 40px 0px;
+}
+
+#tomor-benefits .tomor-benefits-wrapper {
+  background-color: var(--btn-color);
+  padding: 0px 15px;
 }
 
 #tomor-benefits .container {
-  padding: 0 15px;
+  padding: 0 !important;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -524,9 +529,13 @@
   line-height: 1.3;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #tomor-benefits {
-    background-color: transparent;
+    padding: 40px 15px;
+  }
+
+  #tomor-benefits .tomor-benefits-wrapper {
+    border-radius: 20px;
   }
 
   #tomor-benefits .content {
@@ -866,34 +875,40 @@
 #tomor-offers {
   font-family: "El Messiri", sans-serif;
   direction: rtl;
-  background-color: var(--btn-color);
   position: relative;
-  padding: 0;
-  margin: 40px 0;
+  background-color: var(--main-bg-color);
+  padding: 40px 0;
 }
 
 #tomor-offers .container {
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 #tomor-offers .content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 15px;
 }
 
 #tomor-offers .offer-info,
 #tomor-offers .offer-img {
-  width: 50%;
-  height: 100%;
-  flex: 1;
+  width: calc(50% - 7.5px);
+  overflow: hidden;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 #tomor-offers .offer-info {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--btn-color);
+  border-radius: 20px;
 }
 
 #tomor-offers .offer-info-wrapper {
@@ -947,33 +962,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #tomor-offers .offer-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 1020px) {
-  #tomor-offers {
-    background-color: transparent;
-  }
-
   #tomor-offers .container {
     padding: 0 15px;
   }
 
-  #tomor-offers .content {
-    flex-direction: column;
-    border-radius: 18px;
-    overflow: hidden;
-    background-color: var(--btn-color);
-    height: unset;
-  }
 
   #tomor-offers .offer-info-wrapper {
     padding: 60px 15px;
+  }
+
+  #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+    font-size: 44px;
+  }
+
+  #tomor-offers .offer-info-content .offer-info-heading-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
   }
 
   #tomor-offers .offer-info,
@@ -984,6 +1000,13 @@
 
 
 @media screen and (max-width: 767px) {
+  #tomor-offers .content {
+    flex-direction: column;
+    border-radius: 18px;
+    overflow: hidden;
+    height: unset;
+  }
+
   #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
     font-size: 37px;
   }

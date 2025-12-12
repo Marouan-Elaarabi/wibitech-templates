@@ -1545,6 +1545,7 @@
 
 #amanmali-footer .container .content .form-body .form-info-content .form-paragraph-content .form-amanmali input[type="email"] {
   background-color: #143349;
+  color: var(--tints-10);
   border: 1px solid #001E33;
   padding: 20px 25px;
   font-size: 15px;

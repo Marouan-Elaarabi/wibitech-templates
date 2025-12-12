@@ -1,0 +1,177 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+/** tomor-offers start **/
+
+#tomor-offers {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-offers {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  position: relative;
+  background-color: var(--main-bg-color);
+  padding: 40px 0;
+}
+
+#tomor-offers .container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+#tomor-offers .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 15px;
+}
+
+#tomor-offers .offer-info,
+#tomor-offers .offer-img {
+  width: calc(50% - 7.5px);
+  overflow: hidden;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+#tomor-offers .offer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-color);
+  border-radius: 20px;
+}
+
+#tomor-offers .offer-info-wrapper {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-txt,
+#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+  line-height: 1;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+#tomor-offers .offer-info-wrapper .offer-info-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-offers .offer-info-wrapper .cta-btn {
+  background-color: var(--sec-bg-color);
+  padding: 15px 25px;
+  color: var(--txt-color-1);
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+#tomor-offers .offer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tomor-offers .offer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-offers .container {
+    padding: 0 15px;
+  }
+
+
+  #tomor-offers .offer-info-wrapper {
+    padding: 60px 15px;
+  }
+
+  #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+    font-size: 44px;
+  }
+
+  #tomor-offers .offer-info-content .offer-info-heading-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+  #tomor-offers .offer-info,
+  #tomor-offers .offer-img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #tomor-offers .content {
+    flex-direction: column;
+    border-radius: 18px;
+    overflow: hidden;
+    height: unset;
+  }
+
+  #tomor-offers .offer-info-wrapper .offer-info-heading-txt {
+    font-size: 37px;
+  }
+}
+
+/** tomor-offers end **/

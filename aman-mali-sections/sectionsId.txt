@@ -3,8 +3,8 @@ header: 04396271-470f-4773-b0cf-5671e5b8a130
 hero: ad79cb23-e6be-4649-83d2-b945e42a0dd9
 social-proof: 107cac1f-1efe-4a3b-ba95-8494f9e1546e
 overview: fd50480a-bbc7-45b0-a41f-d92f3c5a2885
-overview-sec:
-cta:
-testimonial:
-faq:
-footer:
+overview-sec: c2dbef29-fcd2-421f-a83c-c1ff6efa826d
+cta: 23401e5e-877b-4784-83dc-c70e7f6d07d6
+testimonial: df4559d8-fba8-42af-9a46-8f0483047c92
+faq: 5288f02f-a844-4b56-b5ec-003a42b0d031
+footer: e7f36686-49f3-4729-892b-77357f12ab25
