@@ -498,21 +498,11 @@
   box-sizing: border-box;
 }
 
-#clean-form .timeleft .timer .minutes-wrapper {
+#clean-form .timeleft .ouasl_timer-countdown > div {
   position: relative;
 }
 
-#clean-form .timeleft .timer .minutes-wrapper::before {
-  content: ":";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateX(-21px) translateY(-60%);
-  font-size: 70px;
-  color: var(--shades-10);
-}
-
-#clean-form .timeleft .timer .minutes-wrapper::after {
+#clean-form .timeleft .ouasl_timer-countdown > div:not(:first-child)::after {
   content: ":";
   position: absolute;
   right: 0;
@@ -522,7 +512,7 @@
   color: var(--shades-10);
 }
 
-#clean-form .timeleft .timer .time-digits {
+#clean-form .timeleft .timer .timer-digits {
   font-size: 40px;
   font-weight: 500;
   line-height: 1;

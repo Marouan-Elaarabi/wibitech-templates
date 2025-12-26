@@ -38,7 +38,7 @@
   background-color: var(--btn-color);
   color: var(--tints-10);
   direction: rtl;
-  height: 143px;
+  /* height: 143px; */
 }
 
 #clean-header .container {
@@ -49,7 +49,7 @@
   width: 100%;
 }
 
-#clean-header .upperbody {
+/* #clean-header .upperbody {
   font-size: 15px;
   overflow: hidden;
   user-select: none;
@@ -80,7 +80,7 @@
 #clean-header .upperbody .upperbody-link .upperbody-txt {
   color: var(--tints-10);
   margin: 0;
-}
+} */
 
 #clean-header .lowerbody {
   background-color: var(--sec-bg-color);
@@ -96,11 +96,11 @@
   margin: 0;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   #clean-header .upperbody {
     --gap: 40px;
   }
-}
+} */
 
 @keyframes scroll {
   to {

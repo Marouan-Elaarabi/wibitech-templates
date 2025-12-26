@@ -68,7 +68,7 @@
   margin: 0;
 }
 
-#timelime-header .count-down>p {
+#timelime-header .count-down>div {
   width: 27px;
   height: 27px;
   display: flex;

@@ -69,7 +69,7 @@
   margin: 0;
 }
 
-#timelime-header .count-down>p {
+#timelime-header .count-down>div {
   width: 27px;
   height: 27px;
   display: flex;
@@ -82,7 +82,6 @@
   color: var(--shades-10);
   border-radius: 6px;
   position: relative;
-  margin: 0;
 }
 
 #timelime-header .count-down>div:not(:first-of-type)::before {
