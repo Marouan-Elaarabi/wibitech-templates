@@ -1,0 +1,132 @@
+Global rules
+1- the css rules comment gotta include @import directive
+
+2- for the css styling .container globally won't work it gotta be in the scope of it's section as
+  #section-id .container {
+    padding: 0px 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+3- these doesn't get applied in the builder [
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+] global settings gotta be scopped again
+
+A)- Header
+
+1- the logo shoudn't be seperated as txt & img either one txt or one img containing the textual of a logo (if it was an img it's parent .logo-icon gotta have a wrapper class to modify it's bg & border-radius)
+2- wrapper class shoudn't be thrown away it only need to be made if a container has a background, border-raduis, css styles to change
+3- the nav shoudn't have the wrapper content-box classes
+4- for nav-actions it shouldn't have more than one cta
+5- the nav-btn gotta have the txt first then the icon if exist to respect the RTL direction
+6- the responsive design gotta take place for the nav
+
+B)- Section
+
+1- Each section gotta have a bg-color the builder needs it
+2- span tag isn't editable use paragraph
+3- padding is right as visual
+4- an image was positioned with absolute and it's parent doesn't have relative position which made it seen in a whole other section
+5- for content h2,p,ctas like (.hero-content) it's better to design the space between with flex gap not margins, if two content would need more space wrap em in a div & flex gap em
+6- all imgs gotta have a max-width it gotta follow this structure:
+  img-wrapper {
+    max-width: value;
+    or
+    width: value;
+    &
+    max-height: value;
+    or
+    height: value;
+  }
+
+  img-wrapper img {
+    width: 100%;
+    height: 100%
+  }
+
+7- some content color contrast with the background
+8- don't assume that every node will inherit the styling from the body like here
+body {
+  // got a color
+  color: #513f31;
+}
+and for #naqa-products .product-card .product-name h3 the sees as no color
+
+9- for faq-accordions this is the structured meant for the builder
+  <section id="naqa-faq" data-name="naqa-faq" data-tag="section">
+    <div class="container">
+      <div class="content">
+        <div class="faq-header">
+          <h2 class="faq-title">الأسئلة الشائعة</h2>
+        </div>
+
+        <div class="accordion content-box">
+          <details class="wrapper" open>
+            <summary>
+              <h3 class="text">كم تدوم البطارية في الوضع الأقصى؟</h3>
+              <img src="../images/faq-toggle-1.svg" alt="فتح" class="faq-toggle-icon">
+            </summary>
+            <div class="description-wrapper wrapper">
+              <p class="description">تدوم البطارية حتى 60 دقيقة في الوضع العادي و30 دقيقة في الوضع الأقصى، مع إمكانية
+                الشحن الكامل خلال 3 ساعات فقط.</p>
+            </div>
+          </details>
+
+          <details class="wrapper">
+            <summary>
+              <h3 class="text">هل الفلتر قابل للغسل؟</h3>
+              <img src="../images/faq-toggle-1.svg" alt="فتح" class="faq-toggle-icon">
+            </summary>
+            <div class="description-wrapper wrapper">
+              <p class="description">نعم، فلتر HEPA قابل للغسل والاستخدام المتكرر. ننصح بغسله كل أسبوعين للحفاظ على أفضل
+                أداء.</p>
+            </div>
+          </details>
+
+          <details class="wrapper">
+            <summary>
+              <h3 class="text">ما هي سياسة الضمان والاسترجاع؟</h3>
+              <img src="../images/faq-toggle-1.svg" alt="فتح" class="faq-toggle-icon">
+            </summary>
+            <div class="description-wrapper wrapper">
+              <p class="description">نقدم ضمان لمدة عامين يشمل جميع الأعطال التصنيعية، مع إمكانية الاسترجاع خلال 30
+                يوماً من تاريخ الشراء.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  10 - form need to follow this structure for the newsletters
+
+    <section id="lingualearn-form" data-name="lingualearn-form" data-tag="form">
+    <div class="container">
+      <div class="content wrapper content-box">
+        <h2 class="newsletter-header">ابقى على اطلاع بأحدث المعلومات منا!</h2>
+        <form class="form-lingualearn" data-form-type="newsletter"
+          data-form-name="newsletter_form_lingualearn-newsletter"
+          data-form-id="id1756998776850_FmPmB35kEMguuq7Maz5cX4OBCmB3pk">
+          <label class="email-label wrapper">
+            <span class="ouasl_field-title"></span>
+            <input type="email" name="lingualearn_email" placeholder="أدخل بريدك الإلكتروني" required />
+          </label>
+          <div class="submit-btn">
+            <button type="submit" class="subscribe">
+              اشترك الان
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>

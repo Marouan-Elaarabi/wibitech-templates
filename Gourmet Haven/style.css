@@ -1,0 +1,1130 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+/** css rules end **/
+
+
+/** gourmet-header start **/
+
+#gourmet-header {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-header {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 40px 0;
+}
+
+#gourmet-header .container {
+  max-width: 1200px;
+}
+
+#gourmet-header .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gourmet-header .header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+}
+
+#gourmet-header .header-nav a {
+  color: var(--tints-10);
+  font-size: 20px;
+  font-weight: 400;
+  transition: all 0.33s ease;
+}
+
+#gourmet-header .header-nav a[data-active_hover] {
+  opacity: 0.7;
+}
+
+#gourmet-header .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#gourmet-header .hamburger-menu img {
+  width: 36px;
+  height: 36px;
+}
+
+/** gourmet-header end **/
+
+
+/** gourmet-hero start **/
+
+#gourmet-hero {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: transparent;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-hero {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#gourmet-hero .container {
+  padding: 0;
+  max-width: 100%;
+}
+
+#gourmet-hero .content {
+  position: relative;
+  min-height: 700px;
+}
+
+#gourmet-hero .hero-bg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#gourmet-hero .hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gourmet-hero .hero-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  gap: 30px;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+#gourmet-hero .hero-title {
+  color: var(--tints-10);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 73px;
+}
+
+#gourmet-hero .hero-subtitle {
+  color: var(--tints-10);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+#gourmet-hero .hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--tints-10);
+  border-radius: 12px;
+  color: var(--tints-10);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+  padding: 18px 50px;
+  transition: all 0.33s ease;
+}
+
+#gourmet-hero .hero-cta[data-active_hover] {
+  background-color: var(--tints-10);
+  color: var(--shades-10);
+}
+
+/** gourmet-hero end **/
+
+
+/** gourmet-about start **/
+
+#gourmet-about {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-about {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 80px 0;
+}
+
+#gourmet-about .content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+#gourmet-about .about-images {
+  flex: 1;
+  display: flex;
+  gap: 25px;
+  position: relative;
+}
+
+#gourmet-about .about-img-main {
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#gourmet-about .about-img-secondary {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  align-self: flex-end;
+}
+
+#gourmet-about .about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  text-align: right;
+}
+
+#gourmet-about .about-title {
+  color: var(--tints-10);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#gourmet-about .about-description {
+  color: var(--tints-10);
+  font-size: 31px;
+  line-height: 60px;
+}
+
+#gourmet-about .about-cta {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+#gourmet-about .discover-btn {
+  color: var(--tints-10);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+}
+
+#gourmet-about .arrow-icon {
+  width: 77px;
+  height: auto;
+  object-fit: contain;
+}
+
+/** gourmet-about end **/
+
+
+/** gourmet-menu start **/
+
+#gourmet-menu {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-menu {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#gourmet-menu .content {
+  align-items: center;
+}
+
+#gourmet-menu .menu-title {
+  color: var(--tints-10);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+#gourmet-menu .menu-subtitle {
+  color: var(--tints-10);
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+#gourmet-menu .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#gourmet-menu .menu-item-img {
+  width: 100%;
+  height: 573px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#gourmet-menu .menu-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+#gourmet-menu .discover-btn {
+  color: var(--tints-10);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+}
+
+#gourmet-menu .discover-icon {
+  width: 122px;
+  height: auto;
+}
+
+/** gourmet-menu end **/
+
+
+/** gourmet-services start **/
+
+#gourmet-services {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-services {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#gourmet-services .container {
+  padding: 0;
+  max-width: 100%;
+}
+
+#gourmet-services .content {
+  position: relative;
+  min-height: 585px;
+}
+
+#gourmet-services .services-bg-img {
+  width: 100%;
+  height: 585px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#gourmet-services .services-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 585px;
+  text-align: center;
+  padding: 80px 40px;
+  gap: 30px;
+}
+
+#gourmet-services .services-overlay::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 60%;
+  backdrop-filter: blur(4px);
+  border-radius: 25px;
+  z-index: -1;
+}
+
+#gourmet-services .services-title {
+  color: var(--tints-10);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+#gourmet-services .services-text {
+  color: var(--tints-10);
+  font-size: 22px;
+  line-height: 43px;
+}
+
+/** gourmet-services end **/
+
+
+/** gourmet-form start **/
+
+#gourmet-form {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-form {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 80px 0;
+}
+
+#gourmet-form .content {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+#gourmet-form .form-gourmet {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#gourmet-form .form-title {
+  color: var(--tints-10);
+  font-size: 44px;
+  font-weight: 700;
+  text-align: right;
+}
+
+#gourmet-form .form-description {
+  color: var(--tints-10);
+  font-size: 18px;
+  line-height: 38px;
+  text-align: right;
+}
+
+#gourmet-form .form-header {
+  gap: 15px;
+}
+
+#gourmet-form .form-fields {
+  gap: 20px;
+}
+
+#gourmet-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+#gourmet-form .form-row label {
+  flex: 1;
+}
+
+#gourmet-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+#gourmet-form .landino_field-title {
+  color: var(--tints-10);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#gourmet-form input,
+#gourmet-form textarea {
+  background-color: var(--btn-color);
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  font-size: 17px;
+  font-family: "Cairo", sans-serif;
+  color: #1f1f1f;
+  direction: rtl;
+  text-align: right;
+}
+
+#gourmet-form input {
+  height: 58px;
+}
+
+#gourmet-form textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+#gourmet-form .button {
+  cursor: pointer;
+  border: 0;
+  padding: 15px 60px;
+  background-color: var(--btn-color);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+  color: #202020;
+  text-align: center;
+  transition: all 0.33s ease;
+}
+
+#gourmet-form .form-image-wrapper {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+#gourmet-form .form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/** gourmet-form end **/
+
+
+/** gourmet-map start **/
+
+#gourmet-map {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-map {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 0;
+}
+
+#gourmet-map .container {
+  padding: 0;
+  max-width: 100%;
+}
+
+#gourmet-map .map_location_area {
+  width: 100%;
+  height: 469px;
+}
+
+#gourmet-map #map {
+  width: 100%;
+  height: 100%;
+}
+
+/** gourmet-map end **/
+
+
+/** gourmet-footer start **/
+
+#gourmet-footer {
+  --tints-1: #1a1a1a;
+  --tints-2: #333333;
+  --tints-3: #4d4d4d;
+  --tints-4: #666666;
+  --tints-5: #808080;
+  --tints-6: #999999;
+  --tints-7: #b3b3b3;
+  --tints-8: #cccccc;
+  --tints-9: #e6e6e6;
+  --tints-10: #ffffff;
+
+  --shades-1: #000000;
+  --shades-2: #000000;
+  --shades-3: #000000;
+  --shades-4: #000000;
+  --shades-5: #000000;
+  --shades-6: #000000;
+  --shades-7: #000000;
+  --shades-8: #000000;
+  --shades-9: #000000;
+  --shades-10: #000000;
+
+  --btn-color: #f2f2f2;
+  --sec-bg-color: #000000;
+  --main-bg-color: #000000;
+}
+
+#gourmet-footer {
+  width: 100%;
+  background-color: var(--sec-bg-color);
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  padding: 80px 0;
+}
+
+#gourmet-footer .content {
+  align-items: center;
+  gap: 30px;
+}
+
+#gourmet-footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+#gourmet-footer .footer-links a {
+  color: var(--tints-10);
+  font-size: 17px;
+  letter-spacing: -0.2px;
+  transition: all 0.33s ease;
+}
+
+#gourmet-footer .footer-links a[data-active_hover] {
+  opacity: 0.7;
+}
+
+#gourmet-footer .footer-text {
+  color: var(--tints-10);
+  font-size: 17px;
+  opacity: 0.5;
+  text-align: center;
+  letter-spacing: -0.23px;
+}
+
+#gourmet-footer .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+#gourmet-footer .social-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/** gourmet-footer end **/
+
+
+/** tablet media query **/
+@media only screen and (max-width: 768px) {
+
+  #gourmet-header .header-nav {
+    display: none;
+  }
+
+  #gourmet-header .hamburger-menu {
+    display: block;
+  }
+
+  #gourmet-header {
+    padding: 25px 0;
+  }
+
+  #gourmet-hero .hero-overlay {
+    min-height: 500px;
+    padding: 60px 20px;
+  }
+
+  #gourmet-hero .hero-title {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  #gourmet-hero .hero-subtitle {
+    font-size: 16px;
+  }
+
+  #gourmet-hero .hero-cta {
+    padding: 12px 35px;
+    font-size: 16px;
+  }
+
+  #gourmet-about {
+    padding: 50px 0;
+  }
+
+  #gourmet-about .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #gourmet-about .about-images {
+    width: 100%;
+  }
+
+  #gourmet-about .about-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #gourmet-about .about-title {
+    font-size: 30px;
+  }
+
+  #gourmet-about .about-description {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  #gourmet-menu {
+    padding: 50px 0;
+  }
+
+  #gourmet-menu .menu-title {
+    font-size: 30px;
+  }
+
+  #gourmet-menu .menu-subtitle {
+    font-size: 16px;
+  }
+
+  #gourmet-menu .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  #gourmet-menu .menu-item-img {
+    height: 300px;
+  }
+
+  #gourmet-services .content {
+    min-height: 400px;
+  }
+
+  #gourmet-services .services-bg-img {
+    height: 400px;
+  }
+
+  #gourmet-services .services-overlay {
+    min-height: 400px;
+    padding: 40px 20px;
+  }
+
+  #gourmet-services .services-title {
+    font-size: 30px;
+  }
+
+  #gourmet-services .services-text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  #gourmet-form {
+    padding: 50px 0;
+  }
+
+  #gourmet-form .content {
+    flex-direction: column-reverse;
+  }
+
+  #gourmet-form .form-image-wrapper {
+    flex: none;
+    max-width: 100%;
+    height: 300px;
+  }
+
+  #gourmet-form .form-image {
+    height: 300px;
+  }
+
+  #gourmet-form .form-row {
+    flex-direction: column;
+  }
+
+  #gourmet-form .form-title {
+    font-size: 30px;
+  }
+
+  #gourmet-map .map_location_area {
+    height: 300px;
+  }
+
+  #gourmet-footer {
+    padding: 50px 0;
+  }
+
+  #gourmet-footer .footer-links {
+    gap: 20px;
+  }
+
+  #gourmet-footer .footer-links a {
+    font-size: 14px;
+  }
+}
+
+/** Phone media query **/
+@media only screen and (max-width: 375px) {
+
+  #gourmet-header .content {
+    justify-content: flex-end;
+  }
+
+  #gourmet-hero .hero-overlay {
+    min-height: 400px;
+    padding: 40px 15px;
+    gap: 20px;
+  }
+
+  #gourmet-hero .hero-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  #gourmet-hero .hero-subtitle {
+    font-size: 14px;
+  }
+
+  #gourmet-hero .hero-cta {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  #gourmet-about {
+    padding: 40px 0;
+  }
+
+  #gourmet-about .about-images {
+    flex-direction: column;
+  }
+
+  #gourmet-about .about-img-main,
+  #gourmet-about .about-img-secondary {
+    width: 100%;
+  }
+
+  #gourmet-about .about-title {
+    font-size: 24px;
+  }
+
+  #gourmet-about .about-description {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  #gourmet-menu {
+    padding: 40px 0;
+  }
+
+  #gourmet-menu .menu-title {
+    font-size: 24px;
+  }
+
+  #gourmet-menu .menu-subtitle {
+    font-size: 14px;
+  }
+
+  #gourmet-menu .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #gourmet-menu .menu-item-img {
+    height: 250px;
+  }
+
+  #gourmet-services .content {
+    min-height: 300px;
+  }
+
+  #gourmet-services .services-bg-img {
+    height: 300px;
+  }
+
+  #gourmet-services .services-overlay {
+    min-height: 300px;
+    padding: 30px 15px;
+    gap: 15px;
+  }
+
+  #gourmet-services .services-title {
+    font-size: 24px;
+  }
+
+  #gourmet-services .services-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  #gourmet-form {
+    padding: 40px 0;
+  }
+
+  #gourmet-form .form-title {
+    font-size: 24px;
+  }
+
+  #gourmet-form .form-description {
+    font-size: 14px;
+  }
+
+  #gourmet-form .form-image-wrapper {
+    height: 200px;
+  }
+
+  #gourmet-form .form-image {
+    height: 200px;
+  }
+
+  #gourmet-form input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  #gourmet-form textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+
+  #gourmet-map .map_location_area {
+    height: 220px;
+  }
+
+  #gourmet-footer {
+    padding: 40px 0;
+  }
+
+  #gourmet-footer .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #gourmet-footer .footer-text {
+    font-size: 14px;
+  }
+}

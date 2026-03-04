@@ -1,0 +1,209 @@
+/** css rules start **/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");/** css rules end **/
+/** css rules end **/
+
+/** carmaster-carousel start **/
+#carmaster-carousel {
+  --main-color: #4a5859;
+
+  --tints-1: #f96857;
+  --tints-2: #f97969;
+  --tints-3: #fa897c;
+  --tints-4: #fb9a8f;
+  --tints-5: #fcaba2;
+  --tints-6: #fcbcb4;
+  --tints-7: #fdcdc7;
+  --tints-8: #feddda;
+  --tints-9: #feeeec;
+  --tints-10: #ffffff;
+
+  --shades-1: #df4e3d;
+  --shades-2: #c64636;
+  --shades-3: #ae3d30;
+  --shades-4: #953429;
+  --shades-5: #7c2c22;
+  --shades-6: #63231b;
+  --shades-7: #4a1a14;
+  --shades-8: #32110e;
+  --shades-9: #190907;
+  --shades-10: #000000;
+
+  --secondary-color: #f3f3e0;
+  --third-color: #32373b;
+  --fourth-color: #c31719;
+}
+
+#carmaster-carousel {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--shades-10);
+}
+
+#carmaster-carousel .container {
+  width: 100%;
+  padding: 50px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#carmaster-carousel .cars-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  height: 460px;
+}
+
+#carmaster-carousel .info {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 20px;
+}
+
+#carmaster-carousel .sliders-wrapper {
+  flex: 0 1 60%;
+}
+
+#carmaster-carousel .info h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 1.7em;
+  color: var(--shades-10);
+  width: 85%;
+}
+
+#carmaster-carousel .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--shades-10);
+  width: 85%;
+  margin: 0;
+}
+
+#carmaster-carousel .cta-container {
+  display: flex;
+}
+
+#carmaster-carousel .get-started {
+  min-width: 180px;
+  background-color: var(--secondary-color);
+  height: 50px;
+  display: flex;
+  padding: 0 5px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 3em;
+  font-weight: 600;
+  border-radius: 77px;
+  font-size: 14px;
+  color: var(--shades-10);
+  border: 1.5px solid var(--shades-10);
+  transition: all 0.22s ease-in-out;
+}
+
+#carmaster-carousel .get-started[data-active_hover] {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+#carmaster-carousel .carmaster-sliders-wrapper {
+  position: relative;
+  flex: 0 0 60%;
+}
+
+#carmaster-carousel .carmaster-carousel-slider {
+  min-height: 350px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#carmaster-carousel .arrows {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  direction: ltr;
+  position: absolute;
+  bottom: 0;
+  z-index: 99999;
+  box-sizing: border-box;
+}
+
+#carmaster-carousel .arrows .next-carsSlide-arrow,
+#carmaster-carousel .arrows .prev-carsSlide-arrow {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--tints-10);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#carmaster-carousel .swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carmaster-carousel .mercedes {
+  background-image: url("./mercedes.jpg");
+}
+
+#carmaster-carousel .bentley {
+  background-image: url("./bentley.jpg");
+}
+
+#carmaster-carousel .bmw {
+  background-image: url("./bmw.jpg");
+}
+
+@media only screen and (max-width: 1024px) {
+  #carmaster-carousel .cars-features {
+    flex-direction: column;
+    width: 100%;
+    gap: 3em;
+    height: fit-content;
+  }
+  #carmaster-carousel .info {
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  #carmaster-carousel .info h2 {
+    text-align: center;
+  }
+  #carmaster-carousel .carmaster-sliders-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #carmaster-carousel .container {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  #carmaster-carousel .arrows {
+    bottom: 175px;
+    transform: translate(0, 50%);
+  }
+}
+
+@media only screen and (max-width: 375px) {}
+
+/** carmaster-carousel end **/

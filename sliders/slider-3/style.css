@@ -1,0 +1,124 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** thobe-testimonials start **/
+
+#thobe-testimonials {
+  --tints-1: #62615e;
+  --tints-2: #737270;
+  --tints-3: #858482;
+  --tints-4: #969594;
+  --tints-5: #a8a7a6;
+  --tints-6: #b9b9b7;
+  --tints-7: #cbcac9;
+  --tints-8: #dcdcdb;
+  --tints-9: #eeeded;
+  --tints-10: #ffffff;
+
+  --shades-1: #484744;
+  --shades-2: #403f3d;
+  --shades-3: #383735;
+  --shades-4: #302f2e;
+  --shades-5: #282826;
+  --shades-6: #20201e;
+  --shades-7: #181817;
+  --shades-8: #10100f;
+  --shades-9: #080808;
+  --shades-10: #000000;
+
+  --btn-color: #8E5437;
+  --sec-bg-color: #504F4C;
+  --main-bg-color: #E8E8E1;
+}
+
+#thobe-testimonials {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+  background-color: #F2F2EF;
+  padding: 30px 0;
+}
+
+#thobe-testimonials .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#thobe-testimonials .content {
+  background-color: var(--tints-10);
+  border-radius: 20px;
+  margin: 0 17.5px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+#thobe-testimonials .content .heading-txt {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--shades-10);
+}
+
+#thobe-testimonials .content .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+  height: 580px;
+  position: relative;
+  padding: 10px;
+}
+
+#thobe-testimonials .content .swiper,
+#thobe-testimonials .content .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#thobe-testimonials .content .swiper-slide {
+  padding: 2px 0;
+}
+
+#thobe-testimonials .content .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+#thobe-testimonials .content .swiper-pagination {
+  position: relative;
+  width: 100% !important;
+  display: none;
+}
+
+#thobe-testimonials .content .swiper-pagination-bullet-active {
+  background: var(--btn-color);
+}
+
+@media screen and (max-width: 1279px) {
+  #thobe-testimonials .content .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #thobe-testimonials .content {
+    padding: 50px 0;
+    margin: 0;
+  }
+}
+
+/** thobe-testimonials end **/
