@@ -3,7 +3,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 /** css rules end **/
 
-/** lawfirm-header start **/
+/** amanmali-header start **/
 
 #amanmali-header {
   --main-color: #0085f2;
@@ -64,13 +64,20 @@
   align-items: center;
 }
 
-#amanmali-header ul.menu {
+#amanmali-header .list-container {
   flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#amanmali-header ul.menu {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0;
+
 }
 
 #amanmali-header ul.menu a {
@@ -262,7 +269,7 @@
   }
 }
 
-/** lawfirm-header end **/
+/** amanmali-header end **/
 
 
 /** amanmali-hero start **/
@@ -419,10 +426,6 @@
 
   #amanmali-hero .image-wrapper {
     min-width: 250px;
-  }
-
-  #amanmali-hero .image-wrapper img {
-    width: unset;
   }
 }
 
@@ -667,9 +670,9 @@
   }
 
   #amanmali-overview .content .image-content img {
-  max-width: unset;
-  max-height: unset;
-}
+    max-width: unset;
+    max-height: unset;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -857,7 +860,7 @@
   font-family: "Almarai", sans-serif;
   box-sizing: border-box;
   direction: rtl;
-  background-image: url(./amanmali-cta-bg.webp);
+  background-image: url(../images/amanmali-cta-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1069,7 +1072,9 @@
 }
 
 #amanmali-testimonials .testimonial-content .testimonial-rating-star {
-  display: flex;justify-content: center;align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2px;
 }
 
@@ -1143,8 +1148,8 @@
   }
 
   #amanmali-testimonials .testimonial-card {
-      width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1300,7 +1305,7 @@
 
 #amanmali-faq .accordion details summary .text::before {
   content: "";
-  background-image: url(./faq-icon.svg);
+  background-image: url(../images/faq-icon.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

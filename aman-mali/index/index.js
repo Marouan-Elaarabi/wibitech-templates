@@ -26,6 +26,7 @@ function amanmaliHeader() {
       }
 
       responsiveElms.classList.toggle("active", !isClosed);
+      document.body.style.overflow = !isClosed ? "hidden" : "";
       isClosed = !isClosed;
     });
   });
