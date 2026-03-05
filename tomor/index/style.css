@@ -1,0 +1,988 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** tomor-header start **/
+
+#tomor-header {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-header {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-header .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#tomor-header .logo-content,
+#tomor-header .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#tomor-header .logo-content .logo {
+  overflow: hidden;
+}
+
+#tomor-header .logo-content .logo img {
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: cover;
+}
+
+#tomor-header .logo-content .logo-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#tomor-header .links-container {
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 100;
+}
+
+#tomor-header .links-container .link {
+  color: var(--txt-color-1);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+#tomor-header .menu-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#tomor-header .menu-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-header .links-container {
+    position: absolute;
+    height: calc(100vh - 90px);
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    background-color: var(--main-bg-color);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #tomor-header .links-container.open {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  #tomor-header .menu-icon {
+    display: block;
+  }
+}
+
+/** tomor-header end **/
+
+/** tomor-hero start **/
+
+#tomor-hero {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-hero {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-hero .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 65px;
+  padding: 40px 0;
+}
+
+#tomor-hero .content .heading-cta,
+#tomor-hero .content .heading-txt {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tomor-hero .content .heading-title,
+#tomor-hero .content .heading-paragraph {
+  color: var(--txt-color-1);
+  margin: 0;
+  text-align: center;
+}
+
+#tomor-hero .content .heading-title {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-hero .content .heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-hero .content .cta-container a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 90px;
+  border-radius: 50px;
+  background-color: var(--btn-color);
+  color: var(--txt-color-2);
+  text-decoration: none;
+}
+
+#tomor-hero .content .hero-banner {
+  max-width: 1010px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#tomor-hero .content .hero-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-hero .content .heading-title {
+    font-size: 37px;
+  }
+}
+
+/** tomor-hero end **/
+
+/** tomor-best-products start **/
+
+#tomor-best-products {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-best-products {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--main-bg-color);
+  position: relative;
+}
+
+#tomor-best-products .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-best-products .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 65px;
+  padding: 40px 0;
+}
+
+#tomor-best-products .content .heading-cta,
+#tomor-best-products .content .heading-txt {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tomor-best-products .content .heading-title,
+#tomor-best-products .content .heading-paragraph {
+  color: var(--txt-color-1);
+  margin: 0;
+  text-align: center;
+}
+
+#tomor-best-products .content .heading-title {
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-best-products .content .heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-best-products .content .cta-container a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px 90px;
+  border-radius: 50px;
+  background-color: var(--btn-color);
+  color: var(--txt-color-2);
+  text-decoration: none;
+}
+
+#tomor-best-products .content .products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+#tomor-best-products .content .products-grid .box-img {
+  width: 100%;
+  max-height: 365px;
+  height: 100%;
+  overflow: hidden;
+}
+
+#tomor-best-products .content .products-grid .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+#tomor-best-products .content .products-grid .box-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+#tomor-best-products .content .products-grid .box-info .box-title,
+#tomor-best-products .content .products-grid .box-info .box-paragraph {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#tomor-best-products .content .products-grid .box-info .box-title {
+  color: var(--txt-color-1);
+}
+
+#tomor-best-products .content .products-grid .box-info .box-paragraph {
+  color: var(--sec-bg-color);
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-best-products .content .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #tomor-best-products .content .heading-title {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-best-products .content .products-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/** tomor-best-products end **/
+
+/** tomor-benefits start **/
+
+#tomor-benefits {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-benefits {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--tints-10);
+  position: relative;
+  padding: 40px 0px;
+}
+
+#tomor-benefits .tomor-benefits-container {
+  background-color: var(--btn-color);
+  padding: 0px 15px;
+}
+
+#tomor-benefits .container {
+  padding: 0 !important;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-benefits .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px 20px;
+  padding: 50px 0;
+}
+
+#tomor-benefits .benefit-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-benefits .benefit-box .benefit-icon {
+  background-color: var(--sec-bg-color);
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tomor-benefits .benefit-box .benefit-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+#tomor-benefits .benefit-box .benefit-heading,
+#tomor-benefits .benefit-box .benefit-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+}
+
+#tomor-benefits .benefit-box .benefit-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 200px;
+}
+
+#tomor-benefits .benefit-box .benefit-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#tomor-benefits .benefit-box .benefit-paragraph {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 1024px) {
+  #tomor-benefits {
+    padding: 40px 15px;
+  }
+
+  #tomor-benefits .tomor-benefits-wrapper {
+    border-radius: 20px;
+  }
+
+  #tomor-benefits .content {
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-benefits .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/** tomor-benefits end **/
+
+/** tomor-offers start **/
+
+#tomor-offers {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-offers {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  position: relative;
+  background-color: var(--main-bg-color);
+  padding: 40px 0;
+}
+
+#tomor-offers .container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+#tomor-offers .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 15px;
+}
+
+#tomor-offers .offer-info,
+#tomor-offers .offer-img {
+  width: calc(50% - 7.5px);
+  overflow: hidden;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+#tomor-offers .offer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-color);
+  border-radius: 20px;
+}
+
+#tomor-offers .offer-info-container {
+  max-width: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#tomor-offers .offer-info-container .offer-info-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-offers .offer-info-container .offer-info-heading-txt,
+#tomor-offers .offer-info-container .offer-info-heading-paragraph {
+  margin: 0;
+  color: var(--txt-color-2);
+  line-height: 1;
+}
+
+#tomor-offers .offer-info-container .offer-info-heading-txt {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+#tomor-offers .offer-info-container .offer-info-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#tomor-offers .offer-info-container .cta-btn {
+  background-color: var(--sec-bg-color);
+  padding: 15px 25px;
+  color: var(--txt-color-1);
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+#tomor-offers .offer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#tomor-offers .offer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-offers .container {
+    padding: 0 15px;
+  }
+
+
+  #tomor-offers .offer-info-container {
+    padding: 60px 15px;
+  }
+
+  #tomor-offers .offer-info-container .offer-info-heading-txt {
+    font-size: 44px;
+  }
+
+  #tomor-offers .offer-info-content .offer-info-heading-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  #tomor-offers .offer-info,
+  #tomor-offers .offer-img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #tomor-offers .content {
+    flex-direction: column;
+    border-radius: 18px;
+    overflow: hidden;
+    height: unset;
+  }
+
+  #tomor-offers .offer-info-container .offer-info-heading-txt {
+    font-size: 37px;
+  }
+}
+
+/** tomor-offers end **/
+
+/** tomor-contact start **/
+
+#tomor-contact {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-contact {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: #E8DEBA;
+  position: relative;
+  padding: 40px 0;
+}
+
+#tomor-contact .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-contact .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 145px;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#tomor-contact .form-heading-txt,
+#tomor-contact .form-paragraph-txt {
+  margin: 0;
+  color: var(--txt-color-1);
+  line-height: 1;
+}
+
+#tomor-contact .form-heading-txt {
+  font-size: 43px;
+  font-weight: 700;
+}
+
+#tomor-contact .form-paragraph-txt {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#tomor-contact .form-txt {
+  max-width: 250px;
+}
+
+#tomor-contact .form-tomor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label {
+  width: 100%;
+}
+
+#tomor-contact .form-tomor label.half-span {
+  width: calc(50% - 8px);
+}
+
+#tomor-contact .form-tomor label input {
+  width: 100%;
+  border-radius: 50px;
+  background-color: var(--main-bg-color);
+  color: var(--txt-color-1);
+  padding: 15px 18px;
+  border: none;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+#tomor-contact .form-tomor label input:focus {
+  outline: 1px solid var(--btn-color);
+}
+
+#tomor-contact .form-tomor .button-cta {
+  background-color: var(--txt-color-1);
+  color: var(--txt-color-2);
+  border-radius: 50px;
+  text-align: center;
+  padding: 15px 50px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-contact {
+    background-color: white;
+  }
+
+  #tomor-contact .content {
+    padding: 70px 16px;
+    background-color: #E8DEBA;
+    border-radius: 20px;
+  }
+
+  #tomor-contact .form-tomor label.half-span {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tomor-contact .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/** tomor-contact end **/
+
+/** tomor-footer start **/
+
+#tomor-footer {
+  --tints-1: #974e41;
+  --tints-2: #a26156;
+  --tints-3: #ae756b;
+  --tints-4: #b98980;
+  --tints-5: #c59d96;
+  --tints-6: #d1b0ab;
+  --tints-7: #dcc4c0;
+  --tints-8: #e8d8d5;
+  --tints-9: #f3ebea;
+  --tints-10: #ffffff;
+
+  --shades-1: #7d3428;
+  --shades-2: #6f2e23;
+  --shades-3: #61291f;
+  --shades-4: #53231a;
+  --shades-5: #461d16;
+  --shades-6: #381712;
+  --shades-7: #2a110d;
+  --shades-8: #1c0c09;
+  --shades-9: #0e0604;
+  --shades-10: #000000;
+
+  --btn-color: #8B3A2C;
+  --sec-bg-color: #CFB58C;
+  --main-bg-color: #fff;
+  --txt-color-1: #2C110D;
+  --txt-color-2: #FFFDF8;
+}
+
+#tomor-footer {
+  font-family: "El Messiri", sans-serif;
+  direction: rtl;
+  background-color: var(--txt-color-2);
+  position: relative;
+  padding: 40px 0;
+}
+
+#tomor-footer .container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#tomor-footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tomor-footer .logo-content,
+#tomor-footer .links-container,
+#tomor-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#tomor-footer .logo-content .logo-txt {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+#tomor-footer .links-container {
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+#tomor-footer .links-container .link {
+  text-decoration: none;
+  color: var(--txt-color-1);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+#tomor-footer .social-icons {
+  gap: 50px;
+}
+
+#tomor-footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1020px) {
+  #tomor-footer .content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #tomor-footer .links-container {
+    gap: 40px;
+  }
+}
+
+/** tomor-footer end **/
