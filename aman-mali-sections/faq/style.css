@@ -130,7 +130,7 @@
 
 #amanmali-faq .accordion details summary .text::before {
   content: "";
-  background-image: url(./faq-icon.svg);
+  background-image: url(../images/faq-icon.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

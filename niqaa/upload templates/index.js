@@ -15,7 +15,7 @@ document.getElementById("uploadButton").addEventListener("click", () => {
   const zip_file = zip.files;
 
   const formData = new FormData();
-  formData.append("name", "section test 2");
+  formData.append("name", "last version 5");
   formData.append("coming_soon", 0);
   formData.append("multiPages", 0);
   formData.append("categories[]", 5);
@@ -75,7 +75,7 @@ document.getElementById("uploadButton").addEventListener("click", () => {
     }
   }
 
-  const url = "https://api.testingbuilder.com/api/section/";
+  const url = "https://api.testingbuilder.com/api/section/ ";
   const headers = {
     Authorization:
       "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxNSIsImp0aSI6IjAxNTkxOTljY2IwNDI2ZGJlZGZlZTVhM2Y4Mzg3MzBkOTVmZjRjZjVmYWE1MzY3MzU5ZmU3NjY5MmMzYmZjM2VkYzkxNDRjNzg0YWFkMDY1IiwiaWF0IjoxNzcyNDU3NjU2LjA2NTQyNCwibmJmIjoxNzcyNDU3NjU2LjA2NTQyNiwiZXhwIjoxODAzOTkzNjU2LjA2MTE2NSwic3ViIjoiMTQ2Iiwic2NvcGVzIjpbXX0.HICdRaoV7q1BIPN9hAyzEnLXuJ_KAIa5hWN00zTLevYUvLJj8lL3tAvXSD7fJ-uoy8Ld-xN_YQL3ueg_66Cu08ciFEWNoYg-SVaEiWBrmYsLe8P4okVKnJ61dsgkfGFjbobkC35tHK7Ai22717o4oieY5EwcZOGcr_kiKORzCplXZggwT4-1RrVGarH48RCCshz-lPfUiRxgOIA0GDpZDvA9KHq3y2ri4if4_kNiPeat7_N8lfhPgktaGXwckGUGpvDJnhMYeiIXhj7HOzg8YusYkBqe6KziQNCmk6dBhoMBP-iYQN4hTwvwEfdG5n_JxptZyN7GV0i8I4R3p8ysl2-HtQLKuN_UHEz4GNKbpI-47UpSNtCawnAINBd_2y79fHp0oZ4oAB7b931w51TguQ81NeRIvFPoppJtrkGkDqktM7ngiAC5OCAGd5aHqfDEa1jfjQ583IAng6ioXJIrWaOk7SSx52M9txgHmymwS41074bmOOjMTd_c_mPcVSg8nfgpG8X99FqHgtuDUEAeO551zA8A6Zp4eae3IfOdwFUy6-1a0kaWY2N9g3a1QUWva5T4fwRj0KVFXC2GUq8UVQi2w8QWsY58Vt_qvZA0efs9VtiBzgUGgrRoZCD0Et2akwpH8uj2HWWaPFft0HR5vLLF4iNuhT_y51P9ZlfDV7s",

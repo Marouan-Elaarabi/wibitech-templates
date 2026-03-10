@@ -3,7 +3,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 /** css rules end **/
 
-
 /** amanmali-overview start **/
 
 #amanmali-overview {
@@ -142,9 +141,9 @@
   }
 
   #amanmali-overview .content .image-content img {
-  max-width: unset;
-  max-height: unset;
-}
+    max-width: unset;
+    max-height: unset;
+  }
 }
 
 @media screen and (max-width: 767px) {

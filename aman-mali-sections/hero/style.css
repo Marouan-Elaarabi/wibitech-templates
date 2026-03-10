@@ -158,10 +158,6 @@
   #amanmali-hero .image-wrapper {
     min-width: 250px;
   }
-
-  #amanmali-hero .image-wrapper img {
-    width: unset;
-  }
 }
 
 

@@ -64,13 +64,20 @@
   align-items: center;
 }
 
-#amanmali-header ul.menu {
+#amanmali-header .list-container {
   flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#amanmali-header ul.menu {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 0;
   padding: 0;
+
 }
 
 #amanmali-header ul.menu a {
