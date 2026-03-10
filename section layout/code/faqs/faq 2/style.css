@@ -1,0 +1,209 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-faq-2 start **/
+
+#seclayout-faq-2 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-faq-2 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-faq-2 .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 0;
+}
+
+#seclayout-faq-2 .faq-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#seclayout-faq-2 .faq-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+}
+
+#seclayout-faq-2 .faq-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--tints-2);
+  margin: 0;
+}
+
+#seclayout-faq-2 .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+#seclayout-faq-2 .accordion details {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  user-select: none;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+#seclayout-faq-2 .accordion details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.18s;
+  list-style: none;
+}
+
+#seclayout-faq-2 .accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+#seclayout-faq-2 .accordion details summary .text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--third-color);
+  flex: 1;
+}
+
+#seclayout-faq-2 .accordion details summary .chevron {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  transform: rotate(-45deg);
+  transition: transform 0.18s linear;
+  flex-shrink: 0;
+}
+
+#seclayout-faq-2 .accordion details[open] summary .chevron {
+  transform: rotate(135deg);
+}
+
+#seclayout-faq-2 .accordion details .description-wrapper {
+  margin-top: 12px;
+  padding-top: 12px;
+  /* border-top: 1px solid var(--tints-8); */
+}
+
+#seclayout-faq-2 .accordion details .description {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  color: var(--tints-2);
+}
+
+#seclayout-faq-2 .faq-image {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+#seclayout-faq-2 .faq-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-faq-2 .content {
+    gap: 40px;
+    padding: 60px 0;
+  }
+
+  #seclayout-faq-2 .faq-title {
+    font-size: 28px;
+  }
+
+  #seclayout-faq-2 .faq-image img {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-faq-2 .content {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  #seclayout-faq-2 .faq-title {
+    font-size: 24px;
+  }
+
+  #seclayout-faq-2 .faq-description {
+    font-size: 14px;
+  }
+
+  #seclayout-faq-2 .faq-image {
+    width: 100%;
+  }
+
+  #seclayout-faq-2 .faq-image img {
+    height: 280px;
+  }
+
+  #seclayout-faq-2 .accordion details {
+    padding: 16px 20px;
+  }
+
+  #seclayout-faq-2 .accordion details summary .text {
+    font-size: 14px;
+  }
+}
+
+/** seclayout-faq-2 end **/

@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="./style.css">
+
+<section id="seclayout-demand-1" data-name="seclayout-demand-1" data-tag="section, form">
+  <div class="container">
+    <div class="content">
+      <div class="demand-image wrapper">
+        <img src="https://placehold.co/600x700" alt="صورة المنتج">
+      </div>
+
+      <div class="demand-form-body wrapper">
+        <div class="demand-header">
+          <h2 class="demand-title">اختر العرض المناسب لك :</h2>
+          <span class="demand-badge">عرض صالح ليوم فقط!</span>
+        </div>
+
+        <div class="demand-offers">
+          <label class="demand-offer wrapper active">
+            <input type="radio" name="offer" value="199" checked />
+            <div class="offer-content content-box">
+              <span class="offer-name">العرض الأول</span>
+              <span class="offer-price">199 ريال</span>
+            </div>
+          </label>
+          <label class="demand-offer wrapper">
+            <input type="radio" name="offer" value="349" />
+            <div class="offer-content content-box">
+              <span class="offer-name">العرض الثاني</span>
+              <span class="offer-price">349 ريال</span>
+            </div>
+          </label>
+          <label class="demand-offer wrapper">
+            <input type="radio" name="offer" value="499" />
+            <div class="offer-content content-box">
+              <span class="offer-name">العرض الثالث</span>
+              <span class="offer-price">499 ريال</span>
+            </div>
+            <span class="offer-badge">&#128293;</span>
+          </label>
+        </div>
+
+        <form data-form-type="demand" data-form-name="demand_form_seclayout" data-form-id="seclayout-demand-1-form">
+          <label>
+            <span class="ouasl_field-title"></span>
+            <input type="text" name="full_name" placeholder="الاسم الكامل" required />
+          </label>
+          <label>
+            <span class="ouasl_field-title"></span>
+            <input type="tel" name="phone" placeholder="رقم الجوال (واتساب)" required />
+          </label>
+          <label>
+            <span class="ouasl_field-title"></span>
+            <textarea name="address" placeholder="المدينة + العنوان" rows="3" required></textarea>
+          </label>
+          <button type="submit" class="demand-submit">تأكيد الطلب الآن</button>
+        </form>
+
+        <p class="demand-disclaimer">بالضغط على تأكيد الطلب، أنت توافق على الشروط والأحكام وسياسة الاستبدال والاسترجاع.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./index.js"></script>

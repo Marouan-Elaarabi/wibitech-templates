@@ -1,0 +1,258 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-demand-1 start **/
+
+#seclayout-demand-1 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+  --accent-color: #e67e22;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-demand-1 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-demand-1 .content {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+  padding: 80px 0;
+}
+
+#seclayout-demand-1 .demand-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#seclayout-demand-1 .demand-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#seclayout-demand-1 .demand-form-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#seclayout-demand-1 .demand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#seclayout-demand-1 .demand-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+}
+
+#seclayout-demand-1 .demand-badge {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tints-10);
+  background-color: var(--accent-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+#seclayout-demand-1 .demand-offers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#seclayout-demand-1 .demand-offer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border: 1.5px solid var(--tints-8);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.33s ease;
+  position: relative;
+}
+
+#seclayout-demand-1 .demand-offer input[type="radio"] {
+  accent-color: var(--third-color);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#seclayout-demand-1 .demand-offer.active {
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+}
+
+#seclayout-demand-1 .demand-offer.active .offer-name,
+#seclayout-demand-1 .demand-offer.active .offer-price {
+  color: var(--tints-10);
+}
+
+#seclayout-demand-1 .offer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+#seclayout-demand-1 .offer-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--third-color);
+  transition: color 0.33s ease;
+}
+
+#seclayout-demand-1 .offer-price {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--third-color);
+  transition: color 0.33s ease;
+}
+
+#seclayout-demand-1 .offer-badge {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 18px;
+}
+
+#seclayout-demand-1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#seclayout-demand-1 form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#seclayout-demand-1 form input,
+#seclayout-demand-1 form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--tints-8);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Almarai", sans-serif;
+  color: var(--third-color);
+  background-color: var(--tints-10);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.33s ease;
+  direction: rtl;
+}
+
+#seclayout-demand-1 form input:focus,
+#seclayout-demand-1 form textarea:focus {
+  border-color: var(--tints-3);
+}
+
+#seclayout-demand-1 form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+#seclayout-demand-1 .demand-submit {
+  padding: 16px 32px;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#seclayout-demand-1 .demand-submit:hover {
+  opacity: 0.85;
+}
+
+#seclayout-demand-1 .demand-disclaimer {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tints-4);
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-demand-1 .content {
+    gap: 40px;
+    padding: 60px 0;
+  }
+
+  #seclayout-demand-1 .demand-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-demand-1 .content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  #seclayout-demand-1 .demand-image {
+    max-height: 350px;
+  }
+
+  #seclayout-demand-1 .demand-title {
+    font-size: 18px;
+  }
+
+  #seclayout-demand-1 .demand-submit {
+    width: 100%;
+  }
+}
+
+/** seclayout-demand-1 end **/

@@ -1,0 +1,214 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-footer-2 start **/
+
+#seclayout-footer-2 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+  border-top: 1px solid var(--tints-9);
+}
+
+#seclayout-footer-2 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-footer-2 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 40px;
+  gap: 32px;
+}
+
+#seclayout-footer-2 .footer-logo a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+#seclayout-footer-2 .brand-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+}
+
+#seclayout-footer-2 .footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+#seclayout-footer-2 ul.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#seclayout-footer-2 ul.menu a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tints-2);
+  text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#seclayout-footer-2 ul.menu a:hover {
+  color: var(--third-color);
+}
+
+#seclayout-footer-2 .footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#seclayout-footer-2 .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: all 0.33s ease;
+}
+
+#seclayout-footer-2 .social-link:hover {
+  background-color: var(--tints-8);
+}
+
+#seclayout-footer-2 .social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+#seclayout-footer-2 .footer-tax {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#seclayout-footer-2 .tax-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#seclayout-footer-2 .tax-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#seclayout-footer-2 .tax-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#seclayout-footer-2 .tax-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--tints-3);
+}
+
+#seclayout-footer-2 .footer-payments {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#seclayout-footer-2 .payment-icon {
+  width: 56px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  padding: 4px;
+}
+
+#seclayout-footer-2 .payment-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-footer-2 .content {
+    padding: 48px 0 32px;
+    gap: 28px;
+  }
+
+  #seclayout-footer-2 ul.menu {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-footer-2 .content {
+    padding: 40px 0 28px;
+    gap: 24px;
+  }
+
+  #seclayout-footer-2 ul.menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  #seclayout-footer-2 .footer-tax {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #seclayout-footer-2 .footer-payments {
+    gap: 12px;
+  }
+}
+
+/** seclayout-footer-2 end **/

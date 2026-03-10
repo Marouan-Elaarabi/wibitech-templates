@@ -1,0 +1,179 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-contact-3 start **/
+
+#seclayout-contact-3 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-contact-3 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-contact-3 .content {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+  padding: 80px 0;
+}
+
+#seclayout-contact-3 .contact-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#seclayout-contact-3 .contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#seclayout-contact-3 .contact-form-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#seclayout-contact-3 .contact-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+}
+
+#seclayout-contact-3 .contact-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--tints-2);
+  margin: 0;
+}
+
+#seclayout-contact-3 form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+#seclayout-contact-3 form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#seclayout-contact-3 form input,
+#seclayout-contact-3 form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--tints-8);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Almarai", sans-serif;
+  color: var(--third-color);
+  background-color: var(--tints-10);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.33s ease;
+  direction: rtl;
+}
+
+#seclayout-contact-3 form input:focus,
+#seclayout-contact-3 form textarea:focus {
+  border-color: var(--tints-3);
+}
+
+#seclayout-contact-3 form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#seclayout-contact-3 .contact-submit {
+  padding: 14px 32px;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.33s ease;
+}
+
+#seclayout-contact-3 .contact-submit:hover {
+  opacity: 0.85;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-contact-3 .content {
+    gap: 40px;
+    padding: 60px 0;
+  }
+
+  #seclayout-contact-3 .contact-title {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-contact-3 .content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  #seclayout-contact-3 .contact-image {
+    max-height: 300px;
+  }
+
+  #seclayout-contact-3 .contact-title {
+    font-size: 24px;
+  }
+
+  #seclayout-contact-3 .contact-description {
+    font-size: 14px;
+  }
+}
+
+/** seclayout-contact-3 end **/
