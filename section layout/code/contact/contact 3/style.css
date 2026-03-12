@@ -50,14 +50,16 @@
 #seclayout-contact-3 .content {
   display: flex;
   align-items: stretch;
-  gap: 60px;
-  padding: 80px 0;
+  gap: 100px;
+  padding: 75px 0;
 }
 
 #seclayout-contact-3 .contact-image {
   flex: 1;
   border-radius: 12px;
   overflow: hidden;
+  width: 540px;
+  height: 550px;
 }
 
 #seclayout-contact-3 .contact-image img {
@@ -71,20 +73,28 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
+}
+
+#seclayout-contact-3 .contact-form-body .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 18px;
 }
 
 #seclayout-contact-3 .contact-title {
-  font-size: 36px;
-  font-weight: 800;
+  font-size: 38px;
+  font-weight: 700;
   color: var(--third-color);
   margin: 0;
 }
 
 #seclayout-contact-3 .contact-description {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.5;
   color: var(--tints-2);
   margin: 0;
 }
@@ -92,8 +102,8 @@
 #seclayout-contact-3 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 30px;
+  margin: 0;
 }
 
 #seclayout-contact-3 form label {
@@ -102,11 +112,19 @@
   gap: 6px;
 }
 
+#seclayout-contact-3 form label .ouasl_field-title {
+  color: #30353A;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
 #seclayout-contact-3 form input,
 #seclayout-contact-3 form textarea {
   width: 100%;
   padding: 14px 16px;
-  border: 1.5px solid var(--tints-8);
+  border: none;
+  outline: none;
   border-radius: 8px;
   font-size: 15px;
   font-family: "Almarai", sans-serif;
@@ -116,6 +134,7 @@
   outline: none;
   transition: border-color 0.33s ease;
   direction: rtl;
+  background-color: #EDEDED;
 }
 
 #seclayout-contact-3 form input:focus,
@@ -164,7 +183,12 @@
   }
 
   #seclayout-contact-3 .contact-image {
-    max-height: 300px;
+    width: 100%;
+  }
+
+  #seclayout-contact-3 .contact-form-body .text {
+    align-items: center;
+    text-align: center;
   }
 
   #seclayout-contact-3 .contact-title {
@@ -174,6 +198,7 @@
   #seclayout-contact-3 .contact-description {
     font-size: 14px;
   }
+
 }
 
 /** seclayout-contact-3 end **/

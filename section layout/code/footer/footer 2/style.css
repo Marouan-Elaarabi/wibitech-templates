@@ -83,11 +83,10 @@
 }
 
 #seclayout-footer-2 ul.menu a {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--tints-2);
-  text-decoration: none;
-  transition: all 0.33s ease;
+font-size: 16px;
+    font-weight: 500;
+    color: #30353A;
+    text-decoration: none;
 }
 
 #seclayout-footer-2 ul.menu a:hover {
@@ -97,15 +96,15 @@
 #seclayout-footer-2 .footer-socials {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 #seclayout-footer-2 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: var(--secondary-color);
   transition: all 0.33s ease;
@@ -116,8 +115,8 @@
 }
 
 #seclayout-footer-2 .social-link img {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -130,12 +129,18 @@
 #seclayout-footer-2 .tax-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+}
+
+#seclayout-footer-2 .tax-item .first_p,
+#seclayout-footer-2 .tax-item .second_p {
+  display: flex;justify-content: flex-start;align-items: flex-start;flex-direction: column;
+  gap: 5px;
 }
 
 #seclayout-footer-2 .tax-icon {
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,9 +153,16 @@
 }
 
 #seclayout-footer-2 .tax-text {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #181A1C;
+  margin: 0;
+}
+
+#seclayout-footer-2 .tax-item .first_p .tax-text:last-of-type,
+#seclayout-footer-2 .tax-item .second_p .tax-text:last-of-type {
   font-weight: 400;
-  color: var(--tints-3);
+
 }
 
 #seclayout-footer-2 .footer-payments {
@@ -159,6 +171,9 @@
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--secondary-color);
+  padding: 16px 0;
+
 }
 
 #seclayout-footer-2 .payment-icon {
@@ -167,9 +182,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-color);
-  border-radius: 6px;
-  padding: 4px;
 }
 
 #seclayout-footer-2 .payment-icon img {
@@ -199,6 +211,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+  }
+
+  #seclayout-footer-2 .tax-item {
+    flex-direction: column;
+  }
+
+  #seclayout-footer-2 .tax-item .tax-text {
+    width: 100%;
+    text-align: center;
   }
 
   #seclayout-footer-2 .footer-tax {

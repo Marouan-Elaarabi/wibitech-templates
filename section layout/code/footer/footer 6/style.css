@@ -87,12 +87,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--secondary-color);
   transition: all 0.33s ease;
-}
-
-#seclayout-footer-6 .social-link:hover {
-  background-color: var(--tints-8);
 }
 
 #seclayout-footer-6 .social-link img {

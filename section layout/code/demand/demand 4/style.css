@@ -50,12 +50,12 @@
 #seclayout-demand-4 .content {
   display: flex;
   justify-content: center;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 #seclayout-demand-4 .demand-form {
   width: 100%;
-  max-width: 600px;
+  max-width: 436px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -103,52 +103,47 @@
 }
 
 #seclayout-demand-4 form input[type="text"],
-#seclayout-demand-4 form input[type="tel"],
-#seclayout-demand-4 form textarea {
+#seclayout-demand-4 form input[type="tel"] {
   width: 100%;
-  padding: 14px 16px;
-  border: 1.5px solid var(--tints-8);
+  padding: 17px 16px;
+  border: none;
   border-radius: 8px;
-  font-size: 15px;
-  font-family: "Almarai", sans-serif;
-  color: var(--third-color);
-  background-color: var(--tints-10);
+  color: #898E93;
+  background-color: #EDEDED;
   box-sizing: border-box;
   outline: none;
-  transition: border-color 0.33s ease;
   direction: rtl;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 #seclayout-demand-4 form input[type="text"]:focus,
-#seclayout-demand-4 form input[type="tel"]:focus,
-#seclayout-demand-4 form textarea:focus {
-  border-color: var(--tints-3);
-}
-
-#seclayout-demand-4 form textarea {
-  resize: vertical;
-  min-height: 80px;
+#seclayout-demand-4 form input[type="tel"]:focus {
+  outline: none;
 }
 
 #seclayout-demand-4 .quantity-control {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 #seclayout-demand-4 .quantity-label {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
-  color: var(--third-color);
+  color: #30353A;
+  line-height: 120%;
 }
 
 #seclayout-demand-4 .quantity-box {
   display: flex;
   align-items: center;
-  border: 1.5px solid var(--tints-8);
+  width: 100%;
+  border: none;
   border-radius: 8px;
   overflow: hidden;
+  background-color: #EDEDED;
 }
 
 #seclayout-demand-4 .qty-btn {
@@ -157,7 +152,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: #EDEDED;
   border: none;
   font-size: 20px;
   font-weight: 700;
@@ -172,26 +167,25 @@
 }
 
 #seclayout-demand-4 .qty-input {
-  width: 56px;
+  flex: 1;
   height: 44px;
   text-align: center;
   border: none;
-  border-left: 1.5px solid var(--tints-8);
-  border-right: 1.5px solid var(--tints-8);
+  border-left: 1.5px solid #d6d6d6;
+  border-right: 1.5px solid #d6d6d6;
   font-size: 16px;
   font-weight: 700;
   font-family: "Almarai", sans-serif;
   color: var(--third-color);
-  background-color: var(--tints-10);
+  background-color: #EDEDED;
   outline: none;
-  -moz-appearance: textfield;
 }
 
-#seclayout-demand-4 .qty-input::-webkit-outer-spin-button,
+/* #seclayout-demand-4 .qty-input::-webkit-outer-spin-button,
 #seclayout-demand-4 .qty-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
+} */
 
 #seclayout-demand-4 .demand-submit {
   padding: 16px 32px;
