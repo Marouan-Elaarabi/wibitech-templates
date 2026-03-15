@@ -1,5 +1,5 @@
 /** css rules start **/
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 /** css rules end **/
 
@@ -63,17 +63,20 @@
 }
 
 #seclayout-pricing-1 .pricing-title {
-  font-size: 36px;
-  font-weight: 800;
-  color: var(--third-color);
+  color: #30353a;
+  text-align: center;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 130%;
   margin: 0;
 }
 
 #seclayout-pricing-1 .pricing-subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.8;
-  color: var(--tints-2);
+  color: #30353a;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 150%;
   margin: 0;
 }
 
@@ -87,21 +90,30 @@
 #seclayout-pricing-1 .pricing-card {
   flex: 1;
   background-color: var(--tints-10);
-  border-radius: 16px;
-  padding: 36px 28px;
+  border-radius: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 42px;
   box-sizing: border-box;
   transition: all 0.33s ease;
   border: 1px solid var(--tints-9);
 }
 
-#seclayout-pricing-1 .pricing-card.featured {
-  background-color: var(--third-color);
-  border-color: var(--third-color);
-  transform: scale(1.04);
+#seclayout-pricing-1 .pricing-card .top-content {
+  border-radius: 35px;
+  border: 1px solid rgba(189, 192, 194, 0.5);
+  background: #fff;
+  box-shadow: 0 4px 10.4px 0 rgba(0, 0, 0, 0.09);
+  width: 100%;
+  padding: 13px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
 #seclayout-pricing-1 .pricing-card.featured .card-badge {
@@ -109,19 +121,18 @@
   color: var(--third-color);
 }
 
-#seclayout-pricing-1 .pricing-card.featured .price-amount,
-#seclayout-pricing-1 .pricing-card.featured .price-period {
+/* #seclayout-pricing-1 .pricing-card.featured .price-amount {
   color: var(--tints-10);
-}
+} */
 
-#seclayout-pricing-1 .pricing-card.featured .card-subtitle {
+/* #seclayout-pricing-1 .pricing-card.featured .card-subtitle {
   color: var(--tints-7);
-}
+} */
 
-#seclayout-pricing-1 .pricing-card.featured .card-btn {
+/* #seclayout-pricing-1 .pricing-card.featured .card-btn {
   background-color: var(--tints-10);
   color: var(--third-color);
-}
+} */
 
 #seclayout-pricing-1 .pricing-card.featured .feature-item {
   color: var(--tints-8);
@@ -133,67 +144,78 @@
 
 #seclayout-pricing-1 .card-badge {
   display: inline-block;
-  padding: 6px 20px;
-  background-color: var(--secondary-color);
+  padding: 12px 22px;
+  background-color: var(--tints-10);
   color: var(--third-color);
   font-size: 13px;
   font-weight: 700;
   border-radius: 20px;
+  margin: 0;
+}
+
+#seclayout-pricing-1 .pricing-showcase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #seclayout-pricing-1 .card-price {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: flex-start;
+  gap: 37px;
+  border-radius: 30px;
+  flex-direction: column;
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#seclayout-pricing-1 .card-price.beginner,
+#seclayout-pricing-1 .card-price.enterprise {
+  background: #eee;
+}
+
+#seclayout-pricing-1 .card-price.professional {
+  background: #dce5f4;
 }
 
 #seclayout-pricing-1 .price-amount {
-  font-size: 44px;
-  font-weight: 800;
-  color: var(--third-color);
-}
-
-#seclayout-pricing-1 .price-period {
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--tints-2);
+  color: #30353a;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
 }
 
 #seclayout-pricing-1 .card-subtitle {
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--tints-2);
+  color: #30353a;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 150%;
   margin: 0;
-  text-align: center;
-  line-height: 1.6;
 }
 
 #seclayout-pricing-1 .card-btn {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  height: 58px;
+  padding: 17px 15px;
   justify-content: center;
-  padding: 14px 32px;
-  background-color: var(--third-color);
-  color: var(--tints-10);
-  font-size: 15px;
-  font-weight: 700;
-  font-family: "Almarai", sans-serif;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.33s ease;
-  width: 100%;
+  align-items: center;
+  gap: 25px;
+  align-self: stretch;
+  border-radius: 60px;
+  background-color: #181a1c;
   box-sizing: border-box;
-  text-align: center;
-}
-
-#seclayout-pricing-1 .card-btn:hover {
-  opacity: 0.85;
+  color: #f5fdff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 #seclayout-pricing-1 .card-features {
   width: 100%;
-  padding-top: 20px;
-  border-top: 1px solid var(--tints-9);
+  padding: 0 20px 40px;
+  box-sizing: border-box;
 }
 
 #seclayout-pricing-1 .pricing-card.featured .card-features {
@@ -225,6 +247,18 @@
   flex-shrink: 0;
 }
 
+#seclayout-pricing-1 .check-icon,
+#seclayout-pricing-1 .feature-txt {
+  margin: 0;
+}
+
+#seclayout-pricing-1 .feature-txt {
+  color: #181a1c;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
 @media only screen and (max-width: 1024px) {
   #seclayout-pricing-1 .content {
     padding: 60px 0;
@@ -235,12 +269,35 @@
     font-size: 28px;
   }
 
-  #seclayout-pricing-1 .pricing-card {
-    padding: 28px 20px;
+  #seclayout-pricing-1 .pricing-card .top-content {
+    padding: 10px;
+    gap: 16px;
+  }
+
+  #seclayout-pricing-1 .card-price {
+    padding: 20px;
+    gap: 28px;
   }
 
   #seclayout-pricing-1 .price-amount {
-    font-size: 36px;
+    font-size: 28px;
+  }
+
+  #seclayout-pricing-1 .card-subtitle {
+    font-size: 15px;
+  }
+
+  #seclayout-pricing-1 .card-btn {
+    height: 50px;
+    font-size: 13px;
+  }
+
+  #seclayout-pricing-1 .card-features {
+    padding: 0 16px 32px;
+  }
+
+  #seclayout-pricing-1 .feature-txt {
+    font-size: 15px;
   }
 
   #seclayout-pricing-1 .pricing-card.featured {
@@ -271,12 +328,22 @@
     transform: none;
   }
 
-  #seclayout-pricing-1 .pricing-card {
-    padding: 28px 24px;
+  #seclayout-pricing-1 .pricing-card .top-content {
+    padding: 12px;
+    gap: 18px;
+  }
+
+  #seclayout-pricing-1 .card-price {
+    padding: 22px;
+    gap: 30px;
   }
 
   #seclayout-pricing-1 .price-amount {
-    font-size: 40px;
+    font-size: 32px;
+  }
+
+  #seclayout-pricing-1 .card-features {
+    padding: 0 18px 36px;
   }
 }
 
