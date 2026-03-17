@@ -51,18 +51,18 @@
   width: 100%;
 }
 
-#seclayout-media-1 .video-container {
+#seclayout-media-1 .image-content {
   width: 100%;
   height: min(100dvh, 721px);
 }
 
-#seclayout-media-1 .video-wrapper {
+#seclayout-media-1 .ouasl_video_iframe {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-#seclayout-media-1 .video-wrapper iframe {
+#seclayout-media-1 .ouasl_video_iframe iframe {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -72,13 +72,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #seclayout-media-1 .video-container {
+  #seclayout-media-1 .image-content {
     height: min(70dvh, 721px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  #seclayout-media-1 .video-container {
+  #seclayout-media-1 .image-content {
     height: min(50dvh, 721px);
   }
 }

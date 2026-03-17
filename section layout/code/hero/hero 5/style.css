@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: min(832px, 100vh);
 }
 
 #seclayout-hero-5 .bg-image-wrapper {

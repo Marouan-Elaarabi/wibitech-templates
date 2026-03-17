@@ -138,6 +138,7 @@
   font-size: 15px;
   font-weight: 700;
   color: var(--third-color);
+  margin: 0;
 }
 
 #seclayout-testimonial-4 .author-handle {
@@ -146,6 +147,7 @@
   color: var(--tints-4);
   direction: ltr;
   text-align: right;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1024px) {
