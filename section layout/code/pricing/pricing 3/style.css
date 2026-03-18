@@ -91,10 +91,14 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   box-sizing: border-box;
   transition: all 0.33s ease;
   border: 1px solid var(--tints-9);
   padding: 12px;
+  text-align: center;
 }
 
 #seclayout-pricing-3 .pricing-card.featured {
@@ -133,17 +137,6 @@
   border-radius: 16px;
 }
 
-#seclayout-pricing-3 .card-info {
-  padding: 16px 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 12px;
-  flex: 1;
-  text-align: center;
-}
-
 #seclayout-pricing-3 .card-name {
   font-size: 18px;
   font-weight: 800;
@@ -169,25 +162,27 @@
   font-size: 32px;
   font-weight: 800;
   color: var(--third-color);
+  margin: 0;
 }
 
 #seclayout-pricing-3 .price-currency {
   font-size: 15px;
   font-weight: 400;
   color: var(--tints-2);
+  margin: 0;
 }
 
 #seclayout-pricing-3 .card-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 17px 32px;
   background-color: var(--third-color);
   color: var(--tints-10);
   font-size: 15px;
   font-weight: 700;
   font-family: "Almarai", sans-serif;
-  border-radius: 12px;
+  border-radius: 30px;
   text-decoration: none;
   transition: all 0.33s ease;
   width: 100%;
@@ -250,7 +245,7 @@
     height: 220px;
   }
 
-  #seclayout-pricing-3 .card-info {
+  #seclayout-pricing-3 .pricing-card {
     padding: 14px 10px;
   }
 
