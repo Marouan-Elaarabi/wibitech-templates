@@ -118,24 +118,19 @@
   flex: 1;
 }
 
-#seclayout-faq-2 .accordion details summary .chevron {
-  width: 12px;
-  height: 12px;
-  border-left: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
-  transform: rotate(-45deg);
+#seclayout-faq-2 .accordion details summary .chevron-icon {
+  transform: rotate(0deg);
   transition: transform 0.18s linear;
   flex-shrink: 0;
 }
 
-#seclayout-faq-2 .accordion details[open] summary .chevron {
-  transform: rotate(135deg);
+#seclayout-faq-2 .accordion details[open] summary .chevron-icon {
+  transform: rotate(180deg);
 }
 
 #seclayout-faq-2 .accordion details .description-wrapper {
   margin-top: 12px;
   padding-top: 12px;
-  /* border-top: 1px solid var(--tints-8); */
 }
 
 #seclayout-faq-2 .accordion details .description {

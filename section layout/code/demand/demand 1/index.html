@@ -3,60 +3,47 @@
 <section id="seclayout-demand-1" data-name="seclayout-demand-1" data-tag="section, form">
   <div class="container">
     <div class="content">
-      <div class="demand-form-body wrapper">
-        <div class="demand-header">
-          <h2 class="demand-title">اختر العرض المناسب لك :</h2>
-          <span class="demand-badge">عرض صالح ليوم فقط!</span>
+      <div class="form-body">
+        <div class="ouasl_field-radios_title">
+          <h4 class="option-description-title">اختر العرض المناسب لك :</h4>
+          <p class="option-description-text">عرض صالح ليوم فقط!</p>
         </div>
-
-        <div class="demand-offers">
-          <label class="demand-offer wrapper active">
-            <input type="radio" name="offer" value="199" checked />
-            <div class="offer-content content-box">
-              <span class="offer-name">العرض الأول</span>
-              <span class="offer-price">199 ريال</span>
-            </div>
-          </label>
-          <label class="demand-offer wrapper">
-            <input type="radio" name="offer" value="349" />
-            <div class="offer-content content-box">
-              <span class="offer-name">العرض الثاني</span>
-              <span class="offer-price">349 ريال</span>
-            </div>
-          </label>
-          <label class="demand-offer wrapper">
-            <input type="radio" name="offer" value="499" />
-            <div class="offer-content content-box">
-              <span class="offer-name">العرض الثالث</span>
-              <span class="offer-price">499 ريال</span>
-            </div>
-            <span class="offer-badge">&#128293;</span>
-          </label>
-        </div>
-
-        <form data-form-type="demand" data-form-name="demand_form_seclayout" data-form-id="seclayout-demand-1-form">
+        <form data-form-type="leads" data-form-name="demand_form_seclayout" data-form-id="seclayout-demand-1-form">
+          <div class="ouasl_field-radios">
+            <label class="radio">
+              <span class="ouasl_field-title">1 = 199 ريال</span>
+              <input type="radio" name="demand_radio" value="1 = 199 ريال">
+            </label>
+            <label class="radio">
+              <span class="ouasl_field-title">2 = 349 ريال</span>
+              <input type="radio" name="demand_radio" value="2 = 349 ريال">
+            </label>
+            <label class="radio">
+              <span class="ouasl_field-title">3 = 499 ريال <span class="inner-span">&#128293; الأكثر طلبًا</span></span>
+              <input type="radio" name="demand_radio" value="3 = 499 ريال 🔥 الأكثر طلبًا" checked>
+            </label>
+          </div>
           <label>
-            <span class="ouasl_field-title">الاسم الكامل</span>
+            <span class="ouasl_field-title">الاسم الكامل :</span>
             <input type="text" name="full_name" placeholder="الاسم الكامل" required />
           </label>
           <label>
-            <span class="ouasl_field-title">رقم الجوال (واتساب)</span>
+            <span class="ouasl_field-title">رقم الجوال (واتساب) :</span>
             <input type="tel" name="phone" placeholder="رقم الجوال (واتساب)" required />
           </label>
           <label>
-            <span class="ouasl_field-title">المدينة + العنوان</span>
-            <textarea name="address" placeholder="المدينة + العنوان" rows="3" required></textarea>
+            <span class="ouasl_field-title">المدينة + العنوان :</span>
+            <input type="text" name="address" placeholder="المدينة + العنوان" required />
           </label>
-          <button type="submit" class="demand-submit">تأكيد الطلب الآن</button>
+          <div class="btn-cta submit-form-btn">
+            <button type="submit" role="button" class="button-cta">تأكيد الطلب الآن</button>
+          </div>
         </form>
-
-        <p class="demand-disclaimer">سنقوم بالتواصل عبر واتساب لتأكيد الطلب وموعد التسليم. الدفع عند الاستلام. بياناتك آمنة ولن تُشارك.</p>
+        <p class="connect">سنقوم بالتواصل عبر واتساب لتأكيد الطلب وموعد التسليم. الدفع عند الاستلام. بياناتك آمنة ولن تُشارك.</p>
       </div>
-      <div class="demand-image wrapper">
+      <div class="form-image">
         <img src="./images/placeholder.jpg" alt="placeholder">
       </div>
-
-
     </div>
   </div>
 </section>
