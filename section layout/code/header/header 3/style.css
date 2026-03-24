@@ -1,0 +1,237 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-header-3 start **/
+
+#seclayout-header-3 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-header-3 .container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-header-3 .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-height: 70px;
+  position: relative;
+}
+
+#seclayout-header-3 .oa-menu-actions {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+#seclayout-header-3 .oa-menu-actions * {
+  pointer-events: auto;
+}
+
+#seclayout-header-3 .list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seclayout-header-3 ul.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#seclayout-header-3 ul.menu a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.33s ease;
+  color: var(--third-color);
+}
+
+#seclayout-header-3 ul.menu a[data-active_hover] {
+  color: var(--main-color);
+  opacity: 0.7;
+}
+
+#seclayout-header-3 .brand {
+  flex: 1;
+  display: flex;
+  max-width: 180px;
+}
+
+#seclayout-header-3 .brand a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+#seclayout-header-3 .brand img {
+  max-width: 100%;
+}
+
+#seclayout-header-3 .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#seclayout-header-3 .lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  direction: ltr;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--third-color);
+  transition: opacity 0.33s ease;
+}
+
+#seclayout-header-3 .lang-switcher:hover {
+  opacity: 0.7;
+}
+
+#seclayout-header-3 .lang-switcher svg {
+  flex-shrink: 0;
+}
+
+#seclayout-header-3 .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  font-family: "Almarai", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: opacity 0.33s ease;
+  white-space: nowrap;
+}
+
+#seclayout-header-3 .cta-btn:hover {
+  opacity: 0.8;
+}
+
+#seclayout-header-3 .cta-btn--mobile {
+  display: none;
+}
+
+#seclayout-header-3 .responsive-icons {
+  display: none;
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+}
+
+#seclayout-header-3 .responsive-icons img {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-header-3 ul.menu {
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-header-3 .responsive-icons {
+    display: flex;
+  }
+
+  #seclayout-header-3 .oa-menu-actions {
+    position: absolute;
+    z-index: 999;
+    top: 70px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    right: 0;
+    flex-direction: column;
+    height: calc(100vh - 70px);
+    gap: 30px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: var(--tints-10);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #seclayout-header-3 .oa-menu-actions.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #seclayout-header-3 ul.menu {
+    flex: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #seclayout-header-3 .lang-switcher {
+    display: none;
+  }
+
+  #seclayout-header-3 .actions .cta-btn {
+    display: none;
+  }
+
+  #seclayout-header-3 .cta-btn--mobile {
+    display: inline-flex;
+  }
+}
+
+/** seclayout-header-3 end **/
