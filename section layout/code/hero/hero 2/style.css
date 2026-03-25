@@ -3,9 +3,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 /** css rules end **/
 
-/** seclayout-hero-1 start **/
+/** seclayout-hero-2 start **/
 
-#seclayout-hero-1 {
+#seclayout-hero-2 {
   --main-color: #333333;
 
   --shades-1: #2e2e2e;
@@ -43,55 +43,57 @@
   box-sizing: border-box;
 }
 
-#seclayout-hero-1 .container {
-  padding: 0px 15px;
+#seclayout-hero-2 .container {
+  padding: 0 15px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-#seclayout-hero-1 .content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 60px 10px;
-  margin: auto;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
-
-#seclayout-hero-1 .text {
+#seclayout-hero-2 .content {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  flex: 1;
-  z-index: 1;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 50px;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-#seclayout-hero-1 .text .heading {
+#seclayout-hero-2 .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-width: 700px;
+  width: 100%;
+}
+
+#seclayout-hero-2 .text .heading {
   margin: 0;
   font-size: 44px;
   font-weight: 800;
   line-height: 1.3;
-  max-width: 550px;
   color: var(--third-color);
 }
 
-#seclayout-hero-1 .text .description {
+#seclayout-hero-2 .text .description {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
-  max-width: 450px;
   color: var(--tints-2);
+  max-width: 500px;
 }
 
-#seclayout-hero-1 .action-container {
+#seclayout-hero-2 .action-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-#seclayout-hero-1 .cta-btn {
+#seclayout-hero-2 .cta-btn {
   border-radius: 10px;
   color: var(--tints-10);
   font-weight: 700;
@@ -103,20 +105,19 @@
   text-align: center;
 }
 
-#seclayout-hero-1 .cta-btn[data-active_hover] {
+#seclayout-hero-2 .cta-btn[data-active_hover] {
   transition: background-color 0.26s ease-in-out;
   background-color: var(--main-color) !important;
 }
 
-#seclayout-hero-1 .image-container {
-  flex: 1;
-  max-width: 500px;
-  max-height: 500px;
+#seclayout-hero-2 .image-container {
+  width: 100%;
+  border-radius: 16px;
   overflow: hidden;
-  border-radius: 12px;
+  aspect-ratio: 15/8;
 }
 
-#seclayout-hero-1 .image-container img {
+#seclayout-hero-2 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -124,57 +125,39 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  #seclayout-hero-1 .content {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 10px;
+  #seclayout-hero-2 .content {
+    padding: 60px 20px;
+    gap: 40px;
   }
 
-  #seclayout-hero-1 .text {
-    text-align: center;
-    align-items: center;
-    flex: 0;
-  }
-
-  #seclayout-hero-1 .text .heading {
-    max-width: 100%;
+  #seclayout-hero-2 .text .heading {
     font-size: 36px;
-  }
-
-  #seclayout-hero-1 .text .description {
-    max-width: 100%;
-  }
-
-  #seclayout-hero-1 .image-container {
-    width: 100%;
-    max-width: 400px;
-    max-height: 400px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  #seclayout-hero-1 .content {
-    padding-inline: 0;
+  #seclayout-hero-2 .content {
+    padding: 50px 0;
+    gap: 30px;
   }
 
-  #seclayout-hero-1 .text .heading {
-    font-size: 32px;
+  #seclayout-hero-2 .text .heading {
+    font-size: 28px;
   }
 
-  #seclayout-hero-1 .text .description {
+  #seclayout-hero-2 .text .description {
     font-size: 15px;
   }
 
-  #seclayout-hero-1 .image-container {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  #seclayout-hero-1 .cta-btn {
+  #seclayout-hero-2 .cta-btn {
     font-size: 14px;
     padding: 15px 28px;
   }
+
+  #seclayout-hero-2 .image-container {
+    border-radius: 10px;
+    aspect-ratio: 4 / 3;
+  }
 }
 
-/** seclayout-hero-1 end **/
+/** seclayout-hero-2 end **/

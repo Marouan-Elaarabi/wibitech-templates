@@ -1,0 +1,173 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-cta-5 start **/
+
+#seclayout-cta-5 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-cta-5 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-cta-5 .content {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  padding: 40px 0;
+}
+
+#seclayout-cta-5 .cta-image,
+#seclayout-cta-5 .cta-info {
+  width: calc(50% - 7.5px);
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#seclayout-cta-5 .cta-image {
+  background-color: var(--secondary-color);
+  min-height: 420px;
+}
+
+#seclayout-cta-5 .cta-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#seclayout-cta-5 .cta-info {
+  background-color: var(--third-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+#seclayout-cta-5 .cta-info-wrapper {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#seclayout-cta-5 .cta-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#seclayout-cta-5 .cta-title {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--tints-10);
+  margin: 0;
+}
+
+#seclayout-cta-5 .cta-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--tints-7);
+  margin: 0;
+}
+
+#seclayout-cta-5 .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: var(--tints-10);
+  color: var(--third-color);
+  align-self: flex-start;
+  transition: opacity 0.22s ease;
+}
+
+#seclayout-cta-5 .cta-btn[data-active_hover],
+#seclayout-cta-5 .cta-btn:hover {
+  opacity: 0.85;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-cta-5 .cta-title {
+    font-size: 44px;
+  }
+
+  #seclayout-cta-5 .cta-info-wrapper {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-cta-5 .content {
+    flex-direction: column-reverse;
+    padding: 24px 0;
+  }
+
+  #seclayout-cta-5 .cta-image,
+  #seclayout-cta-5 .cta-info {
+    width: 100%;
+  }
+
+  #seclayout-cta-5 .cta-image {
+    min-height: 260px;
+  }
+
+  #seclayout-cta-5 .cta-info {
+    padding: 48px 24px;
+  }
+
+  #seclayout-cta-5 .cta-title {
+    font-size: 36px;
+  }
+
+  #seclayout-cta-5 .cta-description {
+    font-size: 15px;
+  }
+}
+
+/** seclayout-cta-5 end **/

@@ -1,0 +1,200 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-faq-6 start **/
+
+#seclayout-faq-6 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#seclayout-faq-6 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#seclayout-faq-6 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 80px 0;
+}
+
+#seclayout-faq-6 .faq-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+  text-align: center;
+}
+
+#seclayout-faq-6 .accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+#seclayout-faq-6 .accordion details {
+  background-color: #ededed;
+  border: 1.5px solid var(--tints-9);
+  border-radius: 14px;
+  user-select: none;
+  padding: 20px 24px;
+}
+
+#seclayout-faq-6 .accordion details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+#seclayout-faq-6 .accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+#seclayout-faq-6 .accordion details summary .text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--third-color);
+  flex: 1;
+}
+
+/* toggle icon: cross made of two pseudo-elements */
+#seclayout-faq-6 .toggle-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+#seclayout-faq-6 .toggle-icon::before,
+#seclayout-faq-6 .toggle-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--third-color);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+}
+
+/* horizontal bar — always visible */
+#seclayout-faq-6 .toggle-icon::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+/* vertical bar — rotates out when open */
+#seclayout-faq-6 .toggle-icon::after {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+#seclayout-faq-6 .accordion details[open] .toggle-icon::after {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
+}
+
+/* answer animation */
+#seclayout-faq-6 .description-wrapper {
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#seclayout-faq-6 .description-inner {
+  padding-top: 14px;
+  margin-top: 16px;
+}
+
+#seclayout-faq-6 .accordion details .description {
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  color: var(--tints-2);
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-faq-6 .faq-title {
+    font-size: 28px;
+  }
+
+  #seclayout-faq-6 .accordion {
+    gap: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-faq-6 .accordion {
+    grid-template-columns: 1fr;
+  }
+
+  #seclayout-faq-6 .content {
+    gap: 32px;
+    padding: 48px 0;
+  }
+
+  #seclayout-faq-6 .faq-title {
+    font-size: 24px;
+  }
+
+  #seclayout-faq-6 .accordion details {
+    padding: 16px 20px;
+  }
+
+  #seclayout-faq-6 .accordion details summary .text {
+    font-size: 14px;
+  }
+}
+
+/** seclayout-faq-6 end **/

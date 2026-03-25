@@ -1,0 +1,158 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-cta-3 start **/
+
+#seclayout-cta-3 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-cta-3 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-cta-3 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 110px 0;
+  gap: 24px;
+}
+
+#seclayout-cta-3 .cta-title {
+  font-size: 47px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+  max-width: 744px;
+  line-height: 1.3;
+}
+
+#seclayout-cta-3 .cta-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--tints-2);
+  margin: 0;
+  max-width: 640px;
+}
+
+#seclayout-cta-3 .action-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+#seclayout-cta-3 .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 17px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.33s ease;
+}
+
+#seclayout-cta-3 .cta-btn.primary {
+  background-color: var(--third-color);
+  color: var(--tints-10);
+}
+
+#seclayout-cta-3 .cta-btn.primary:hover {
+  opacity: 0.85;
+}
+
+#seclayout-cta-3 .cta-btn.primary p {
+  margin: 0;
+}
+
+#seclayout-cta-3 .btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+#seclayout-cta-3 .btn-icon img {
+  max-width: 13px;
+  max-height: 13px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-cta-3 .content {
+    padding: 60px 0;
+  }
+
+  #seclayout-cta-3 .cta-title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-cta-3 .content {
+    padding: 48px 0;
+  }
+
+  #seclayout-cta-3 .cta-title {
+    font-size: 26px;
+  }
+
+  #seclayout-cta-3 .cta-description {
+    font-size: 14px;
+  }
+
+  #seclayout-cta-3 .action-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #seclayout-cta-3 .cta-btn {
+    text-align: center;
+  }
+}
+
+/** seclayout-cta-3 end **/

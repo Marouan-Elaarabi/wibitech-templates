@@ -1,0 +1,262 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-demand-3 start **/
+
+#seclayout-demand-3 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-demand-3 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-demand-3 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#seclayout-demand-3 .form-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#seclayout-demand-3 .form-heading-txt {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+#seclayout-demand-3 .form-heading-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--tints-2);
+  margin: 0;
+  line-height: 1.5;
+}
+
+#seclayout-demand-3 .form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#seclayout-demand-3 .form-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+#seclayout-demand-3 .form-body .half-span {
+  width: calc(50% - 10px);
+}
+
+#seclayout-demand-3 .form-body > label,
+#seclayout-demand-3 .form-body > .ouasl_field-radios {
+  width: 100%;
+}
+
+#seclayout-demand-3 .form-body label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#seclayout-demand-3 .form-body label .ouasl_field-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #30353A;
+  margin: 0;
+}
+
+#seclayout-demand-3 .form-body label input[type="text"],
+#seclayout-demand-3 .form-body label input[type="tel"] {
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--secondary-color);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Almarai", sans-serif;
+  color: var(--third-color);
+  outline: none;
+}
+
+#seclayout-demand-3 .form-body ::placeholder {
+  color: #C7C7C7;
+  font-family: "Almarai", sans-serif;
+}
+
+#seclayout-demand-3 .ouasl_field-radios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#seclayout-demand-3 .ouasl_field-radios_title {
+  width: 100%;
+}
+
+#seclayout-demand-3 .option-description-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #30353A;
+  margin: 0;
+  text-align: right;
+}
+
+#seclayout-demand-3 .ouasl_field-radios .radio {
+  flex: 1;
+  height: 45px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.22s ease;
+}
+
+#seclayout-demand-3 .ouasl_field-radios .radio.active {
+  background-color: #30353A;
+}
+
+#seclayout-demand-3 .ouasl_field-radios .radio .ouasl_field-title {
+  color: var(--third-color);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition: color 0.22s ease;
+}
+
+#seclayout-demand-3 .ouasl_field-radios .radio.active .ouasl_field-title {
+  color: var(--tints-10);
+}
+
+#seclayout-demand-3 .ouasl_field-radios .radio input {
+  display: none;
+}
+
+#seclayout-demand-3 .btn-cta {
+  width: 100%;
+}
+
+#seclayout-demand-3 .button-cta {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: #30353A;
+  color: var(--tints-10);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.22s ease;
+}
+
+#seclayout-demand-3 .button-cta:hover {
+  opacity: 0.85;
+}
+
+#seclayout-demand-3 .connect {
+  color: #898E93;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-demand-3 .content {
+    padding: 60px 0;
+  }
+
+  #seclayout-demand-3 .form-heading-txt {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-demand-3 .content {
+    padding: 48px 0;
+    gap: 32px;
+  }
+
+  #seclayout-demand-3 .form-wrapper {
+    max-width: unset;
+  }
+
+  #seclayout-demand-3 .form-body .half-span {
+    width: 100%;
+  }
+
+  #seclayout-demand-3 .form-heading-txt {
+    font-size: 28px;
+  }
+
+  #seclayout-demand-3 .ouasl_field-radios .radio .ouasl_field-title {
+    font-size: 14px;
+  }
+}
+
+/** seclayout-demand-3 end **/

@@ -1,0 +1,175 @@
+/** css rules start **/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+/** css rules end **/
+
+/** seclayout-contact-4 start **/
+
+#seclayout-contact-4 {
+  --main-color: #333333;
+
+  --shades-1: #2e2e2e;
+  --shades-2: #292929;
+  --shades-3: #242424;
+  --shades-4: #1f1f1f;
+  --shades-5: #1a1a1a;
+  --shades-6: #141414;
+  --shades-7: #0f0f0f;
+  --shades-8: #0a0a0a;
+  --shades-9: #050505;
+  --shades-10: #000000;
+
+  --tints-1: #474747;
+  --tints-2: #5c5c5c;
+  --tints-3: #707070;
+  --tints-4: #858585;
+  --tints-5: #999999;
+  --tints-6: #adadad;
+  --tints-7: #c2c2c2;
+  --tints-8: #d6d6d6;
+  --tints-9: #ebebeb;
+  --tints-10: #ffffff;
+
+  --secondary-color: #f5f5f5;
+  --third-color: #1a1a1a;
+
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+  box-sizing: border-box;
+  direction: rtl;
+  background-color: var(--tints-10);
+}
+
+#seclayout-contact-4 .container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#seclayout-contact-4 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 0;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+#seclayout-contact-4 .contact-text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+#seclayout-contact-4 .contact-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--third-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+#seclayout-contact-4 .contact-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--tints-2);
+  margin: 0;
+}
+
+#seclayout-contact-4 form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  text-align: right;
+}
+
+#seclayout-contact-4 form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#seclayout-contact-4 form label .ouasl_field-title {
+  color: #30353A;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+#seclayout-contact-4 form input,
+#seclayout-contact-4 form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Almarai", sans-serif;
+  color: var(--third-color);
+  background-color: var(--secondary-color);
+  box-sizing: border-box;
+  direction: rtl;
+  transition: background-color 0.22s ease;
+}
+
+#seclayout-contact-4 form input:focus,
+#seclayout-contact-4 form textarea:focus {
+  background-color: var(--tints-9);
+}
+
+#seclayout-contact-4 form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#seclayout-contact-4 .contact-submit {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: var(--third-color);
+  color: var(--tints-10);
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Almarai", sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.22s ease;
+}
+
+#seclayout-contact-4 .contact-submit:hover {
+  opacity: 0.85;
+}
+
+@media only screen and (max-width: 1024px) {
+  #seclayout-contact-4 .content {
+    padding: 60px 0;
+  }
+
+  #seclayout-contact-4 .contact-title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #seclayout-contact-4 .content {
+    padding: 48px 0;
+    gap: 32px;
+  }
+
+  #seclayout-contact-4 .contact-title {
+    font-size: 28px;
+  }
+
+  #seclayout-contact-4 .contact-description {
+    font-size: 14px;
+  }
+}
+
+/** seclayout-contact-4 end **/
